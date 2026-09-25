@@ -1,0 +1,263 @@
+REPORT OF TRAFFIC COLLISION INVOLVING AN AUTONOMOUS VEHICLE
+DMV USE ONLY
+AVT NUMBER
+NAME
+
+Instructions: Please print within the spaces and boxes on this form. If you need to provide additional information on a separate piece of paper(s) or you include a copy of any law enforcement agency report, please check the box to indicate "Additional Information Attached."
+• Write unk (for unknown) or none in any space or box when you do not have the information on the other party involved.
+• Give insurance information that is complete and which correctly and fully identifies the company that issued the insurance policy or surety bond, or whether there is a certificate of self-insurance.
+• Place the National Association of Insurance Commissioners (NAIC) number for your Insurance or Surety Company in the boxes provided. The NAIC number should be located on the proof of insurance provided by you company or you can contact your insurer for that information.
+• Identify any person involved in the accident (driver, passenger, bicyclist, pedestrian, etc) that you saw was injured or complained of bodily injury or know to be deceased.
+• Record in the PROPERTY DAMAGE line any damage to telephone poles, fences, street signs, guard post, trees, livestock, dogs, buildings, parked vehicles, etc., including a description of the damage.
+• Once you have completed this report, please mail to: Department of Motor Vehicles, Autonomous Vehicles Branch, 2415 1st Avenue, MS D405, Sacramento, CA 95818
+
+SECTION 1 — MANUFACTURER'S INFORMATION
+MANUFACTURER'S NAME
+Zoox, Inc. dba Zoox Labs, Inc.
+AVT NUMBER
+BUSINESS NAME
+Zoox
+TELEPHONE NUMBER
+(    )
+STREET ADDRESS
+CITY
+STATE
+ZIP CODE
+
+SECTION 2 — ACCIDENT INFORMATION/VEHICLE 1
+DATE OF ACCIDENT
+10/14/2022
+TIME OF ACCIDENT
+02:52 ☐ AM ☒ PM
+VEHICLE YEAR
+2016
+MAKE
+Toyota
+MODEL
+Highlander
+LICENSE PLATE NUMBER
+VEHICLE IDENTIFICATION NUMBER
+STATE VEHICLE IS REGISTERED IN
+CA
+ADDRESS/LOCATION OF ACCIDENT
+Broadway St & Sansome St Intersection
+CITY
+San Francisco
+COUNTY
+San Francisco
+STATE
+CA
+ZIP CODE
+94133
+Vehicle was:
+☒ Moving
+☐ Stopped in Traffic
+Involved in the Accident:
+☐ Pedestrian
+☐ Bicyclist
+☐ Other
+NUMBER OF VEHICLES INVOLVED
+2
+DRIVER'S FULL NAME (FIRST, MIDDLE, LAST)
+DRIVER LICENSE NUMBER
+STATE
+CA
+DATE OF BIRTH
+INSURANCE COMPANY NAME OR SURETY COMPANY AT TIME OF ACCIDENT
+POLICY NUMBER
+COMPANY NAIC NUMBER
+POLICY PERIOD
+FROM ______________________ TO ______________________
+Describe Vehicle Damage
+☐ UNK ☐ NONE ☒ MINOR
+☐ MOD ☐ MAJOR
+Shade in Damaged Area
+[Diagram of vehicle with X marks on the right side: right front corner, right front door area, right rear door area, right rear corner]
+
+OL 316 (REV. 7/2020) www
+Print
+Clear Form
+
+SECTION 3 — OTHER PARTY'S INFORMATION/VEHICLE 2
+VEHICLE YEAR
+2020
+MODEL
+Nissan Altima SR
+LICENSE PLATE NUMBER
+VEHICLE IDENTIFICATION NUMBER
+STATE VEHICLE IS REGISTERED IN
+CA
+Vehicle was:
+☒ Moving
+☐ Stopped in Traffic
+Involved in the Accident:
+☐ Pedestrian
+☐ Bicyclist
+☐ Other
+NUMBER OF VEHICLES INVOLVED
+2
+DRIVER'S FULL NAME (FIRST, MIDDLE, LAST)
+DRIVER LICENSE NUMBER
+STATE
+CA
+DATE OF BIRTH
+INSURANCE COMPANY NAME OR SURETY COMPANY AT TIME OF ACCIDENT
+POLICY NUMBER
+COMPANY NAIC NUMBER
+POLICY PERIOD
+FROM ______________________ TO ______________________
+☐ Additional information attached.
+
+SECTION 4 — INJURY/DEATH, PROPERTY DAMAGE
+NAME (FIRST, MIDDLE, LAST)
+ADDRESS
+CITY
+STATE
+ZIP CODE
+CHECK ALL THAT APPLY ☐ Injured ☐ Deceased ☐ Driver ☐ Passenger ☐ Bicyclist ☐ Property
+NAME (FIRST, MIDDLE, LAST)
+ADDRESS
+CITY
+STATE
+ZIP CODE
+CHECK ALL THAT APPLY ☐ Injured ☐ Deceased ☐ Driver ☐ Passenger ☐ Bicyclist ☐ Property
+PROPERTY DAMAGE
+PROPERTY OWNER'S NAME
+TELEPHONE NUMBER
+(    )
+STREET ADDRESS
+CITY
+STATE
+ZIP CODE
+WITNESS NAME
+TELEPHONE NUMBER
+(    )
+STREET ADDRESS
+CITY
+STATE
+ZIP CODE
+WITNESS NAME
+TELEPHONE NUMBER
+(    )
+STREET ADDRESS
+CITY
+STATE
+ZIP CODE
+☐ Additional information attached.
+
+SECTION 5 — ACCIDENT DETAILS - DESCRIPTION
+☒ Autonomous Mode ☐ Conventional Mode
+
+A Zoox vehicle was proceeding straight in autonomy through an intersection with a green light and right of way when vehicle 2 attempted an illegal left turn across lanes of traffic into Zoox's right of way. The safety driver disengaged and applied max braking effort which allowed Zoox to mitigate but not completely prevent the unavoidable collision. The Zoox vehicle struck the right front corner of vehicle 2. No injuries were reported and the police were not called to the scene.
+
+☐ Additional information attached.
+Print
+Clear Form
+OL 316 (REV. 7/2020) www
+
+ITEMS MARKED BELOW FOLLOWED BY AN ASTERISK (*) SHOULD BE EXPLAINED IN THE NARRATIVE
+WEATHER (MARK 1 to 2 ITEMS)
+VEH 1
+VEH 2
+MOVEMENT PRECEDING COLLISION
+VEH 1
+VEH 2
+OTHER ASSOCIATED FACTOR(s) (MARK ALL APPLICABLE)
+A. CLEAR
+X
+X
+A. STOPPED
+A. CVC SECTIONS VIOLATED
+CITED
+☐ YES ☐ NO
+B. CLOUDY
+B. PROCEEDING STRAIGHT
+X
+C. RAINING
+C. RAN OFF ROAD
+D. SNOWING
+D. MAKING RIGHT TURN
+E. FOG/VISIBILITY
+E. MAKING LEFT TURN
+F. OTHER
+F. MAKING U TURN
+B. VISION OBSCUREMENT ☐
+G. WIND
+G. BACKING
+C. INATTENTION* ☐
+LIGHTING
+H. SLOWING/STOPPING
+D. STOP & GO TRAFFIC ☐
+A. DAYLIGHT
+X
+X
+I. PASSING OTHER VEHICLE
+E. ENTERING/LEAVING RAMP ☐
+B. DUSK – DAWN
+J. CHANGING LANES
+F. PREVIOUS COLLISION ☐
+C. DARK – STREET LIGHTS
+K. PARKING MANEUVER
+G. UNFAMILIAR WITH ROAD ☐
+D. DARK – NO STREET LIGHTS
+L. ENTERING TRAFFIC
+H. DEFECTIVE WEH EQUIP
+CITED
+☐ YES ☐ NO
+E. DARK – STREET LIGHTS NOT FUNCTIONING*
+M. OTHER UNSAFE TURNING
+X
+ROADWAY SURFACE
+N. XING INTO OPPOSING LANE
+A. DRY
+X
+X
+O. PARKED
+I. UNINVOLVED VEHICLE ☐
+B. WET
+P. MERGING
+J. OTHER* ☐
+C. SNOWY – ICY
+Q. TRAVELING WRONG WAY
+K. NONE APPARENT ☐
+D. SLIPPERY (MUDDY, OILY, ETC.)
+R. OTHER*
+L. RUNAWAY VEHICLE ☐
+ROADWAY CONDITIONS (MARK 1 TO 2 ITEMS)
+TYPE OF COLLISION
+A. HOLES, DEEP RUT*
+A. HEAD-ON
+X
+B. LOOSE MATERIAL ON ROADWAY
+B. SIDE SWIPE
+C. OBSTRUCTION ON ROADWAY*
+C. REAR END
+D. CONSTRUCTION – REPAIR ZONE
+D. BROADSIDE
+X
+E. REDUCED ROADWAY WIDTH
+E. HIT OBJECT
+F. FLOODED*
+F. OVERTURNED
+G. OTHER*
+G. VEHICLE/PEDESTRIAN
+H. NO UNUSUAL CONDITIONS
+X
+X
+H. OTHER*
+
+SECTION 6 — CERTIFICATION
+I certify (or declare) under penalty of perjury under the laws of the State of California that the foregoing is true and correct.
+I further certify that I am the authorized Administrator of the program for the above named employer.
+PROGRAM DIRECTOR/AUTHORIZED REPRESENTATIVE PRINTED NAME AND TITLE
+John Maddox, Senior Director, Safety Policy and Strategy
+TELEPHONE NUMBER
+(    )
+SIGNATURE
+X
+DATE SIGNED
+10/18/2022
+
+OL 316 (REV. 7/2020) www
+Print
+Clear Form

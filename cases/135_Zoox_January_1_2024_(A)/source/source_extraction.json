@@ -1,0 +1,22 @@
+{
+  "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/135_Zoox_January_1_2024_(A)/fresh_geometry_import_v1/source.pdf",
+  "source_sha256": "e31ddd92ea767bc0b8c93613cb639e6ae58f8e44be4d6a9b4aaca6e15f3d74f6",
+  "text_sha256": "9f38feb7ad302e76f97d088e55cceb8d70f32fea93cc855fb32cd1340ebf872e",
+  "pdf_narrative_coverage": {
+    "applicable": true,
+    "passed": true,
+    "fields": [
+      {
+        "page": 2,
+        "field": "ADDRESS_2.1.0.1",
+        "word_count": 143,
+        "coverage": 1.0
+      }
+    ]
+  },
+  "vlm_model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "extracted_at": "2026-09-17T18:04:19.765241+00:00",
+  "resumed_from": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/135_Zoox_January_1_2024_(A)/fresh_ordered_contacts_v1/pipeline/framework_42_20260917_135_fresh_ordered_contacts_v1",
+  "resumed_at": "2026-09-18T07:18:58.342869+00:00"
+}

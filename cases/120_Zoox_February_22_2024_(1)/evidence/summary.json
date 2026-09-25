@@ -1,0 +1,104 @@
+{
+  "scenario_name": "scenario",
+  "episode_dir": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_120_critical_62b0c500/outputs/scene/out",
+  "total_ticks": 368,
+  "stored_frame_rows": 368,
+  "duration_seconds": 56.077,
+  "final_route_completion": 63.329,
+  "min_ttc": {
+    "value": 1.334846,
+    "frame": 67754,
+    "simulation_time": 18.468929,
+    "other_actor_id": 111,
+    "other_actor_type_id": "vehicle.mitsubishi.fusorosa"
+  },
+  "min_distance": {
+    "value": 5.732082,
+    "frame": 67795,
+    "simulation_time": 20.518929,
+    "other_actor_id": 111,
+    "other_actor_type_id": "vehicle.mitsubishi.fusorosa"
+  },
+  "max_long_jerk": {
+    "value": 497.275173,
+    "frame": 67482,
+    "simulation_time": 4.868929
+  },
+  "max_lat_jerk": {
+    "value": -782.611568,
+    "frame": 67756,
+    "simulation_time": 18.568929
+  },
+  "unsafe_exposure_time": 0.15,
+  "off_road_time": 0.0,
+  "opposite_lane_occupancy_time": 0.0,
+  "blocked_time": 0.0,
+  "collision_count": 40,
+  "geometric_overlap_count": 1,
+  "collision_evidence": "carla_collision_sensor",
+  "expected_contact_sequence": [],
+  "early_exit_on_first_sut_contact": true,
+  "lane_invasion_count": 0,
+  "red_light_violation_count": 0,
+  "stop_sign_violation_count": 0,
+  "termination_reason": "collision_exit",
+  "scenario_tree_status": "Status.RUNNING",
+  "criteria": [
+    {
+      "name": "RunningStopTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "RunningRedLightTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "WrongLaneTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "OnSidewalkTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "CheckKeepLane",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "CollisionTest",
+      "test_status": "FAILURE",
+      "actual_value": 1,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "CheckDrivenDistance",
+      "test_status": "FAILURE",
+      "actual_value": 78.37,
+      "success_value": 100.0,
+      "units": "times"
+    }
+  ],
+  "video_path": null,
+  "collision_sensor_actor_ids": [
+    110,
+    111
+  ],
+  "sensor_cleanup_errors": [],
+  "sensor_cleanup_status": "complete"
+}

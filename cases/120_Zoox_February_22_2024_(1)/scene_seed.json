@@ -1,0 +1,44 @@
+{
+  "scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {
+        "initial_speed_mps": 0,
+        "speed": 5
+      },
+      "vehicle_class": "suv"
+    },
+    "npcs": [
+      {
+        "id": "bus",
+        "kind": "vehicle",
+        "position": "cross",
+        "side": "left",
+        "behavior": {
+          "block": "junction_turn",
+          "params": {
+            "approach_distance_m": 10
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 0.0,
+            "distance_m": 39.521
+          }
+        },
+        "vehicle_class": "bus"
+      }
+    ],
+    "collision": {
+      "a": "bus",
+      "b": "ego"
+    },
+    "control": "traffic_light",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "morning"
+    }
+  }
+}

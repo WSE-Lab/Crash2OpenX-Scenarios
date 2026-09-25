@@ -1,0 +1,47 @@
+{
+  "status": "supported",
+  "road": {
+    "topology": "cross_intersection",
+    "type": "town",
+    "lanes": {
+      "forward": 1,
+      "backward": 1
+    },
+    "center_line": "broken"
+  },
+  "description_zh": "事故地点为 Capp St 与 24th St 的平面十字交叉口，Capp St 南北双向行驶、24th St 东西向通行，故取 cross_intersection；事实未给出车道数与中心线类型，按城市道路默认双向各一条、中心线可跨越。",
+  "evidence": {
+    "source_snippets": [
+      "ADDRESS/LOCATION OF ACCIDENT On Capp Street at 24th Street",
+      "stopped at a red traffic light on northbound Capp St at the intersection with 24th St in San Francisco",
+      "an SUV (Vehicle 2), heading southbound on Capp St, failed to stop for the red traffic light and entered the intersection",
+      "a passenger car (Vehicle 3) that was traveling eastbound on 24th Street"
+    ],
+    "reason": "事故地点明确为 Capp St 与 24th St 的平面交叉口（'at the intersection with 24th St'，且南北向 Capp St 与东西向 24th St 均有车辆通行），属四向十字路口，因此 topology 选 cross_intersection（路口已隐含所有合法转向，不需另列机动）。Capp St 同时存在北向与南向车流，说明双向行驶，故 lanes.backward 不为 0，取默认双向各一条。事实未提及车道数或中心线虚实，type 默认 town、center_line 默认 broken。"
+  },
+  "pipeline": {
+    "stage": "road_seed",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/135_Zoox_January_1_2024_(A)/fresh_geometry_import_v1/source.pdf"
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "road_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "85833c2355af597d",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/135_Zoox_January_1_2024_(A)/fresh_geometry_import_v1/source.pdf",
+      "sha256_16": "e31ddd92ea767bc0"
+    },
+    "output_sha256_16": "4998e63e2f2aa5cd",
+    "timestamp_utc": "2026-09-18T07:19:26+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}

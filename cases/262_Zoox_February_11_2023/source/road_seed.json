@@ -1,0 +1,46 @@
+{
+  "status": "supported",
+  "road": {
+    "topology": "cross_intersection",
+    "type": "town",
+    "lanes": {
+      "forward": 1,
+      "backward": 1
+    },
+    "center_line": "broken"
+  },
+  "description_zh": "事故地点为5th Street与Jesse Street交叉口，推断为四向交叉口，城市道路，双向各一条车道，中心线可跨越。",
+  "evidence": {
+    "source_snippets": [
+      "ADDRESS/LOCATION OF ACCIDENT: 5th Street and Jesse Street",
+      "on northbound 5th Street near Jesse Street",
+      "slowing to a stop with brake lights illuminated behind traffic ... vehicle behind made contact at approximately 10mph"
+    ],
+    "reason": "事故地点明确为两条命名街道的交叉口（'5th Street and Jesse Street'），因此 topology 选择 cross_intersection；输入未提供车道数、道路类型或中心线虚实信息，按默认 town、双向各一条、broken 中心线处理。"
+  },
+  "pipeline": {
+    "stage": "road_seed",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/262_Zoox_February_11_2023/fresh_geometry_import_v1/source.pdf"
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "road_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "85833c2355af597d",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/262_Zoox_February_11_2023/fresh_geometry_import_v1/source.pdf",
+      "sha256_16": "40a49cc71d040f15"
+    },
+    "output_sha256_16": "5a9ec344c43c3030",
+    "timestamp_utc": "2026-09-18T08:40:02+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}

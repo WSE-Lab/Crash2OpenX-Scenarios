@@ -1,0 +1,104 @@
+{
+  "scenario_name": "scenario",
+  "episode_dir": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_055_critical_802d2a44/outputs/scene/out",
+  "total_ticks": 440,
+  "stored_frame_rows": 440,
+  "duration_seconds": 65.092,
+  "final_route_completion": 75.707,
+  "min_ttc": {
+    "value": 1.565718,
+    "frame": 5944,
+    "simulation_time": 22.160911,
+    "other_actor_id": 29,
+    "other_actor_type_id": "vehicle.tesla.model3"
+  },
+  "min_distance": {
+    "value": 4.736091,
+    "frame": 5985,
+    "simulation_time": 24.210911,
+    "other_actor_id": 29,
+    "other_actor_type_id": "vehicle.tesla.model3"
+  },
+  "max_long_jerk": {
+    "value": 2284.918226,
+    "frame": 5547,
+    "simulation_time": 2.31091
+  },
+  "max_lat_jerk": {
+    "value": 354.437115,
+    "frame": 5946,
+    "simulation_time": 22.260911
+  },
+  "unsafe_exposure_time": 0.0,
+  "off_road_time": 0.0,
+  "opposite_lane_occupancy_time": 0.0,
+  "blocked_time": 0.0,
+  "collision_count": 39,
+  "geometric_overlap_count": 1,
+  "collision_evidence": "carla_collision_sensor",
+  "expected_contact_sequence": [],
+  "early_exit_on_first_sut_contact": true,
+  "lane_invasion_count": 2,
+  "red_light_violation_count": 0,
+  "stop_sign_violation_count": 0,
+  "termination_reason": "collision_exit",
+  "scenario_tree_status": "Status.RUNNING",
+  "criteria": [
+    {
+      "name": "RunningStopTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "RunningRedLightTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "WrongLaneTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "OnSidewalkTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "CheckKeepLane",
+      "test_status": "FAILURE",
+      "actual_value": 2,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "CollisionTest",
+      "test_status": "FAILURE",
+      "actual_value": 1,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "CheckDrivenDistance",
+      "test_status": "SUCCESS",
+      "actual_value": 106.67,
+      "success_value": 100.0,
+      "units": "times"
+    }
+  ],
+  "video_path": null,
+  "collision_sensor_actor_ids": [
+    28,
+    29
+  ],
+  "sensor_cleanup_errors": [],
+  "sensor_cleanup_status": "complete"
+}

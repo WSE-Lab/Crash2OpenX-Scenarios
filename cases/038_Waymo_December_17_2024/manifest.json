@@ -1,0 +1,191 @@
+{
+  "case_id": "038_Waymo_December_17_2024",
+  "mode": "derived_ADS_test",
+  "source_run": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/038_Waymo_December_17_2024/fresh_partial_intrusion_v2/pipeline/framework_42_20260917_038_fresh_partial_intrusion_v1_fresh_partial_intrusion_v2",
+  "source_result_sha256": "bf2e5a692b970bc83ca53bd85a4c9020c35bcfac575970b472b78f9710de01ee",
+  "source_scene_sha256": "63252c6b6a867f24e97c4efbbe3647c1cfe9e3f887554cb7903bef96c258c92e",
+  "source_map_sha256": "b38667db134faff29b07becc57c3f78dbc0686154bf0ab2a93ccaacc0f4d087a",
+  "map_sha256": "b38667db134faff29b07becc57c3f78dbc0686154bf0ab2a93ccaacc0f4d087a",
+  "scenario_sha256": "866ba3ba3d0b240f8e5d82fdbd8fe61064d106159710d5b9a6b80c68fe4fb3b1",
+  "map_preserved": true,
+  "source_scene": {
+    "status": "supported",
+    "scene": {
+      "sut": {
+        "id": "ego",
+        "kind": "vehicle",
+        "maneuver": "straight",
+        "params": {},
+        "vehicle_class": "truck"
+      },
+      "npcs": [
+        {
+          "id": "av",
+          "kind": "vehicle",
+          "position": "adjacent",
+          "side": "right",
+          "behavior": {
+            "block": "partial_lane_intrusion",
+            "params": {
+              "long": 12.0
+            }
+          }
+        },
+        {
+          "id": "cyclist",
+          "kind": "cyclist",
+          "position": "roadside",
+          "side": "right",
+          "behavior": {
+            "block": "cruise",
+            "params": {}
+          },
+          "relative_to": "av"
+        }
+      ],
+      "collision": {
+        "a": "av",
+        "b": "ego"
+      },
+      "control": "unknown",
+      "environment": {
+        "weather": "clear",
+        "time_of_day": "afternoon"
+      }
+    },
+    "description_zh": "Waymo AV 在 Van Ness 大道右侧车道为右前方同向骑行者部分侵入左邻车道，左邻车道后方的重型卡车前行，与 AV 左后侧发生碰撞；选重型卡车为 ego，AV 为 partial_lane_intrusion NPC，并保留骑行者作为 relative_to=av 的路侧同向 cruise。",
+    "evidence": {
+      "source_snippets": [
+        "The Waymo AV was in autonomous mode traveling north in the rightmost of two lanes on Van Ness Avenue when it partially entered the left adjacent lane to make room for a cyclist on its right who was traveling in the same direction.",
+        "A heavy truck behind in the left adjacent lane proceeded forward, and the Waymo AV test driver transitioned to manual mode immediately before the rear driver side of the Waymo AV made contact with the front passenger side of the heavy truck.",
+        "VEHICLE YEAR 2018; MODEL Freightliner M2 106",
+        "WEATHER (MARK 1 TO 2 ITEMS): A. CLEAR — Veh1 X, Veh2 X; LIGHTING: A. DAYLIGHT — Veh1 X, Veh2 X; TIME OF ACCIDENT 01:08 [ ] AM [x] PM"
+      ],
+      "reason": "真实双方交互碰撞：AV 从右车道部分侵入左邻车道，后方左邻车道的重型卡车前行并接触。现有 partial_lane_intrusion 原语可表达 AV 的部分侵入，并按规则将需要该动作的 Waymo AV 作为 NPC、选择主动前行的重型卡车为 SUT/ego；骑行者作为 relative_to=av 的路侧同向 cruise 保留。AV 相对 ego 位于右邻车道且在 ego 前方，故 long=+12m 为仿真初始化假设，不是报告测量。"
+    },
+    "pipeline": {
+      "stage": "scene_seed_v2",
+      "generation_mode": "api_deepseek",
+      "model": "deepseek-flash",
+      "input": "outputs/framework_42_20260917/cases/038_Waymo_December_17_2024/fresh_partial_intrusion_v1/source.pdf",
+      "normalization_rules": []
+    },
+    "provenance": {
+      "schema_version": "1.0",
+      "stage": "scene_seed",
+      "llm": {
+        "model": "deepseek-flash",
+        "base_url": "https://api.deepseek.com",
+        "temperature": 0.0,
+        "reasoning_effort": "high",
+        "enable_thinking": true
+      },
+      "schema_md_sha256_16": "85833c2355af597d",
+      "input": {
+        "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/038_Waymo_December_17_2024/fresh_partial_intrusion_v1/source.pdf",
+        "sha256_16": "2621d40fb9539907"
+      },
+      "output_sha256_16": "351f13dd53962e82",
+      "timestamp_utc": "2026-09-18T06:56:59+00:00",
+      "git_revision": "e82d164435a5"
+    }
+  },
+  "derived_scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {
+        "initial_speed_mps": 4.99
+      },
+      "vehicle_class": "truck"
+    },
+    "npcs": [
+      {
+        "id": "av",
+        "kind": "vehicle",
+        "position": "adjacent",
+        "side": "right",
+        "behavior": {
+          "block": "partial_lane_intrusion",
+          "params": {
+            "long": 24,
+            "speed": 2.994
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 2.0,
+            "distance_m": 8.0
+          }
+        }
+      },
+      {
+        "id": "cyclist",
+        "kind": "cyclist",
+        "position": "roadside",
+        "side": "right",
+        "behavior": {
+          "block": "cruise",
+          "params": {}
+        },
+        "relative_to": "av"
+      }
+    ],
+    "collision": {
+      "a": "av",
+      "b": "ego"
+    },
+    "control": "unknown",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "afternoon"
+    }
+  },
+  "calibration": {
+    "calibration_run": "/Users/xijun/WSELab/crash2openx/outputs/ads_stress_20260919/cut_in/early/run",
+    "unbraked_samples": 160,
+    "observed_ego_median_mps": 4.989958,
+    "npc_speed_ratio": 0.6,
+    "nominal_cut_duration_s": 2.5,
+    "npc_changes": [
+      {
+        "actor": "av",
+        "before": {
+          "block": "partial_lane_intrusion",
+          "params": {
+            "long": 12.0
+          }
+        },
+        "after": {
+          "block": "partial_lane_intrusion",
+          "params": {
+            "long": 12.0,
+            "speed": 2.994
+          }
+        }
+      }
+    ],
+    "sut_before": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {},
+      "vehicle_class": "truck"
+    },
+    "sut_after": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {
+        "initial_speed_mps": 4.99
+      },
+      "vehicle_class": "truck"
+    },
+    "scope": "shared prior InterFuser cruise; validate actual speed in this episode"
+  },
+  "simulation_limit_s": 25,
+  "ocl_pass": true,
+  "xosc_xsd_pass": true,
+  "claim": "Source-derived ADS test; modified onset, speeds and spacing are experimental, not report facts."
+}

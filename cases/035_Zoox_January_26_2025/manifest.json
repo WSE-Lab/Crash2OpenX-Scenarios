@@ -1,0 +1,147 @@
+{
+  "case_id": "035_Zoox_January_26_2025",
+  "mode": "derived_ADS_test",
+  "source_run": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/035_Zoox_January_26_2025/fresh_geometry_import_v1/pipeline/framework_42_20260917_035_fresh_geometry_import_v1",
+  "source_result_sha256": "b1475813b6183cc5f45387aeeb6d7230343add1e3dc8eccfaf9b786fb69f054e",
+  "source_scene_sha256": "a78067c73be3ac64ce05b6d0cabc235da8bf183ab994a98faf9b0dd1e645baef",
+  "source_map_sha256": "0784e0420537725132145fbad5823a169c2167d6d3d15e11e6701b8c76a1a30b",
+  "map_sha256": "0784e0420537725132145fbad5823a169c2167d6d3d15e11e6701b8c76a1a30b",
+  "scenario_sha256": "695a8a33a8240f7bdc894a2ab4cfbadace1c931e3c98907cbe405278fd68358d",
+  "map_preserved": true,
+  "source_scene": {
+    "status": "supported",
+    "scene": {
+      "sut": {
+        "id": "ego",
+        "kind": "vehicle",
+        "maneuver": "left",
+        "params": {},
+        "vehicle_class": "suv"
+      },
+      "npcs": [
+        {
+          "id": "vw",
+          "kind": "vehicle",
+          "position": "cross",
+          "side": "left",
+          "behavior": {
+            "block": "junction_cross",
+            "params": {}
+          },
+          "vehicle_class": "car"
+        }
+      ],
+      "collision": {
+        "a": "vw",
+        "b": "ego"
+      },
+      "control": "traffic_light",
+      "environment": {
+        "weather": "clear",
+        "time_of_day": "night"
+      }
+    },
+    "description_zh": "夜间干燥路面、路灯照明下，Zoox 测试车（2019 Toyota Highlander，事故中为手动模式）在 Folsom 街东北向行驶并准备左转进入 6th 街，一辆在 6th 街东南向直行的 Volkswagen 轿车闯红灯驶入路口，其左前角撞上 Zoox 车辆左后轮/悬架区域；以左转的 Zoox 车为 ego，闯红灯直行的轿车为 ego 左侧横向道路入口的 junction_cross NPC，信号控制为红灯路口。",
+    "evidence": {
+      "source_snippets": [
+        "A Zoox vehicle (Vehicle 1) operating in manual mode was traveling northeast on Folsom Street and preparing to turn left onto 6th Street in San Francisco.",
+        "At that time, a passenger car (Vehicle 2), traveling southeast on 6th Street, failed to stop for the red traffic light and entered the intersection, approaching the Zoox vehicle attempting a left turn.",
+        "The front driver's side of the passenger car collided with the driver-side rear wheel area of the Zoox vehicle.",
+        "Movement Preceding Collision: B. PROCEEDING STRAIGHT Veh 2 X; E. MAKING LEFT TURN Veh 1 X",
+        "Vehicle Year 2019; Make Toyota; Model Highlander",
+        "Time of Accident 09:16 PM (AM unchecked, PM checked)",
+        "Weather: A. CLEAR Veh 1 X, Veh 2 X",
+        "Lighting: C. DARK - STREET LIGHTS Veh 1 X, Veh 2 X",
+        "Roadway Surface: A. DRY Veh 1 X, Veh 2 X"
+      ],
+      "reason": "双方交互的路口红绿灯冲突：ego（报告中的 Zoox 车，行驶决策最值得测试，原文虽为手动模式但其左转决策仍是测试对象）在 Folsom 街东北向准备左转，NPC 为 6th 街上东南向直行、闯红灯进入路口的 Volkswagen 轿车。按 ego 转弯前起点道路定位，该车来自 ego 左侧横向道路入口，故 position=cross + side=left，其路口直行冲突用 junction_cross；控制信号为 traffic_light，环境为夜间晴/干燥（干路面不加 friction_scale）。原文未给任何速度或距离量化语/强定性词，故不填 params，采用公开默认值。"
+    },
+    "pipeline": {
+      "stage": "scene_seed_v2",
+      "generation_mode": "api_deepseek",
+      "model": "deepseek-flash",
+      "input": "outputs/framework_42_20260917/cases/035_Zoox_January_26_2025/fresh_geometry_import_v1/source.pdf",
+      "normalization_rules": []
+    },
+    "provenance": {
+      "schema_version": "1.0",
+      "stage": "scene_seed",
+      "llm": {
+        "model": "deepseek-flash",
+        "base_url": "https://api.deepseek.com",
+        "temperature": 0.0,
+        "reasoning_effort": "high",
+        "enable_thinking": true
+      },
+      "schema_md_sha256_16": "85833c2355af597d",
+      "input": {
+        "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/035_Zoox_January_26_2025/fresh_geometry_import_v1/source.pdf",
+        "sha256_16": "32a750f662a168e1"
+      },
+      "output_sha256_16": "2c6a4ab961b924d8",
+      "timestamp_utc": "2026-09-18T08:07:47+00:00",
+      "git_revision": "e82d164435a5"
+    }
+  },
+  "derived_scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "left",
+      "params": {},
+      "vehicle_class": "suv"
+    },
+    "npcs": [
+      {
+        "id": "vw",
+        "kind": "vehicle",
+        "position": "cross",
+        "side": "left",
+        "behavior": {
+          "block": "junction_cross",
+          "params": {
+            "approach_distance_m": 10
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 0.0,
+            "distance_m": 40.107
+          }
+        },
+        "vehicle_class": "car"
+      }
+    ],
+    "collision": {
+      "a": "vw",
+      "b": "ego"
+    },
+    "control": "traffic_light",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "night"
+    }
+  },
+  "calibration": null,
+  "junction_timing": {
+    "vw": {
+      "distance_m": 40.107,
+      "npc_route_distance_to_conflict_m": 29.0,
+      "ego_route_distance_to_conflict_m": 62.0,
+      "ego_onset_route_s_m": 37.0,
+      "assumed_ego_speed_mps": 5,
+      "requested_npc_speed_mps": 8.0,
+      "estimated_npc_arrival_s": 4.958333333333333,
+      "time_offset_s": 0,
+      "conflict_xy": [
+        240.08258163873498,
+        2.0915112475730715
+      ],
+      "method": "earliest common generated lane-route point; finite acceleration approximation"
+    }
+  },
+  "simulation_limit_s": 25,
+  "ocl_pass": true,
+  "xosc_xsd_pass": true,
+  "claim": "Source-derived ADS test; modified onset, speeds and spacing are experimental, not report facts."
+}

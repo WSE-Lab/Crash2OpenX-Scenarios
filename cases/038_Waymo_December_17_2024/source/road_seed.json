@@ -1,0 +1,46 @@
+{
+  "status": "supported",
+  "road": {
+    "topology": "cross_intersection",
+    "type": "townArterial",
+    "lanes": {
+      "forward": 2,
+      "backward": 2
+    },
+    "center_line": "solid"
+  },
+  "description_zh": "Van Ness Avenue at O'Farrell Street 为四向交叉口，Van Ness 为主干道，同向两车道、对向两车道，中心线为实线禁止跨越。",
+  "evidence": {
+    "source_snippets": [
+      "Van Ness Avenue at O'Farrell Street",
+      "traveling north in the rightmost of two lanes on Van Ness Avenue",
+      "partially entered the left adjacent lane to make room for a cyclist"
+    ],
+    "reason": "地点明确为 Van Ness Avenue 与 O'Farrell Street 交叉口，故选择 cross_intersection；Van Ness 为城市主干道，事故描述明确同向有两条车道（rightmost of two lanes），对向按主干道对称取两条车道；主干道中心线通常为实线，禁止跨越借对向道。"
+  },
+  "pipeline": {
+    "stage": "road_seed",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/038_Waymo_December_17_2024/fresh_partial_intrusion_v1/source.pdf"
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "road_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "85833c2355af597d",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/038_Waymo_December_17_2024/fresh_partial_intrusion_v1/source.pdf",
+      "sha256_16": "2621d40fb9539907"
+    },
+    "output_sha256_16": "f9e1b5ab93888e32",
+    "timestamp_utc": "2026-09-18T06:56:59+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}

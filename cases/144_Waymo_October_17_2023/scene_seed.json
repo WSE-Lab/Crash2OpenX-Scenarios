@@ -1,0 +1,44 @@
+{
+  "scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "right",
+      "params": {
+        "initial_speed_mps": 4.99
+      }
+    },
+    "npcs": [
+      {
+        "id": "cyclist_1",
+        "kind": "cyclist",
+        "position": "roadside",
+        "side": "right",
+        "behavior": {
+          "block": "cut_in",
+          "params": {
+            "lateral": 4.0,
+            "speed": 2.994,
+            "cut_dist": 7.485,
+            "gap": 24
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 2.0,
+            "distance_m": 3.0
+          }
+        }
+      }
+    ],
+    "collision": {
+      "a": "cyclist_1",
+      "b": "ego"
+    },
+    "control": "unknown",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "morning"
+    }
+  }
+}

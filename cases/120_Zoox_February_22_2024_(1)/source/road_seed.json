@@ -1,0 +1,46 @@
+{
+  "status": "supported",
+  "road": {
+    "topology": "cross_intersection",
+    "type": "town",
+    "lanes": {
+      "forward": 1,
+      "backward": 1
+    },
+    "center_line": "broken"
+  },
+  "description_zh": "事故发生在 Mission St 与 9th St 的平面交叉口：Zoox 在 Mission St 北东向车道上等红灯，公交在 9th St 南东向车道右转进入 Mission St，因此道路为四向交叉口；事实未明确车道数与中心线，按默认双向各一条、中心线可跨越、城市道路处理。",
+  "evidence": {
+    "source_snippets": [
+      "ADDRESS/LOCATION OF ACCIDENT On Mission St at 9th St",
+      "A Zoox vehicle (Vehicle 1) in autonomy, traveling northeast on Mission St, was stopped in lane for a red traffic light at 9th Street",
+      "A SamTrans bus (Vehicle 2) ... was traveling southeast on 9th Street and attempting a right turn onto Mission St"
+    ],
+    "reason": "事故地点为两条道路的交叉口（'Mission St at 9th St'），且一车沿 Mission St、另一车沿 9th St 行驶并右转进入 Mission St，符合四向交叉口 topology=cross_intersection；未提供车道数/中心线/道路类型细节，故使用默认 lanes={forward:1,backward:1}、center_line=broken、type=town。"
+  },
+  "pipeline": {
+    "stage": "road_seed",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/120_Zoox_February_22_2024_(1)/fresh_geometry_import_v1/source.pdf"
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "road_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "85833c2355af597d",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/120_Zoox_February_22_2024_(1)/fresh_geometry_import_v1/source.pdf",
+      "sha256_16": "33adc069e3adff12"
+    },
+    "output_sha256_16": "a27eeb3fb24e2138",
+    "timestamp_utc": "2026-09-18T08:24:30+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}

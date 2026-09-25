@@ -1,0 +1,61 @@
+{
+  "ads_actor": "hero",
+  "trace_start_time_s": 2.153732,
+  "trace_end_time_s": 15.053732,
+  "stage_observation_available": true,
+  "actors": {
+    "v2": {
+      "plan": {
+        "reference_actor": "hero",
+        "event": "v2_cut",
+        "distance_semantics": "cartesian_freespace",
+        "min_clearance_m": 0.5,
+        "min_ego_speed_mps": 1.0,
+        "min_npc_speed_mps": 2.0,
+        "distance_m": 3.0
+      },
+      "start_status": "observed",
+      "start_time_s": 10.05373182008043,
+      "start_since_trace_s": 7.89999982008043,
+      "at_start": {
+        "body_clearance_m": 2.906885090738368,
+        "center_distance_m": 8.141500463777973,
+        "radial_closing_speed_mps": 1.8596428231910105,
+        "ego_speed_mps": 4.935712124263326,
+        "npc_speed_mps": 2.9440400001428313,
+        "npc_forward_m": 7.60588856835758,
+        "constant_velocity_ttc_s": null,
+        "clearance_over_ego_speed_s": 0.5889494803492478
+      },
+      "already_braking_at_start": false,
+      "initial_body_clearance_m": 19.254664747565585,
+      "first_brake_after_start_s": 2.0500001799195715,
+      "sampled_eligible_ticks": 37,
+      "first_sampled_eligible_time_s": 10.053732,
+      "six_seconds_after_start_min_clearance_m": 0.0,
+      "six_seconds_after_start_min_positive_ttc_s": 0.03033886128566452,
+      "min_body_clearance_m": 0.0,
+      "min_positive_constant_velocity_ttc_s": 0.03033886128566452,
+      "physical_contact_with_ads": true,
+      "npc_motion_onset_time_s": 10.703732,
+      "event_to_motion_onset_s": 0.6500001799195712,
+      "six_seconds_after_start_max_npc_deceleration_mps2": 0.7996032100769683,
+      "six_seconds_after_start_max_npc_lateral_acceleration_mps2": 3.6387815822883156
+    }
+  },
+  "physical_ads_contact_count": 13,
+  "metric_notes": [
+    "TTC assumes fixed headings and constant planar velocities; separate lanes may have no finite TTC.",
+    "Clearance/speed is a timing proxy, not perception latency or TTC.",
+    "Event START is observed from ScenarioRunner; action response is measured separately.",
+    "No physical collision is inferred from overlapping projected boxes alone."
+  ],
+  "run": "/Users/xijun/WSELab/crash2openx/outputs/ads_expansion_20260919/013_Zoox_February_19_2025/critical/run",
+  "termination_reason": "collision_exit",
+  "video": {
+    "frames": 257,
+    "frames_with_pose_within_75ms": 257,
+    "source_video_sha256": "3387b031051c4a95a18f6a3c2eda3f10f6689c050ea385ae945f9c3d6e17abbe",
+    "annotation": "offline projection of measured CARLA body vertices; raw video unchanged"
+  }
+}

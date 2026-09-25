@@ -1,0 +1,41 @@
+{
+  "scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "left",
+      "params": {},
+      "vehicle_class": "suv"
+    },
+    "npcs": [
+      {
+        "id": "vw",
+        "kind": "vehicle",
+        "position": "cross",
+        "side": "left",
+        "behavior": {
+          "block": "junction_cross",
+          "params": {
+            "approach_distance_m": 10
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 0.0,
+            "distance_m": 40.107
+          }
+        },
+        "vehicle_class": "car"
+      }
+    ],
+    "collision": {
+      "a": "vw",
+      "b": "ego"
+    },
+    "control": "traffic_light",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "night"
+    }
+  }
+}

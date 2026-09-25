@@ -1,0 +1,416 @@
+[
+  {
+    "case_id": "007_Waymo_March_27_2025",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/007_Waymo_March_27_2025/fresh_geometry_import_v1/pipeline/framework_42_20260917_007_fresh_geometry_import_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "008_Waymo_March_20_2025",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/008_Waymo_March_20_2025/fresh_equivalent_road_v1/pipeline/framework_42_20260917_008_fresh_solid_centerline_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "009_Waymo_March_16_2025",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/009_Waymo_March_16_2025/fresh_equivalent_road_v1/pipeline/framework_42_20260917_009_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "013_Zoox_February_19_2025",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/013_Zoox_February_19_2025/fresh_equivalent_road_v1/pipeline/framework_42_20260917_013_fresh_semantic_motion_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [
+      "v2"
+    ],
+    "blocks": [
+      "cut_in",
+      "cruise"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "021_Zoox_Inc._March_28_2025",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/021_Zoox_Inc._March_28_2025/fresh_equivalent_road_v1/pipeline/framework_42_20260917_021_fresh_cross_leg_stop_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "static_hold"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "032_AutoX_February_5_2025",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/032_AutoX_February_5_2025/fresh_equivalent_road_v1/pipeline/framework_42_20260917_032_fresh_semantic_motion_v1_fresh_target_tangent_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "static_hold"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "035_Zoox_January_26_2025",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/035_Zoox_January_26_2025/fresh_geometry_import_v1/pipeline/framework_42_20260917_035_fresh_geometry_import_v1",
+    "hazard_actors": [
+      "vw"
+    ],
+    "blocks": [
+      "junction_cross"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "038_Waymo_December_17_2024",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/038_Waymo_December_17_2024/fresh_partial_intrusion_v5/pipeline/framework_42_20260917_038_fresh_partial_intrusion_v1_fresh_partial_intrusion_v5",
+    "hazard_actors": [
+      "av"
+    ],
+    "blocks": [
+      "partial_lane_intrusion",
+      "cruise"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "040_Waymo_December_14_2024",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/040_Waymo_December_14_2024/fresh_equivalent_road_v1/pipeline/framework_42_20260917_040_fresh_solid_centerline_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "055_Waymo_November_3_2024_(1)",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/055_Waymo_November_3_2024_(1)/fresh_equivalent_road_v1/pipeline/framework_42_20260917_055_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [
+      "v2"
+    ],
+    "blocks": [
+      "junction_turn"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "065_Waymo_September_29_2024",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/065_Waymo_September_29_2024/fresh_equivalent_road_v1/pipeline/framework_42_20260917_065_fresh_deepseek_budget32_v1_fresh_deepseek_budget32_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "097_Zoox_May_30_2024",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/097_Zoox_May_30_2024/fresh_equivalent_road_v1/pipeline/framework_42_20260917_097_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [
+      "v2"
+    ],
+    "blocks": [
+      "cut_in"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "113_Waymo_March_19_2024",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/113_Waymo_March_19_2024/fresh_observed_standstill_v2/pipeline/framework_42_20260917_113_fresh_active_role_v1_fresh_observed_standstill_v2",
+    "hazard_actors": [],
+    "blocks": [
+      "sequence"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "120_Zoox_February_22_2024_(1)",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/120_Zoox_February_22_2024_(1)/fresh_geometry_import_v1/pipeline/framework_42_20260917_120_fresh_geometry_import_v1",
+    "hazard_actors": [
+      "bus"
+    ],
+    "blocks": [
+      "junction_turn"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "122_Waymo_February_18_2024",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/122_Waymo_February_18_2024/fresh_geometry_import_v1/pipeline/framework_42_20260917_122_fresh_geometry_import_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "135_Zoox_January_1_2024_(A)",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/135_Zoox_January_1_2024_(A)/fresh_geometry_import_v1/pipeline/framework_42_20260917_135_fresh_geometry_import_v1",
+    "hazard_actors": [
+      "suv_red_light"
+    ],
+    "blocks": [
+      "junction_cross",
+      "static_hold"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "140_Waymo_November_3_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/140_Waymo_November_3_2023/fresh_longitudinal_route_v2/pipeline/framework_42_20260917_140_fresh_geometry_import_v1_fresh_longitudinal_route_v2",
+    "hazard_actors": [],
+    "blocks": [
+      "cruise",
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "144_Waymo_October_17_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/144_Waymo_October_17_2023/fresh_equivalent_road_v1/pipeline/framework_42_20260917_144_fresh_deepseek_budget32_v1_fresh_deepseek_budget32_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [
+      "cyclist_1"
+    ],
+    "blocks": [
+      "cut_in"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "157_Apollo_Autonomous_Driving_September_6_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/157_Apollo_Autonomous_Driving_September_6_2023/fresh_equivalent_road_v1/pipeline/framework_42_20260917_157_fresh_deepseek_recovery_v2_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "162_Waymo_September_3_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/162_Waymo_September_3_2023/fresh_geometry_import_v1/pipeline/framework_42_20260917_162_fresh_geometry_import_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "static_hold"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "165_Mercedes_Benz_August_18_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/165_Mercedes_Benz_August_18_2023/fresh_equivalent_road_v1/pipeline/framework_42_20260917_165_fresh_deepseek_recovery_v2_fresh_equivalent_road_v1",
+    "hazard_actors": [
+      "v1",
+      "v2"
+    ],
+    "blocks": [
+      "front_brake",
+      "front_brake"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "180_Cruise_July_30_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/180_Cruise_July_30_2023/fresh_equivalent_road_v1/pipeline/framework_42_20260917_180_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "203_Cruise_June_9_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/203_Cruise_June_9_2023/fresh_geometry_import_v1/pipeline/framework_42_20260917_203_fresh_geometry_import_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "235_Waymo_April_6_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/235_Waymo_April_6_2023/fresh_equivalent_road_v1/pipeline/framework_42_20260917_235_fresh_actor_geometry_v1_fresh_target_tangent_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "static_hold"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "249_Waymo_March_12_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/249_Waymo_March_12_2023/fresh_equivalent_road_v1/pipeline/framework_42_20260917_249_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "259_Zoox_February_23_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/259_Zoox_February_23_2023/fresh_geometry_import_v1/pipeline/framework_42_20260917_259_fresh_geometry_import_v1",
+    "hazard_actors": [
+      "pedestrian"
+    ],
+    "blocks": [
+      "junction_merge",
+      "cross"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "262_Zoox_February_11_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/262_Zoox_February_11_2023/fresh_geometry_import_v1/pipeline/framework_42_20260917_262_fresh_geometry_import_v1",
+    "hazard_actors": [
+      "av1"
+    ],
+    "blocks": [
+      "front_brake"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "263_Zoox_February_8_2023",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/263_Zoox_February_8_2023/fresh_equivalent_road_v1/pipeline/framework_42_20260917_263_fresh_deepseek_recovery_v1_fresh_deepseek_recovery_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "rear_hit"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "273_Cruise_December_18_2022",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/273_Cruise_December_18_2022/fresh_equivalent_road_v1/pipeline/framework_42_20260917_273_fresh_deepseek_budget32_v1_fresh_deepseek_budget32_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "static_hold",
+      "static_hold"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "274_Cruise_December_14_2022",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/274_Cruise_December_14_2022/fresh_equivalent_road_v1/pipeline/framework_42_20260917_274_fresh_parking_sequence_v3_fresh_marked_roads_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "sequence"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "293_Zoox_October_14_2022",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/293_Zoox_October_14_2022/fresh_equivalent_road_v1/pipeline/framework_42_20260917_293_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [
+      "v2"
+    ],
+    "blocks": [
+      "junction_turn"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "323_Waymo_July_3_2022",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/323_Waymo_July_3_2022/fresh_equivalent_road_v1/pipeline/framework_42_20260917_323_fresh_deepseek_recovery_v2_fresh_equivalent_road_v1",
+    "hazard_actors": [
+      "v2"
+    ],
+    "blocks": [
+      "junction_turn"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "330_Apple_June_14_2022",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/330_Apple_June_14_2022/fresh_geometry_import_v1/pipeline/framework_42_20260917_330_fresh_geometry_import_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "435_Waymo_November_26_2021",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/435_Waymo_November_26_2021/fresh_equivalent_road_v1/pipeline/framework_42_20260917_435_fresh_deepseek_budget32_v1_fresh_deepseek_budget32_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "static_hold"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "440_Cruise_November_14_2021",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/440_Cruise_November_14_2021/fresh_equivalent_road_v1/pipeline/framework_42_20260917_440_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "444_Waymo_November_6_2021_(1)",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/444_Waymo_November_6_2021_(1)/fresh_geometry_import_v1/pipeline/framework_42_20260917_444_fresh_geometry_import_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "static_hold"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "448_WeRide_Corp_November_3_2021",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/448_WeRide_Corp_November_3_2021/fresh_equivalent_road_v1/pipeline/framework_42_20260917_448_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "491_Zoox_July_13_2021",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/491_Zoox_July_13_2021/fresh_equivalent_road_v1/pipeline/framework_42_20260917_491_fresh_deepseek_recovery_v2_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "oncoming"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "533_Waymo_January_22_2021",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/533_Waymo_January_22_2021/fresh_equivalent_road_v1/pipeline/framework_42_20260917_533_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "635_GM_Cruise_July_15_2019",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/635_GM_Cruise_July_15_2019/fresh_runtime_retry_v1/pipeline/framework_42_20260917_635_fresh_deepseek_batch_v1_fresh_runtime_retry_v1",
+    "hazard_actors": [
+      "v2"
+    ],
+    "blocks": [
+      "cut_in"
+    ],
+    "status": "candidate"
+  },
+  {
+    "case_id": "638_Waymo_July_8_2019",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/638_Waymo_July_8_2019/fresh_deepseek_batch_runtime_v1/pipeline/framework_42_20260917_638_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "static_hold"
+    ],
+    "status": "source_reference_only"
+  },
+  {
+    "case_id": "639_GM_Cruise_July_2_2019",
+    "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/639_GM_Cruise_July_2_2019/fresh_geometry_import_v1/pipeline/framework_42_20260917_639_fresh_geometry_import_v1",
+    "hazard_actors": [],
+    "blocks": [
+      "stopped_ahead"
+    ],
+    "status": "source_reference_only"
+  }
+]

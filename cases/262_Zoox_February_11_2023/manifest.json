@@ -1,0 +1,187 @@
+{
+  "case_id": "262_Zoox_February_11_2023",
+  "mode": "derived_ADS_test",
+  "source_run": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/262_Zoox_February_11_2023/fresh_geometry_import_v1/pipeline/framework_42_20260917_262_fresh_geometry_import_v1",
+  "source_result_sha256": "dcb80b6b1424fe85041ae0860f40fdff870169c60edd4bc0ce7ee93f356551bd",
+  "source_scene_sha256": "feeb70585438980b5de40cc31651443a30abae613bcfe363d55032d2cf7c3606",
+  "source_map_sha256": "bcccf9572e01c7e8e41e436e90a0e3e54bd2241881e9320e6b56b262002c993f",
+  "map_sha256": "bcccf9572e01c7e8e41e436e90a0e3e54bd2241881e9320e6b56b262002c993f",
+  "scenario_sha256": "1b0bd92967ca2abd7bf67452db0af0e4fe3cd1fc4cad8e95a66f18f06cddddd8",
+  "map_preserved": true,
+  "source_scene": {
+    "status": "supported",
+    "scene": {
+      "sut": {
+        "id": "ego",
+        "kind": "vehicle",
+        "maneuver": "straight",
+        "params": {
+          "speed": 4.47
+        },
+        "vehicle_class": "car"
+      },
+      "npcs": [
+        {
+          "id": "av1",
+          "kind": "vehicle",
+          "position": "ahead_same_lane",
+          "side": "none",
+          "behavior": {
+            "block": "front_brake",
+            "params": {
+              "brake_t": 2.0,
+              "end_speed": 0
+            }
+          },
+          "vehicle_class": "suv"
+        }
+      ],
+      "collision": {
+        "a": "av1",
+        "b": "ego"
+      },
+      "control": "unknown",
+      "environment": {
+        "weather": "clear",
+        "time_of_day": "evening"
+      }
+    },
+    "description_zh": "夜间干燥路面上，Zoox 自动驾驶 SUV（2016 Toyota Highlander，原报告车辆1）在 5th St 北向 Jesse St 附近跟车减速停车、刹车灯亮起，后方同车道的 2011 Volvo C70（原报告车辆2，行驶中、直行）以约 10 mph 追尾其左后侧；选主动驶来的后车 Volvo 为 ego 测其能否及时刹停，前车 AV 为前方减速停车 NPC。",
+    "evidence": {
+      "source_snippets": [
+        "A Zoox vehicle in autonomous mode was slowing to a stop with brake lights illuminated behind traffic on northbound 5th Street near Jesse Street when a vehicle behind made contact at approximately 10mph.",
+        "SECTION 3 — OTHER PARTY'S INFORMATION/VEHICLE 2: VEHICLE YEAR: 2011; MODEL: Volvo C70; ... Vehicle was: Moving checked, Stopped in Traffic unchecked.",
+        "MOVEMENT PRECEDING COLLISION: A. STOPPED — VEH 1 marked; B. PROCEEDING STRAIGHT — VEH 2 marked.",
+        "TYPE OF COLLISION: C. REAR END — VEH 1 marked, VEH 2 marked.",
+        "SECTION 2 — ACCIDENT INFORMATION/VEHICLE 1: VEHICLE YEAR: 2016; MAKE: Toyota; MODEL: Highlander ... MINOR checked ... an \"X\" is marked in the box at the left side of the vehicle diagram (left rear side area).",
+        "DATE OF ACCIDENT: 02/11/2023; TIME OF ACCIDENT: 06:06, AM box unchecked, PM box checked.",
+        "WEATHER: A. CLEAR — VEH 1 marked, VEH 2 marked; LIGHTING: C. DARK–STREETLIGHTS — VEH 1 marked, VEH 2 marked; ROADWAY SURFACE: A. DRY."
+      ],
+      "reason": "追尾事故：前车（Zoox AV，Toyota Highlander SUV）跟车减速停车并亮刹车灯，属 front_brake；后车（Volvo C70，行驶中直行）主动驶来追尾，属有测试价值的驾驶决策主体，故选其为 ego，其碰撞前速度由 'approximately 10mph' 换算为 4.47 m/s。前车在 ego 接近时仍在减速过程而非早已静止，故用 front_brake（'decelerating to stop' → brake_t=2.0, end_speed=0），不用 stopped_ahead。位置关系用 ahead_same_lane，碰撞为 rear end，现有词汇表可完整表达。"
+    },
+    "pipeline": {
+      "stage": "scene_seed_v2",
+      "generation_mode": "api_deepseek",
+      "model": "deepseek-flash",
+      "input": "outputs/framework_42_20260917/cases/262_Zoox_February_11_2023/fresh_geometry_import_v1/source.pdf",
+      "normalization_rules": []
+    },
+    "provenance": {
+      "schema_version": "1.0",
+      "stage": "scene_seed",
+      "llm": {
+        "model": "deepseek-flash",
+        "base_url": "https://api.deepseek.com",
+        "temperature": 0.0,
+        "reasoning_effort": "high",
+        "enable_thinking": true
+      },
+      "schema_md_sha256_16": "85833c2355af597d",
+      "input": {
+        "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/262_Zoox_February_11_2023/fresh_geometry_import_v1/source.pdf",
+        "sha256_16": "40a49cc71d040f15"
+      },
+      "output_sha256_16": "757973f7647ce41c",
+      "timestamp_utc": "2026-09-18T08:40:02+00:00",
+      "git_revision": "e82d164435a5"
+    }
+  },
+  "derived_scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {
+        "speed": 4.47,
+        "initial_speed_mps": 4.99
+      },
+      "vehicle_class": "car"
+    },
+    "npcs": [
+      {
+        "id": "av1",
+        "kind": "vehicle",
+        "position": "ahead_same_lane",
+        "side": "none",
+        "behavior": {
+          "block": "front_brake",
+          "params": {
+            "brake_t": 2.0,
+            "end_speed": 2.4,
+            "speed": 3.8,
+            "gap": 18,
+            "max_brake": 0.08
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 0.0,
+            "distance_m": 6
+          }
+        },
+        "vehicle_class": "suv"
+      }
+    ],
+    "collision": {
+      "a": "av1",
+      "b": "ego"
+    },
+    "control": "unknown",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "evening"
+    }
+  },
+  "calibration": {
+    "calibration_run": "/Users/xijun/WSELab/crash2openx/outputs/ads_stress_20260919/cut_in/early/run",
+    "unbraked_samples": 160,
+    "observed_ego_median_mps": 4.989958,
+    "npc_speed_ratio": 0.6,
+    "nominal_cut_duration_s": 2.5,
+    "npc_changes": [
+      {
+        "actor": "av1",
+        "before": {
+          "block": "front_brake",
+          "params": {
+            "brake_t": 2.0,
+            "end_speed": 0
+          }
+        },
+        "after": {
+          "block": "front_brake",
+          "params": {
+            "brake_t": 2.0,
+            "end_speed": 0,
+            "speed": 2.994
+          }
+        }
+      }
+    ],
+    "sut_before": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {
+        "speed": 4.47
+      },
+      "vehicle_class": "car"
+    },
+    "sut_after": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {
+        "speed": 4.47,
+        "initial_speed_mps": 4.99
+      },
+      "vehicle_class": "car"
+    },
+    "scope": "shared prior InterFuser cruise; validate actual speed in this episode"
+  },
+  "junction_timing": {},
+  "simulation_limit_s": 25,
+  "ocl_pass": true,
+  "xosc_xsd_pass": true,
+  "claim": "Source-derived ADS test; modified onset, speeds and spacing are experimental, not report facts."
+}

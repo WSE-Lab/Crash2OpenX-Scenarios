@@ -1,0 +1,39 @@
+{
+  "scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {}
+    },
+    "npcs": [
+      {
+        "id": "v2",
+        "kind": "vehicle",
+        "position": "oncoming",
+        "side": "none",
+        "behavior": {
+          "block": "junction_turn",
+          "params": {
+            "approach_distance_m": 10
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 0.0,
+            "distance_m": 49.56
+          }
+        }
+      }
+    ],
+    "collision": {
+      "a": "ego",
+      "b": "v2"
+    },
+    "control": "traffic_light",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "afternoon"
+    }
+  }
+}

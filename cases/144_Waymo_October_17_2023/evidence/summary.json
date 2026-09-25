@@ -1,0 +1,110 @@
+{
+  "scenario_name": "scenario",
+  "episode_dir": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_144_critical_725409f9/outputs/scene/out",
+  "total_ticks": 502,
+  "stored_frame_rows": 502,
+  "duration_seconds": 77.1,
+  "final_route_completion": 88.155,
+  "min_ttc": {
+    "value": 2.782312,
+    "frame": 18604,
+    "simulation_time": 5.165018,
+    "other_actor_id": 49,
+    "other_actor_type_id": "vehicle.diamondback.century"
+  },
+  "min_distance": {
+    "value": 4.693797,
+    "frame": 18763,
+    "simulation_time": 13.115018,
+    "other_actor_id": 49,
+    "other_actor_type_id": "vehicle.diamondback.century"
+  },
+  "max_long_jerk": {
+    "value": 1951.882191,
+    "frame": 18546,
+    "simulation_time": 2.265018
+  },
+  "max_lat_jerk": {
+    "value": -53.983179,
+    "frame": 18830,
+    "simulation_time": 16.465018
+  },
+  "unsafe_exposure_time": 0.0,
+  "off_road_time": 2.65,
+  "opposite_lane_occupancy_time": 4.2,
+  "blocked_time": 0.0,
+  "collision_count": 0,
+  "geometric_overlap_count": 0,
+  "collision_evidence": "carla_collision_sensor",
+  "expected_contact_sequence": [],
+  "early_exit_on_first_sut_contact": true,
+  "lane_invasion_count": 5,
+  "red_light_violation_count": 0,
+  "stop_sign_violation_count": 0,
+  "termination_reason": "scenario_completed",
+  "scenario_tree_status": "Status.SUCCESS",
+  "criteria": [
+    {
+      "name": "RunningStopTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "RunningRedLightTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "WrongLaneTest",
+      "test_status": "FAILURE",
+      "actual_value": 1,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "OnSidewalkTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "CheckKeepLane",
+      "test_status": "FAILURE",
+      "actual_value": 5,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "CollisionTest",
+      "test_status": "SUCCESS",
+      "actual_value": 0,
+      "success_value": 0,
+      "units": "times"
+    },
+    {
+      "name": "CheckDrivenDistance",
+      "test_status": "SUCCESS",
+      "actual_value": 110.64,
+      "success_value": 100.0,
+      "units": "times"
+    }
+  ],
+  "video_path": null,
+  "collision_sensor_actor_ids": [
+    48,
+    49
+  ],
+  "sensor_cleanup_errors": [
+    {
+      "sensor_id": 59,
+      "operation": "stop",
+      "error": "close: Bad file descriptor [system:9]"
+    }
+  ],
+  "sensor_cleanup_status": "completed_with_errors"
+}

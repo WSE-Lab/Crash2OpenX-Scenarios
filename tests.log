@@ -1,0 +1,37 @@
+........................................................................ [ 25%]
+................................................................ [ 48%]
+........................................................................ [ 73%]
+........................................................................ [ 98%]
+...                                                                      [100%]
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:491
+<frozen importlib._bootstrap>:491
+  <frozen importlib._bootstrap>:491: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:491
+<frozen importlib._bootstrap>:491
+  <frozen importlib._bootstrap>:491: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+<frozen importlib._bootstrap>:491
+  <frozen importlib._bootstrap>:491: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+tests/test_ads_junction_waiting.py: 1 warning
+tests/test_ads_relative_trigger.py: 2 warnings
+tests/test_ads_route_generalization.py: 3 warnings
+tests/test_fresh_generation_resume.py: 2 warnings
+tests/test_junction_route_compilation.py: 6 warnings
+tests/test_parking_lane_sequences.py: 1 warning
+tests/test_partial_lane_intrusion.py: 1 warning
+tests/test_pedestrian_crossing.py: 2 warnings
+tests/test_scene_contacts.py: 2 warnings
+tests/test_scene_seed_runtime_fidelity.py: 10 warnings
+tests/test_scene_sequences.py: 1 warning
+tests/test_source_centerline_violation.py: 1 warning
+tests/test_stationary_sut.py: 1 warning
+tools/test_runtime_fixes.py: 4 warnings
+  /Users/xijun/WSELab/crash2openx/external/scenariogeneration/scenariogeneration/xosc/scenario.py:278: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+    if self.parameters.get_element():
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+283 passed, 42 warnings, 8 subtests passed in 10.73s
+<sys>:0: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

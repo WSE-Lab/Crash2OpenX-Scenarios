@@ -1,0 +1,1067 @@
+{
+  "aligned": false,
+  "verdict": "drifted",
+  "issues": [
+    "expected collision but none occurred",
+    "impact area 'unknown' did not match a clean impact geometry",
+    "hero entered wrong lane (WrongLaneTest=1)",
+    "excessive lane invasions (5)",
+    "off-road trajectory excursion (2.65 s, max center excess=0.188 m)"
+  ],
+  "warnings": [],
+  "expected_collision": [
+    "cyclist_1",
+    "hero"
+  ],
+  "actual_collision_actors": null,
+  "lane_invasion_count": 5,
+  "wrong_lane_count": 1,
+  "impact_area": "unknown",
+  "off_road_time": 2.65,
+  "max_lateral_excess_m": 0.1877,
+  "off_road_before_collision_s": null,
+  "trajectory_quality": "invalid",
+  "lane_corridor_review": {
+    "method": "OpenDRIVE constant-width lane corridors; exact line/arc or pyclothoids projection",
+    "coordinate_conversion": "raw CARLA x,y -> OpenDRIVE x,-y",
+    "numerical_tolerance_m": 0.0001,
+    "point_scope": "actor origin/centre; does not establish full vehicle-footprint containment",
+    "map_sha256": "7924235aa2e687f5975677d694bab0ec2db744b31510f14ba75d0513db59c132",
+    "unsupported": [],
+    "missing_actor_samples": 0,
+    "samples": 502,
+    "inside_samples": 449,
+    "outside_samples": 53,
+    "unresolved_samples": 0,
+    "peak_raw_projection": {
+      "simulation_time": 11.715018,
+      "road_id": "105",
+      "lane_id": -2,
+      "s": 6.774512902532917,
+      "lateral_t_m": -7.174001955596249,
+      "lane_bounds_t_m": [
+        -7.0,
+        -3.5
+      ],
+      "center_distance_m": 1.9240019555962489,
+      "lateral_excess_m": 0.17400195559624887,
+      "tangent_residual_m": -2.4924506902834764e-14,
+      "inside": false,
+      "classification": "outside",
+      "raw_waypoint_distance_m": 1.937659,
+      "raw_road_id": 105,
+      "raw_lane_id": -2
+    },
+    "non_inside_samples": [
+      {
+        "simulation_time": 10.015018,
+        "road_id": "3",
+        "lane_id": -2,
+        "s": 279.540741,
+        "lateral_t_m": -7.000954999999966,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.7509549999999656,
+        "lateral_excess_m": 0.0009549999999656222,
+        "tangent_residual_m": 8.573697131724616e-16,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.750956,
+        "raw_road_id": 3,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.065018,
+        "road_id": "3",
+        "lane_id": -2,
+        "s": 279.672943,
+        "lateral_t_m": -7.006160999999965,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.756160999999965,
+        "lateral_excess_m": 0.006160999999965,
+        "tangent_residual_m": 8.580072642960977e-16,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.756162,
+        "raw_road_id": 3,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.115018,
+        "road_id": "3",
+        "lane_id": -2,
+        "s": 279.799957,
+        "lateral_t_m": -7.011601999999965,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.7616019999999653,
+        "lateral_excess_m": 0.011601999999965251,
+        "tangent_residual_m": 8.586735946195137e-16,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.761603,
+        "raw_road_id": 3,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.165018,
+        "road_id": "3",
+        "lane_id": -2,
+        "s": 279.928101,
+        "lateral_t_m": -7.016723999999965,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.7667239999999653,
+        "lateral_excess_m": 0.016723999999965322,
+        "tangent_residual_m": 8.59300858710037e-16,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.766725,
+        "raw_road_id": 3,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.215018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 0.061698046738975,
+        "lateral_t_m": -7.021961935464462,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.7719619354644616,
+        "lateral_excess_m": 0.02196193546446157,
+        "tangent_residual_m": -3.4949121504798675e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.772118,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.265018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 0.2040072204271335,
+        "lateral_t_m": -7.027064669805762,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.7770646698057622,
+        "lateral_excess_m": 0.027064669805762165,
+        "tangent_residual_m": 4.807840323778345e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.777218,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.315018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 0.356756234242855,
+        "lateral_t_m": -7.032353555062703,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.782353555062703,
+        "lateral_excess_m": 0.03235355506270299,
+        "tangent_residual_m": 3.507003715208512e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.7825,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.365018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 0.5214453937249159,
+        "lateral_t_m": -7.037953195780631,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.7879531957806307,
+        "lateral_excess_m": 0.03795319578063072,
+        "tangent_residual_m": 1.506759127190005e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.788089,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.415018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 0.6985440285246249,
+        "lateral_t_m": -7.0439668551991454,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.7939668551991454,
+        "lateral_excess_m": 0.04396685519914545,
+        "tangent_residual_m": 2.6300576300153367e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.794087,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.465018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 0.887361519666372,
+        "lateral_t_m": -7.051219385393986,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8012193853939857,
+        "lateral_excess_m": 0.05121938539398574,
+        "tangent_residual_m": 1.863006277025292e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.80132,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.515018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 1.0818264742493442,
+        "lateral_t_m": -7.059268190293683,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8092681902936834,
+        "lateral_excess_m": 0.059268190293683354,
+        "tangent_residual_m": -1.0855899512662859e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.809347,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.565018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 1.274388438639564,
+        "lateral_t_m": -7.0660313095450515,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8160313095450515,
+        "lateral_excess_m": 0.06603130954505154,
+        "tangent_residual_m": 2.3531523951625388e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.816088,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.615018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 1.4599731155288356,
+        "lateral_t_m": -7.071694341674492,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8216943416744922,
+        "lateral_excess_m": 0.07169434167449218,
+        "tangent_residual_m": -1.5236076289504297e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.821732,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.665018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 1.6374182220855449,
+        "lateral_t_m": -7.07801330342931,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8280133034293096,
+        "lateral_excess_m": 0.07801330342930957,
+        "tangent_residual_m": -4.916206330918271e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.828033,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.715018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 1.8111004134626019,
+        "lateral_t_m": -7.0850506616922395,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8350506616922395,
+        "lateral_excess_m": 0.08505066169223952,
+        "tangent_residual_m": 9.211381657436846e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.835058,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.765018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 1.9870880347568347,
+        "lateral_t_m": -7.0920114576559135,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8420114576559135,
+        "lateral_excess_m": 0.09201145765591345,
+        "tangent_residual_m": -2.197200754672224e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.842013,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.815018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 2.169719588133768,
+        "lateral_t_m": -7.099136237506773,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.849136237506773,
+        "lateral_excess_m": 0.09913623750677303,
+        "tangent_residual_m": 3.168645901219236e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.84914,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.865018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 2.3618604619171677,
+        "lateral_t_m": -7.105412846746307,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8554128467463071,
+        "lateral_excess_m": 0.10541284674630713,
+        "tangent_residual_m": 8.18789480661053e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.855431,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.915018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 2.5650883575701604,
+        "lateral_t_m": -7.111171524562831,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.861171524562831,
+        "lateral_excess_m": 0.11117152456283108,
+        "tangent_residual_m": -2.002564780667626e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.861223,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 10.965018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 2.78000553408541,
+        "lateral_t_m": -7.118346637857836,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8683466378578357,
+        "lateral_excess_m": 0.11834663785783572,
+        "tangent_residual_m": -1.1227130336521896e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.868457,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.015018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 3.0068346917353774,
+        "lateral_t_m": -7.126684083777653,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8766840837776533,
+        "lateral_excess_m": 0.12668408377765328,
+        "tangent_residual_m": -2.858824288409778e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.876887,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.065018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 3.245854541254997,
+        "lateral_t_m": -7.13397846620061,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8839784662006096,
+        "lateral_excess_m": 0.1339784662006096,
+        "tangent_residual_m": 1.682681771697503e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.884323,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.115018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 3.4971400167965148,
+        "lateral_t_m": -7.1402883946817965,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8902883946817965,
+        "lateral_excess_m": 0.14028839468179655,
+        "tangent_residual_m": -2.1718737919229625e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.890836,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.165018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 3.760758040456566,
+        "lateral_t_m": -7.146797748581771,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.896797748581771,
+        "lateral_excess_m": 0.14679774858177108,
+        "tangent_residual_m": 1.9886869928598117e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.89763,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.215018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 4.035710980371504,
+        "lateral_t_m": -7.153423341787069,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.903423341787069,
+        "lateral_excess_m": 0.15342334178706896,
+        "tangent_residual_m": 1.6514567491299204e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.904642,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.265018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 4.312392665876547,
+        "lateral_t_m": -7.159122731305505,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.909122731305505,
+        "lateral_excess_m": 0.15912273130550503,
+        "tangent_residual_m": -3.5110803153770576e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.91084,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.315018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 4.590589438504056,
+        "lateral_t_m": -7.163633502568736,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9136335025687359,
+        "lateral_excess_m": 0.16363350256873588,
+        "tangent_residual_m": 2.220446049250313e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.915976,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.365018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 4.868389676277909,
+        "lateral_t_m": -7.16790259134384,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9179025913438403,
+        "lateral_excess_m": 0.16790259134384034,
+        "tangent_residual_m": 4.468647674116255e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.92101,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.415018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 5.145079502275546,
+        "lateral_t_m": -7.172062683382603,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9220626833826033,
+        "lateral_excess_m": 0.17206268338260333,
+        "tangent_residual_m": -1.0241807402167069e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.92609,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.465018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 5.419512366926562,
+        "lateral_t_m": -7.175069780493721,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.925069780493721,
+        "lateral_excess_m": 0.1750697804937209,
+        "tangent_residual_m": -7.216449660063518e-16,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.930181,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.515018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 5.691653508378798,
+        "lateral_t_m": -7.1767045560083735,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9267045560083735,
+        "lateral_excess_m": 0.17670455600837354,
+        "tangent_residual_m": -1.5487611193520934e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.933078,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.565018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 5.961580947611033,
+        "lateral_t_m": -7.177360639512659,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.927360639512659,
+        "lateral_excess_m": 0.177360639512659,
+        "tangent_residual_m": -7.771561172376096e-16,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.935194,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.615018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 6.232893144753263,
+        "lateral_t_m": -7.177067896227302,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9270678962273022,
+        "lateral_excess_m": 0.17706789622730223,
+        "tangent_residual_m": 3.091971123581061e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.936591,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.665018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 6.50388526500756,
+        "lateral_t_m": -7.175968223802131,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9259682238021307,
+        "lateral_excess_m": 0.17596822380213073,
+        "tangent_residual_m": -9.43689570931383e-16,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.937428,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.715018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 6.774512902532917,
+        "lateral_t_m": -7.174001955596249,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9240019555962489,
+        "lateral_excess_m": 0.17400195559624887,
+        "tangent_residual_m": -2.4924506902834764e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.937659,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.765018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 7.044436353069157,
+        "lateral_t_m": -7.170527903569289,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9205279035692886,
+        "lateral_excess_m": 0.1705279035692886,
+        "tangent_residual_m": -7.827072323607354e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.920788,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.815018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 7.312938399376043,
+        "lateral_t_m": -7.165617660923129,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9156176609231288,
+        "lateral_excess_m": 0.1656176609231288,
+        "tangent_residual_m": 7.049916206369744e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.915646,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.865018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 7.578680948468803,
+        "lateral_t_m": -7.161188432500049,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9111884325000492,
+        "lateral_excess_m": 0.16118843250004922,
+        "tangent_residual_m": 9.270362255620057e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.911224,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.915018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 7.8381311203671125,
+        "lateral_t_m": -7.157104300944302,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9071043009443018,
+        "lateral_excess_m": 0.15710430094430183,
+        "tangent_residual_m": -2.525757381022231e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.907392,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 11.965018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 8.090172361524058,
+        "lateral_t_m": -7.1526135798241075,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.9026135798241075,
+        "lateral_excess_m": 0.1526135798241075,
+        "tangent_residual_m": -2.9753977059954195e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.903402,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.015018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 8.339831802343468,
+        "lateral_t_m": -7.147518127448025,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8975181274480253,
+        "lateral_excess_m": 0.14751812744802528,
+        "tangent_residual_m": -4.4020342926387457e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.899071,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.065018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 8.591849986484975,
+        "lateral_t_m": -7.140417232463834,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8904172324638342,
+        "lateral_excess_m": 0.1404172324638342,
+        "tangent_residual_m": 6.38378239159465e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.893036,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.115018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 8.850535314490143,
+        "lateral_t_m": -7.13136879152287,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8813687915228696,
+        "lateral_excess_m": 0.13136879152286962,
+        "tangent_residual_m": -2.7755575615628914e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.885413,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.165018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 9.118722762978987,
+        "lateral_t_m": -7.121894487267856,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8718944872678556,
+        "lateral_excess_m": 0.12189448726785557,
+        "tangent_residual_m": -9.2148511043888e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.877793,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.215018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 9.39804132633769,
+        "lateral_t_m": -7.111737281731484,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8617372817314841,
+        "lateral_excess_m": 0.11173728173148412,
+        "tangent_residual_m": 1.6431300764452317e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.870008,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.265018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 9.68903983290496,
+        "lateral_t_m": -7.101057398926252,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.851057398926252,
+        "lateral_excess_m": 0.10105739892625198,
+        "tangent_residual_m": -1.765254609153999e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.862309,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.315018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 9.9848730289881,
+        "lateral_t_m": -7.089744630340582,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.839744630340582,
+        "lateral_excess_m": 0.089744630340582,
+        "tangent_residual_m": -1.6653345369377348e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.854599,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.365018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 10.280955922394089,
+        "lateral_t_m": -7.077686075716954,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8276860757169544,
+        "lateral_excess_m": 0.0776860757169544,
+        "tangent_residual_m": -7.882583474838611e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.827689,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.415018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 10.576718159272577,
+        "lateral_t_m": -7.064847383036859,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8148473830368594,
+        "lateral_excess_m": 0.06484738303685944,
+        "tangent_residual_m": -3.341771304121721e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.815156,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.465018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 10.871680445219459,
+        "lateral_t_m": -7.0514644778263325,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.8014644778263325,
+        "lateral_excess_m": 0.051464477826332455,
+        "tangent_residual_m": 3.530509218307998e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.802678,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.515018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 11.164208461157694,
+        "lateral_t_m": -7.037540424956761,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.7875404249567612,
+        "lateral_excess_m": 0.03754042495676124,
+        "tangent_residual_m": -1.7763568394002505e-15,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.790287,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.565018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 11.45438634922655,
+        "lateral_t_m": -7.023190186517434,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.773190186517434,
+        "lateral_excess_m": 0.023190186517433986,
+        "tangent_residual_m": -4.96269692007445e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.778129,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      },
+      {
+        "simulation_time": 12.615018,
+        "road_id": "105",
+        "lane_id": -2,
+        "s": 11.744655712873172,
+        "lateral_t_m": -7.008312127818904,
+        "lane_bounds_t_m": [
+          -7.0,
+          -3.5
+        ],
+        "center_distance_m": 1.758312127818904,
+        "lateral_excess_m": 0.008312127818904003,
+        "tangent_residual_m": 2.2537527399890678e-14,
+        "inside": false,
+        "classification": "outside",
+        "raw_waypoint_distance_m": 1.766157,
+        "raw_road_id": 105,
+        "raw_lane_id": -2
+      }
+    ],
+    "raw_metrics_overwritten": false,
+    "source_fidelity_accepted": false
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "status": "supported",
+  "road": {
+    "topology": "cross_intersection",
+    "type": "town",
+    "lanes": {
+      "forward": 1,
+      "backward": 1
+    },
+    "center_line": "broken"
+  },
+  "description_zh": "事故地点为 Broadway St 与 Sansome St 的十字路口（'Broadway St & Sansome St Intersection'），车辆直行通过绿灯路口、另一车左转横穿车流，属典型平面四向交叉口；事实未给出具体车道数与中心线信息，故按 schema 默认双向各一条、中心线可跨越，类型取 town。",
+  "evidence": {
+    "source_snippets": [
+      "ADDRESS/LOCATION OF ACCIDENT: Broadway St & Sansome St Intersection",
+      "CITY: San Francisco",
+      "A Zoox vehicle was proceeding straight in autonomy through an intersection with a green light and right of way",
+      "vehicle 2 attempted an illegal left turn across lanes of traffic into Zoox's right of way",
+      "TYPE OF COLLISION: BROADSIDE"
+    ],
+    "reason": "事故地点明确写着两条 street 相交的 intersection，且叙述为车辆在绿灯下直行穿过路口、另一车左转横穿车流，地点本身即平面四向交叉口，故 topology 选 cross_intersection（路口已隐含全部直行/左转/右转，不额外列转向）。未给出车道数与中心线虚实，按默认 {forward:1, backward:1} 与 broken；road type 事实不明确，取默认 town。"
+  },
+  "pipeline": {
+    "stage": "road_seed",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/293_Zoox_October_14_2022/fresh_deepseek_batch_v1/source.pdf"
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "road_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "1a84c6af0160a9df",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/293_Zoox_October_14_2022/fresh_deepseek_batch_v1/source.pdf",
+      "sha256_16": "d0a5904290d0e8bd"
+    },
+    "output_sha256_16": "47c438b860e46738",
+    "timestamp_utc": "2026-09-17T18:26:03+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}

@@ -1,0 +1,160 @@
+WARNING: Version mismatch detected: You are trying to connect to a simulator that might be incompatible with this API 
+WARNING: Client API version     = 78eb4c373 
+WARNING: Simulator API version  = 0.9.16 
+WARNING: Version mismatch detected: You are trying to connect to a simulator that might be incompatible with this API 
+WARNING: Client API version     = 78eb4c373 
+WARNING: Simulator API version  = 0.9.16 
+WARNING:[SR:OpenScenarioConfiguration]: The /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/openscenarios/catalogs/VehicleCatalog.xosc path for the Vehicle Catalog is invalid
+WARNING:[SR:OpenScenarioConfiguration]: The /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/openscenarios/catalogs/ControllerCatalog.xosc path for the Controller Catalog is invalid
+WARNING:[SR:OpenScenarioConfiguration]: The /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/openscenarios/catalogs/PedestrianCatalog.xosc path for the Pedestrian Catalog is invalid
+WARNING:[SR:OpenScenarioConfiguration]: The /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/openscenarios/catalogs/MiscObjectCatalog.xosc path for the MiscObject Catalog is invalid
+WARNING:[SR:OpenScenarioConfiguration]: The /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/openscenarios/catalogs/EnvironmentCatalog.xosc path for the Environment Catalog is invalid
+WARNING: Version mismatch detected: You are trying to connect to a simulator that might be incompatible with this API 
+WARNING: Client API version     = 78eb4c373 
+WARNING: Simulator API version  = 0.9.16 
+WARNING: Version mismatch detected: You are trying to connect to a simulator that might be incompatible with this API 
+WARNING: Client API version     = 78eb4c373 
+WARNING: Simulator API version  = 0.9.16 
+WARNING: No InMemoryMap cache found. Setting up local map. This may take a while... 
+CARLA Host: 127.0.0.1
+CARLA Port: 2000
+Record Mode: False
+Output File: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/hero_pcla_route.xml
+Case: disabled
+Input Root: /home/server/crash2openx_ads_stress_20260919/runtime/input
+Scenario File: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/inputs/scenario.xosc
+Custom XODR: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/inputs/map.xodr
+PCLA Agent: if_if
+PCLA SUT: hero
+Sync Route: False
+Replay Control: npc
+Disable Traffic Lights: True
+Data Collection: True
+Real Time Factor: 1.0
+Post Run Hold: 0.0s
+No Rendering: False
+Record Video: False
+Data Output: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out
+--------------------------------------------------
+已将运行时 OpenSCENARIO 的 RoadNetwork/LogicFile 指向自定义地图: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/inputs/map.xodr
+Episode Output Dir: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out
+Route sync: generating OpenDRIVE world from /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/inputs/map.xodr
+PCLA SUT route: preserving 58 generated AssignRouteAction waypoints for hero.
+PCLA full route: preserving supplied start position, heading and route geometry.
+PCLA SUT route 已从 hero 原始轨迹生成: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/hero_pcla_route.xml
+PCLA SUT route mode=endpoints, spacing=2.00m, waypoints=82 (before densify=58), PCLA SUT route start=(228.25, -60.02) end=(290.02, 1.75)
+Replay mode: 跳过 PCLA route 生成、hero controller 写入和 ActEnd 终点同步。
+Replay mode: 已为 hero 启用 PCLA external_control，agent=if_if。
+Replay mode: ego vehicle 已切换为 hero: {'hero': 'ego_vehicle', 'vw': 'simulation'}
+Replay mode: 已将 hero 的 0 个 Init TeleportAction 同步到 PCLA route 起点，start_offset=0.00m, route_mode=endpoints, route_spacing=2.00m, min_z=0.50。
+Replay mode: 已移除 hero 的 0 个 FollowTrajectory ManeuverGroup，避免覆盖 ADS 控制。
+Replay mode: 已移除其他 actor 的 0 个 external_control ControllerAction。
+已将同步后的 OpenSCENARIO 写入运行时文件: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/scenario.runtime.xosc
+数据收集器已创建，场景名称: scenario
+开始运行评估...
+数据收集器已传递给ScenarioRunner
+Loading custom OpenDRIVE map: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/inputs/map.xodr
+Global traffic lights disabled: 0 lights forced to GREEN
+Preparing scenario: scene_seed_block_scenario
+Hero road waypoint: pos=(228.25, -60.02), yaw=-270.0°
+Route endpoint selection: configured route file
+Endpoint used for routing: (290.02, 1.75)
+Configured route file: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/hero_pcla_route.xml
+Configured route endpoint: (290.02, 1.75)
+PCLA route debug file: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/hero_pcla_route_debug.jsonl
+PCLA: setting up agent 'if_if'
+pygame 2.5.2 (SDL 2.28.2, Python 3.8.18)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+PCLA_INFERENCE_DEVICE=cpu
+load model: /home/server/crash2openx_ads_stress_20260919/runtime/PCLA/pcla_agents/interfuser/../interfuser_pretrained/interfuser.pth.tar
+PCLA_MODEL_PARAMETER_DEVICE=cpu
+hero_pcla_route_09_19_13_44_35
+PCLA: agent 'if_if' loaded
+PCLA: route loaded for agent 'if_if'
+PCLA: sensors ready for agent 'if_if'
+PCLA_GNSS_CALIBRATION={"georeference": "+proj=tmerc +lat_0=0 +lon_0=0 +k=1 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs", "validation_bounds_xy": [198.25, 320.0199890136719, -90.02000045776367, 31.75], "native_gps_jacobian_per_m": [[1.6691807441446272e-15, 8.98674770419682e-06], [8.98674890405878e-06, -1.6691812862457133e-15]], "max_probe_error_m": 2.468401164816522e-05, "source": "Actual GNSS samples; fixed calibration from map coordinate transforms only", "noise_preserved": true, "vehicle_ground_truth_used": false}
+PCLA Agent 'if_if' setup complete for ExternalControl.
+Route: Start(228.25, -60.02) -> End(290.02, 1.75)
+Spectator view set to overhead position: Location(x=228.250000, y=-60.020004, z=50.022926)
+Overhead observation camera setup complete
+Data collector initialized: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out
+数据收集器已初始化
+ScenarioManager: Running scenario scene_seed_block_scenario
+C2X_GENERATED_LANE_ROUTE actor_id=5014 points=53 source=compiled_CARLA_roadgraph
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658098, "tag": "gps", "native_gps": [-0.0005384088285019202, 0.0020529383616786122, 0.02029749271696346], "route_convention_gps": [0.0005381934600734439, 0.0020521170916728737, 0.02029749271696346]}
+PCLA_NAV_AUDIT={"step": 0, "timestamp": 0.05000000074505806, "raw_gps": [0.0005381934600734439, 0.0020521170916728737], "compass_rad": 3.1415927410125732, "planner_position": [59.91417523236302, 228.4406300045582], "target_local": [-4.45224282102098, -51.086893504555306], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.25, "y": -59.435813903808594, "yaw": 89.99999237060547}, "sensor_frames": {"speed": 0, "imu": 32658098, "gps": 32658098, "lidar": 32658098, "rgb": 32658097, "rgb_left": 32658097, "rgb_right": 32658097}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658118, "tag": "gps", "native_gps": [-0.00051460582956687, 0.002051921603745979, 0.0036488857131189434], "route_convention_gps": [0.0005143999827765811, 0.0020511007406020768, 0.0036488857131189434]}
+PCLA_NAV_AUDIT={"step": 20, "timestamp": 1.0500000156462193, "raw_gps": [0.0005143999827765811, 0.0020511007406020768], "compass_rad": 3.1409945487976074, "planner_position": [57.265375731980846, 228.32749032073568], "target_local": [-4.536406167446661, -48.44081630385708], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.2518310546875, "y": -57.24010467529297, "yaw": 89.96702575683594}, "sensor_frames": {"speed": 32658117, "imu": 32658118, "gps": 32658118, "lidar": 32658118, "rgb": 32658117, "rgb_left": 32658117, "rgb_right": 32658117}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658138, "tag": "gps", "native_gps": [-0.0004979587680954855, 0.0020484098517911005, 0.0007070652965239788], "route_convention_gps": [0.0004977595804263046, 0.0020475903938838086, 0.0007070652965239788]}
+PCLA_NAV_AUDIT={"step": 40, "timestamp": 2.0500000305473804, "raw_gps": [0.0004977595804263046, 0.0020475903938838086], "compass_rad": 3.143984794616699, "planner_position": [55.41288948620701, 227.9367203110176], "target_local": [-5.067573106262234, -46.57361906460123], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.24737548828125, "y": -54.75162887573242, "yaw": 90.1377182006836}, "sensor_frames": {"speed": 32658137, "imu": 32658138, "gps": 32658138, "lidar": 32658138, "rgb": 32658137, "rgb_left": 32658137, "rgb_right": 32658137}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658158, "tag": "gps", "native_gps": [-0.00046739753710504467, 0.0020505676659020775, 0.0029130812035873532], "route_convention_gps": [0.0004672105744845112, 0.002049747344547472, 0.0029130812035873532]}
+PCLA_NAV_AUDIT={"step": 60, "timestamp": 3.0500000454485416, "raw_gps": [0.0004672105744845112, 0.002049747344547472], "compass_rad": 3.1446421146392822, "planner_position": [52.012033416864696, 228.1768309608901], "target_local": [-4.847705486122475, -43.17016993627699], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.2406005859375, "y": -52.05473327636719, "yaw": 90.17475128173828}, "sensor_frames": {"speed": 32658157, "imu": 32658158, "gps": 32658158, "lidar": 32658158, "rgb": 32658157, "rgb_left": 32658157, "rgb_right": 32658157}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658178, "tag": "gps", "native_gps": [-0.0004480217184055449, 0.0020495209638185918, 0.0009681790365902998], "route_convention_gps": [0.0004478425064746716, 0.002048701061307203, 0.0009681790365902998]}
+PCLA_NAV_AUDIT={"step": 80, "timestamp": 4.050000060349703, "raw_gps": [0.0004478425064746716, 0.002048701061307203], "compass_rad": 3.1449224948883057, "planner_position": [49.855890864527666, 228.06035924319906], "target_local": [-4.969100831147516, -41.0122906080714], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.23377990722656, "y": -49.43124771118164, "yaw": 90.18965911865234}, "sensor_frames": {"speed": 32658177, "imu": 32658178, "gps": 32658178, "lidar": 32658178, "rgb": 32658177, "rgb_left": 32658177, "rgb_right": 32658177}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658198, "tag": "gps", "native_gps": [-0.00039784708740244666, 0.0020445726030730604, 0.004047853404927082], "route_convention_gps": [0.0003976879462470606, 0.0020437546806659585, 0.004047853404927082]}
+PCLA_NAV_AUDIT={"step": 100, "timestamp": 5.050000075250864, "raw_gps": [0.0003976879462470606, 0.0020437546806659585], "compass_rad": 3.136436700820923, "planner_position": [44.27245417659556, 227.50973066819554], "target_local": [-5.20031331180174, -35.472456785209445], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.24295043945312, "y": -44.25054931640625, "yaw": 89.70451354980469}, "sensor_frames": {"speed": 32658197, "imu": 32658198, "gps": 32658198, "lidar": 32658198, "rgb": 32658197, "rgb_left": 32658197, "rgb_right": 32658197}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658218, "tag": "gps", "native_gps": [-0.00035663182488171013, 0.00205177436364673, 0.0035227285989094526], "route_convention_gps": [0.0003564891705707396, 0.0020509535594505344, 0.0035227285989094526]}
+PCLA_NAV_AUDIT={"step": 120, "timestamp": 6.050000090152025, "raw_gps": [0.0003564891705707396, 0.0020509535594505344], "compass_rad": 3.1269359588623047, "planner_position": [39.686016680879675, 228.3111061898693], "target_local": [-4.128999183788238, -30.922571970078376], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.30694580078125, "y": -39.338226318359375, "yaw": 89.16020202636719}, "sensor_frames": {"speed": 32658217, "imu": 32658218, "gps": 32658218, "lidar": 32658218, "rgb": 32658217, "rgb_left": 32658217, "rgb_right": 32658217}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658238, "tag": "gps", "native_gps": [-0.0003083851151058464, 0.0020540849645874575, 0.0038418238333406407], "route_convention_gps": [0.0003082617603666904, 0.0020532632358093213, 0.0038418238333406407]}
+PCLA_NAV_AUDIT={"step": 140, "timestamp": 7.050000105053186, "raw_gps": [0.0003082617603666904, 0.0020532632358093213], "compass_rad": 3.117124319076538, "planner_position": [34.317119211233454, 228.56821818637715], "target_local": [-3.699724007484299, -25.58801430673718], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.41946411132812, "y": -34.418487548828125, "yaw": 88.59808349609375}, "sensor_frames": {"speed": 32658237, "imu": 32658238, "gps": 32658238, "lidar": 32658238, "rgb": 32658237, "rgb_left": 32658237, "rgb_right": 32658237}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658258, "tag": "gps", "native_gps": [-0.0002826006479414978, 0.0020482850301498053, 0.0033612859724030386], "route_convention_gps": [0.000282487607464077, 0.0020474656222300896, 0.0033612859724030386]}
+PCLA_NAV_AUDIT={"step": 160, "timestamp": 8.050000119954348, "raw_gps": [0.000282487607464077, 0.0020474656222300896], "compass_rad": 3.1103622913360596, "planner_position": [31.447821778183698, 227.92283079404123], "target_local": [-4.261281194614, -22.76470087133674], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.52630615234375, "y": -30.878177642822266, "yaw": 88.2106704711914}, "sensor_frames": {"speed": 32658257, "gps": 32658258, "imu": 32658258, "lidar": 32658258, "rgb": 32658257, "rgb_left": 32658257, "rgb_right": 32658257}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658278, "tag": "gps", "native_gps": [-0.00027193004540814755, 0.0020458739687085913, 0.0024117050238601223], "route_convention_gps": [0.0002718212733583414, 0.0020450555255811945, 0.0024117050238601223]}
+PCLA_NAV_AUDIT={"step": 180, "timestamp": 9.050000134855509, "raw_gps": [0.0002718212733583414, 0.0020450555255811945], "compass_rad": 3.107435703277588, "planner_position": [30.260396329701358, 227.654540061958], "target_local": [-4.503325325369952, -21.599503757922164], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.55426025390625, "y": -30.059364318847656, "yaw": 88.04290008544922}, "sensor_frames": {"speed": 32658277, "gps": 32658278, "imu": 32658278, "lidar": 32658278, "rgb": 32658277, "rgb_left": 32658277, "rgb_right": 32658277}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658298, "tag": "gps", "native_gps": [-0.0002288435300567912, 0.002052981371711682, 0.003835042096397956], "route_convention_gps": [0.00022875199341854113, 0.0020521600845528807, 0.003835042096397956]}
+PCLA_NAV_AUDIT={"step": 200, "timestamp": 10.05000014975667, "raw_gps": [0.00022875199341854113, 0.0020521600845528807], "compass_rad": 3.0981595516204834, "planner_position": [25.46572568265791, 228.44541595007482], "target_local": [-3.7208260922351815, -16.81585907159379], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.7263946533203, "y": -25.913902282714844, "yaw": 87.511474609375}, "sensor_frames": {"speed": 32658297, "imu": 32658298, "gps": 32658298, "lidar": 32658298, "rgb": 32658297, "rgb_left": 32658297, "rgb_right": 32658297}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658318, "tag": "gps", "native_gps": [-0.0002132254721191652, 0.0020602131050994647, 0.00223231490656417], "route_convention_gps": [0.00021314018297857729, 0.0020593889241531447, 0.00223231490656417]}
+PCLA_NAV_AUDIT={"step": 220, "timestamp": 11.050000164657831, "raw_gps": [0.00021314018297857729, 0.0020593889241531447], "compass_rad": 3.085803747177124, "planner_position": [23.72774702668022, 229.25012669449927], "target_local": [-2.8062247571227164, -15.080402752317518], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 228.81158447265625, "y": -24.330238342285156, "yaw": 86.80352020263672}, "sensor_frames": {"speed": 32658317, "imu": 32658318, "gps": 32658318, "lidar": 32658318, "rgb": 32658317, "rgb_left": 32658317, "rgb_right": 32658317}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658338, "tag": "gps", "native_gps": [-0.00018138461877290947, 0.0020563345902577666, 0.0012739236131693588], "route_convention_gps": [0.00018131206655880305, 0.0020555119613116708, 0.0012739236131693588]}
+PCLA_NAV_AUDIT={"step": 240, "timestamp": 12.050000179558992, "raw_gps": [0.00018131206655880305, 0.0020555119613116708], "compass_rad": 3.0605356693267822, "planner_position": [20.18449448654312, 228.81854516457372], "target_local": [-3.1413721859532293, -11.649814624003465], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 229.07473754882812, "y": -20.69186019897461, "yaw": 85.35578155517578}, "sensor_frames": {"speed": 32658337, "imu": 32658338, "gps": 32658338, "lidar": 32658338, "rgb": 32658337, "rgb_left": 32658337, "rgb_right": 32658337}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658358, "tag": "gps", "native_gps": [-0.00013944113101205884, 0.002069719118343231, 0.0037316988498901082], "route_convention_gps": [0.0001393853569595649, 0.002068891133563237, 0.0037316988498901082]}
+PCLA_NAV_AUDIT={"step": 260, "timestamp": 13.050000194460154, "raw_gps": [0.0001393853569595649, 0.002068891133563237], "compass_rad": 2.9956743717193604, "planner_position": [15.51702003320741, 230.30790780888356], "target_local": [-1.5847948783317267, -6.994501414957104], "command": 4, "remaining_route_points": 4, "next_route_points": [[60.022762571376525, 228.25000031110056], [8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599]], "actual_transform": {"x": 229.68565368652344, "y": -15.761484146118164, "yaw": 81.63948059082031}, "sensor_frames": {"speed": 32658357, "imu": 32658358, "gps": 32658358, "lidar": 32658358, "rgb": 32658357, "rgb_left": 32658357, "rgb_right": 32658357}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658378, "tag": "gps", "native_gps": [-0.00010285174894842838, 0.0020738477273467885, 0.0038343282394635025], "route_convention_gps": [0.00010281061130967828, 0.002073018090503671, 0.0038343282394635025]}
+PCLA_NAV_AUDIT={"step": 280, "timestamp": 14.050000209361315, "raw_gps": [0.00010281061130967828, 0.002073018090503671], "compass_rad": 2.833427667617798, "planner_position": [11.44535086121975, 230.76731855464456], "target_local": [-44.83593347471205, -28.119294884691797], "command": 4, "remaining_route_points": 3, "next_route_points": [[8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599], [-1.7500804230384281, 290.0199894089638]], "actual_transform": {"x": 230.94618225097656, "y": -10.98909854888916, "yaw": 72.34343719482422}, "sensor_frames": {"speed": 32658377, "imu": 32658378, "gps": 32658378, "lidar": 32658378, "rgb": 32658377, "rgb_left": 32658377, "rgb_right": 32658377}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658398, "tag": "gps", "native_gps": [-6.427928100190455e-05, 0.0020955771143126023, 0.0038434318897770936], "route_convention_gps": [6.42535730577265e-05, 0.002094738782425483, 0.0038434318897770936]}
+PCLA_NAV_AUDIT={"step": 300, "timestamp": 15.050000224262476, "raw_gps": [6.42535730577265e-05, 0.002094738782425483], "compass_rad": 2.660928964614868, "planner_position": [7.153003745085867, 233.18525492235386], "target_local": [-39.18468613029999, -30.473867032053782], "command": 4, "remaining_route_points": 3, "next_route_points": [[8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599], [-1.7500804230384281, 290.0199894089638]], "actual_transform": {"x": 232.99449157714844, "y": -6.558762550354004, "yaw": 62.46001434326172}, "sensor_frames": {"speed": 32658397, "imu": 32658398, "gps": 32658398, "lidar": 32658398, "rgb": 32658397, "rgb_left": 32658397, "rgb_right": 32658397}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658418, "tag": "gps", "native_gps": [-1.7651501354199917e-05, 0.002116487686797351, 0.0035599604900653503], "route_convention_gps": [1.76444453785507e-05, 0.0021156409875177327, 0.0035599604900653503]}
+PCLA_NAV_AUDIT={"step": 320, "timestamp": 16.050000239163637, "raw_gps": [1.76444453785507e-05, 0.0021156409875177327], "compass_rad": 2.4824466705322266, "planner_position": [1.9642609409339191, 235.5120777528511], "target_local": [-34.490409099057416, -31.41964127017245], "command": 4, "remaining_route_points": 3, "next_route_points": [[8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599], [-1.7500804230384281, 290.0199894089638]], "actual_transform": {"x": 235.82513427734375, "y": -2.5147042274475098, "yaw": 52.23373031616211}, "sensor_frames": {"speed": 32658417, "imu": 32658418, "gps": 32658418, "lidar": 32658418, "rgb": 32658417, "rgb_left": 32658417, "rgb_right": 32658417}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658438, "tag": "gps", "native_gps": [1.1995637835637878e-05, 0.0021423950994583305, 0.013549616374234574], "route_convention_gps": [-1.1990834394737249e-05, 0.002141538033288963, 0.013549616374234574]}
+PCLA_NAV_AUDIT={"step": 340, "timestamp": 17.0500002540648, "raw_gps": [-1.1990834394737249e-05, 0.002141538033288963], "compass_rad": 2.0529959201812744, "planner_position": [-1.334874922133938, 238.3949237050838], "target_local": [-19.86234925326713, -38.84334993876945], "command": 4, "remaining_route_points": 3, "next_route_points": [[8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599], [-1.7500804230384281, 290.0199894089638]], "actual_transform": {"x": 238.86900329589844, "y": 1.0294564962387085, "yaw": 27.627986907958984}, "sensor_frames": {"speed": 32658437, "imu": 32658438, "gps": 32658438, "lidar": 32658438, "rgb": 32658437, "rgb_left": 32658437, "rgb_right": 32658437}}
+PCLA_GNSS_ADAPTER_SAMPLE={"frame": 32658458, "tag": "gps", "native_gps": [1.7609513079452216e-05, 0.0021702346740608176, 0.0007561175434602774], "route_convention_gps": [-1.7602463998400708e-05, 0.00216936646783935, 0.0007561175434602774]}
+PCLA_NAV_AUDIT={"step": 360, "timestamp": 18.05000026896596, "raw_gps": [-1.7602463998400708e-05, 0.00216936646783935], "compass_rad": 1.9029836654663086, "planner_position": [-1.9595873803030266, 241.49277087302914], "target_local": [-13.414448203664797, -38.243325089902086], "command": 4, "remaining_route_points": 3, "next_route_points": [[8.827281338580462, 232.8928683594209], [-1.7500804230384281, 282.0199893980599], [-1.7500804230384281, 290.0199894089638]], "actual_transform": {"x": 241.75762939453125, "y": 2.2441651821136475, "yaw": 19.032936096191406}, "sensor_frames": {"speed": 32658457, "imu": 32658458, "gps": 32658458, "lidar": 32658458, "rgb": 32658457, "rgb_left": 32658457, "rgb_right": 32658457}}
+ERROR: failed to destroy actor 5029 : unable to destroy actor: not found 
+ERROR: failed to destroy actor 5024 : unable to destroy actor: not found 
+WARNING: attempting to unsubscribe from stream but sensor wasn't listening: Actor 5023 (sensor.camera.rgb) 
+ERROR: failed to destroy actor 5023 : unable to destroy actor: not found 
+ERROR: failed to destroy actor 5025 : unable to destroy actor: not found 
+ERROR: failed to destroy actor 5026 : unable to destroy actor: not found 
+ERROR: failed to destroy actor 5027 : unable to destroy actor: not found 
+ScenarioManager: duration system=132.10s, simulation=19.05s, real_time_factor=0.14
+Data artifacts saved under: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out
+数据收集摘要:
+  scenario_name: scenario
+  episode_dir: /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out
+  total_ticks: 381
+  stored_frame_rows: 381
+  duration_seconds: 132.364
+  final_route_completion: 61.585
+  min_ttc: {'value': 0.452922, 'frame': 32658433, 'simulation_time': 19.165787, 'other_actor_id': 5014, 'other_actor_type_id': 'vehicle.tesla.model3'}
+  min_distance: {'value': 3.10534, 'frame': 32658435, 'simulation_time': 19.265787, 'other_actor_id': 5014, 'other_actor_type_id': 'vehicle.tesla.model3'}
+  max_long_jerk: {'value': 2290.526986, 'frame': 32658097, 'simulation_time': 2.365787}
+  max_lat_jerk: {'value': -911.824666, 'frame': 32658437, 'simulation_time': 19.365787}
+  unsafe_exposure_time: 1.35
+  off_road_time: 0.15
+  opposite_lane_occupancy_time: 0.0
+  blocked_time: 0.0
+  collision_count: 1
+  geometric_overlap_count: 1
+  collision_evidence: carla_collision_sensor
+  expected_contact_sequence: []
+  early_exit_on_first_sut_contact: True
+  lane_invasion_count: 0
+  red_light_violation_count: 0
+  stop_sign_violation_count: 0
+  termination_reason: collision_exit
+  scenario_tree_status: Status.RUNNING
+  criteria: [{'name': 'RunningStopTest', 'test_status': 'SUCCESS', 'actual_value': 0, 'success_value': 0, 'units': 'times'}, {'name': 'RunningRedLightTest', 'test_status': 'SUCCESS', 'actual_value': 0, 'success_value': 0, 'units': 'times'}, {'name': 'WrongLaneTest', 'test_status': 'SUCCESS', 'actual_value': 0, 'success_value': 0, 'units': 'times'}, {'name': 'OnSidewalkTest', 'test_status': 'SUCCESS', 'actual_value': 0, 'success_value': 0, 'units': 'times'}, {'name': 'CheckKeepLane', 'test_status': 'SUCCESS', 'actual_value': 0, 'success_value': 0, 'units': 'times'}, {'name': 'CollisionTest', 'test_status': 'FAILURE', 'actual_value': 1, 'success_value': 0, 'units': 'times'}, {'name': 'CheckDrivenDistance', 'test_status': 'FAILURE', 'actual_value': 71.74, 'success_value': 100.0, 'units': 'times'}]
+  video_path: None
+  collision_sensor_actor_ids: [5013, 5014]
+  sensor_cleanup_errors: []
+  sensor_cleanup_status: complete

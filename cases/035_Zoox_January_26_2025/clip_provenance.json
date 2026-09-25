@@ -1,0 +1,35 @@
+{
+  "source_video": "run/ads_review/ads_review.mp4",
+  "source_video_sha256": "78b09651a986630f6c666df8f6950f0c78d41e495f5008f2d4894abcc9058437",
+  "raw_video_sha256": "9e05f866fcc060ee6c7ef906b66d791f5b39fc9136e7c6d2bd5ae36fcf92537d",
+  "clip_sha256": "dcdbf800e6fcbb27c22a337aab436de96ca59d6df3cd481947c54850435724bb",
+  "first_source_frame": 201,
+  "last_source_frame": 378,
+  "source_fps": 20.0,
+  "first_simulation_time_s": 12.465787312015891,
+  "last_simulation_time_s": 21.315787443891168,
+  "playback": "continuous original-speed excerpt",
+  "contact_sheet_samples": [
+    {
+      "image_index": 221,
+      "carla_frame": 32658319,
+      "simulation_time": 13.465787326917052
+    },
+    {
+      "image_index": 261,
+      "carla_frame": 32658359,
+      "simulation_time": 15.465787356719375
+    },
+    {
+      "image_index": 301,
+      "carla_frame": 32658399,
+      "simulation_time": 17.465787386521697
+    },
+    {
+      "image_index": 341,
+      "carla_frame": 32658439,
+      "simulation_time": 19.46578741632402
+    }
+  ],
+  "full_decode_pass": true
+}

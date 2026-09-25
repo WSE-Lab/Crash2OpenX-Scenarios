@@ -1,0 +1,12 @@
+{
+  "host": "10.134.142.199",
+  "run_directory": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_097_critical_39479b5b",
+  "retained": true,
+  "xodr_sha256": "a27be9bd9d57d758dc7b5523ebd8724024c66ee0f54d57c3942830ee912652b3",
+  "xosc_sha256": "cd98c240259fcf27afba6f6229764e4e4a2c8e057383e9a5fb57a3c999bfb83f",
+  "pcla_agent": "if_if",
+  "sut_actor": "hero",
+  "execution_mode": "pcla_autonomous_sut",
+  "compact_local_artifacts": true,
+  "raw_rgb_frames_retained_remotely": true
+}

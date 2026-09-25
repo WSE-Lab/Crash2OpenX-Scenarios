@@ -1,0 +1,69 @@
+{
+  "status": "supported",
+  "scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {}
+    },
+    "npcs": [
+      {
+        "id": "v2",
+        "kind": "vehicle",
+        "position": "cross",
+        "side": "right",
+        "behavior": {
+          "block": "junction_turn",
+          "params": {}
+        }
+      }
+    ],
+    "collision": {
+      "a": "v2",
+      "b": "ego"
+    },
+    "control": "traffic_light",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "afternoon"
+    }
+  },
+  "description_zh": "Waymo AV 在 Cesar Chavez 街东行左车道黄灯通过 Guerrero 街路口时，北向 Guerrero 街右转的救护车（无灯无警笛）完成右转后侵入其车道，救护车左前角擦碰 Waymo 右后乘客侧车门，属路口转弯冲突。",
+  "evidence": {
+    "source_snippets": [
+      "the Waymo AV was traveling east in the leftmost of two lanes on Cesar Chavez Street",
+      "While the traffic light was yellow, the Waymo AV began to cross the intersection with Guerrero Street",
+      "an ambulance traveling north on Guerrero Street (without lights and sirens activated) began to make a right turn onto eastbound Cesar Chavez Street",
+      "While the ambulance completed its right turn it crossed into the lane the Waymo AV was traveling in and the front driver side of the ambulance then made contact with the rear passenger side door of the Waymo AV",
+      "TYPE OF COLLISION: B. SIDE SWIPE X"
+    ],
+    "reason": "双方均为移动车辆，存在真实的车辆间路口交互；Waymo AV 直行通过路口可映射为 ego straight，救护车从交叉口右侧右转侵入 ego 车道可映射为 NPC vehicle position=cross/side=right + behavior.block=junction_turn，事故为 side swipe 碰撞，现有词汇表可表达。黄灯控制对应 control=traffic_light；天气 clear、时间 1:18 PM 对应 afternoon。"
+  },
+  "pipeline": {
+    "stage": "scene_seed_v2",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/055_Waymo_November_3_2024_(1)/fresh_deepseek_batch_v1/source.pdf",
+    "normalization_rules": []
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "scene_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "1a84c6af0160a9df",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/055_Waymo_November_3_2024_(1)/fresh_deepseek_batch_v1/source.pdf",
+      "sha256_16": "2f3ecaf257310885"
+    },
+    "output_sha256_16": "4ada28098cf10d71",
+    "timestamp_utc": "2026-09-17T18:28:24+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}

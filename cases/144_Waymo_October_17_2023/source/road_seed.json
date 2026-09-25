@@ -1,0 +1,46 @@
+{
+  "status": "supported",
+  "road": {
+    "topology": "cross_intersection",
+    "type": "townArterial",
+    "lanes": {
+      "forward": 2,
+      "backward": 2
+    },
+    "center_line": "solid"
+  },
+  "description_zh": "事故发生在 Market Street 与 Gough Street 的十字路口，Market Street 为城市主干道，双向各两条车道，中心线实线，故采用 cross_intersection + townArterial。",
+  "evidence": {
+    "source_snippets": [
+      "collision involving a cyclist on Market Street at Gough Street",
+      "eastbound Market Street preparing to make a right turn onto southbound Gough Street",
+      "TYPE OF COLLISION D. BROADSIDE: X"
+    ],
+    "reason": "事故地点为两条街道的交叉口（Market Street at Gough Street），且涉及从东行 Market Street 右转至南行 Gough Street，故 topology 为 cross_intersection；Market Street 是旧金山城市主干道，取 type=townArterial，双向各两条车道，中心线实线。"
+  },
+  "pipeline": {
+    "stage": "road_seed",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/144_Waymo_October_17_2023/fresh_deepseek_budget32_v1/source.pdf"
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "road_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "1a84c6af0160a9df",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/144_Waymo_October_17_2023/fresh_deepseek_budget32_v1/source.pdf",
+      "sha256_16": "15cb71ee7641badd"
+    },
+    "output_sha256_16": "0b216e81b175433d",
+    "timestamp_utc": "2026-09-17T19:08:52+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/055_Waymo_November_3_2024_(1)/fresh_deepseek_batch_v1/source.pdf",
+  "source_sha256": "2f3ecaf257310885fc5c9dfaebd5b231e8c05bb3e13af88b11cd960748b85101",
+  "text_sha256": "176e89094e860eba17770dcc38daf3fd61f453e9e53cd2cd40e69a2910bb4f40",
+  "pdf_narrative_coverage": {
+    "applicable": true,
+    "passed": true,
+    "fields": [
+      {
+        "page": 2,
+        "field": "ADDRESS_2.1.0.1",
+        "word_count": 160,
+        "coverage": 0.9938
+      }
+    ]
+  },
+  "vlm_model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "extracted_at": "2026-09-17T18:28:10.100619+00:00"
+}

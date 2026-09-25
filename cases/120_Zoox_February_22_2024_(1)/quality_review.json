@@ -1,0 +1,317 @@
+{
+  "case_id": "120_Zoox_February_22_2024_(1)",
+  "profile": "critical",
+  "candidate_for_visual_review": true,
+  "integrity_and_native_map_pass": true,
+  "native_map": {
+    "verified": true,
+    "source_map_hash_matches": true,
+    "max_position_difference_m": 0.020000000000010232,
+    "max_yaw_difference_degrees": 3.360674639907302e-05,
+    "check_path": "/Users/xijun/WSELab/crash2openx/outputs/map_cache/framework_42_20260917_120_fresh_geometry_import_v1/roadgraph_selfcheck.json",
+    "check_sha256": "4eb5dac2b98ba805f552d22e4ffd34745c8c4f9da01ce892f5a5b386edd03162",
+    "reason": "Native CARLA sampling agrees with generated XODR within recorded tolerance"
+  },
+  "interactions": [
+    {
+      "actor": "bus",
+      "event": "bus_depart",
+      "start_since_trace_s": 9.299999666785359,
+      "window_duration_s": 5.949999999999999,
+      "npc_max_lateral_displacement_m": 4.153212,
+      "npc_speed_range_mps": 8.085508764450756,
+      "ego_speed_drop_mps": 0.34865329683506996,
+      "ego_max_brake": 0.0,
+      "min_clearance_m": 5.667104564199588,
+      "min_positive_ttc_s": 0.9332009782176823,
+      "physical_contact": true,
+      "checks": {
+        "event_observed": true,
+        "npc_motion_observed": true,
+        "relevant_proximity": true,
+        "six_second_window_or_contact_termination": true,
+        "valid_ego_spawn_and_npc_corridor": true,
+        "upright_actors": true,
+        "declared_junction_approach": true,
+        "plausible_lead_braking": true
+      },
+      "npc_max_deceleration_mps2": 2.3118683514308205,
+      "ads_lane_departure_samples": 0,
+      "contact_terminated_before_six_seconds": false,
+      "candidate_pass": true,
+      "ego_corridor": {
+        "method": "OpenDRIVE constant-width lane corridors; exact line/arc or pyclothoids projection",
+        "coordinate_conversion": "raw CARLA x,y -> OpenDRIVE x,-y",
+        "numerical_tolerance_m": 0.0001,
+        "point_scope": "actor origin/centre; does not establish full vehicle-footprint containment",
+        "map_sha256": "18e9730d54aea5af72b22635060d1965969277b4c6f09959e6a7d61f06eb1e9d",
+        "unsupported": [],
+        "missing_actor_samples": 0,
+        "samples": 120,
+        "inside_samples": 120,
+        "outside_samples": 0,
+        "unresolved_samples": 0,
+        "peak_raw_projection": {
+          "simulation_time": 11.568929,
+          "road_id": "102",
+          "lane_id": -1,
+          "s": 7.903745941100416,
+          "lateral_t_m": -1.40908754786217,
+          "lane_bounds_t_m": [
+            -3.5,
+            0
+          ],
+          "center_distance_m": 0.34091245213782995,
+          "lateral_excess_m": 0.0,
+          "tangent_residual_m": 4.163336342344337e-16,
+          "inside": true,
+          "classification": "inside",
+          "raw_waypoint_distance_m": 0.105701,
+          "raw_road_id": 104,
+          "raw_lane_id": -1
+        },
+        "non_inside_samples": [],
+        "raw_metrics_overwritten": false,
+        "source_fidelity_accepted": false
+      },
+      "npc_corridor": {
+        "method": "OpenDRIVE constant-width lane corridors; exact line/arc or pyclothoids projection",
+        "coordinate_conversion": "raw CARLA x,y -> OpenDRIVE x,-y",
+        "numerical_tolerance_m": 0.0001,
+        "point_scope": "actor origin/centre; does not establish full vehicle-footprint containment",
+        "map_sha256": "18e9730d54aea5af72b22635060d1965969277b4c6f09959e6a7d61f06eb1e9d",
+        "unsupported": [],
+        "missing_actor_samples": 0,
+        "samples": 120,
+        "inside_samples": 120,
+        "outside_samples": 0,
+        "unresolved_samples": 0,
+        "peak_raw_projection": {
+          "simulation_time": 16.868929,
+          "road_id": "101",
+          "lane_id": 1,
+          "s": 16.15119899999999,
+          "lateral_t_m": 0.5360529999999935,
+          "lane_bounds_t_m": [
+            0,
+            3.5
+          ],
+          "center_distance_m": 1.2139470000000065,
+          "lateral_excess_m": 0.0,
+          "tangent_residual_m": 2.1882519687444272e-16,
+          "inside": true,
+          "classification": "inside",
+          "raw_waypoint_distance_m": 0.274642,
+          "raw_road_id": 103,
+          "raw_lane_id": -1
+        },
+        "non_inside_samples": [],
+        "raw_metrics_overwritten": false,
+        "source_fidelity_accepted": false
+      }
+    }
+  ],
+  "onset_review": {
+    "ads_actor": "hero",
+    "trace_start_time_s": 2.168929,
+    "trace_end_time_s": 20.518929,
+    "stage_observation_available": true,
+    "actors": {
+      "bus": {
+        "plan": {
+          "reference_actor": "hero",
+          "event": "bus_depart",
+          "distance_semantics": "cartesian_freespace",
+          "min_clearance_m": 0.5,
+          "min_ego_speed_mps": 1.0,
+          "min_npc_speed_mps": 0.0,
+          "distance_m": 39.521
+        },
+        "start_status": "observed",
+        "start_time_s": 11.46892866678536,
+        "start_since_trace_s": 9.299999666785359,
+        "at_start": {
+          "body_clearance_m": 39.44428503047123,
+          "center_distance_m": 46.65125830362394,
+          "radial_closing_speed_mps": 2.270873582725002,
+          "ego_speed_mps": 5.037402662289466,
+          "npc_speed_mps": 0.0,
+          "npc_forward_m": 20.810836474634637,
+          "constant_velocity_ttc_s": null,
+          "clearance_over_ego_speed_s": 7.830282325007559
+        },
+        "already_braking_at_start": false,
+        "initial_body_clearance_m": 64.57589369141684,
+        "first_brake_after_start_s": 7.150000333214642,
+        "sampled_eligible_ticks": 137,
+        "first_sampled_eligible_time_s": 11.468929,
+        "six_seconds_after_start_min_clearance_m": 5.667104564199588,
+        "six_seconds_after_start_min_positive_ttc_s": 0.9332009782176823,
+        "min_body_clearance_m": 0.0,
+        "min_positive_constant_velocity_ttc_s": 0.02230199958527263,
+        "physical_contact_with_ads": true,
+        "npc_motion_onset_time_s": null,
+        "event_to_motion_onset_s": null,
+        "six_seconds_after_start_max_npc_deceleration_mps2": 2.3118683514308205,
+        "six_seconds_after_start_max_npc_lateral_acceleration_mps2": 3.5532358116285554
+      }
+    },
+    "physical_ads_contact_count": 40,
+    "metric_notes": [
+      "TTC assumes fixed headings and constant planar velocities; separate lanes may have no finite TTC.",
+      "Clearance/speed is a timing proxy, not perception latency or TTC.",
+      "Event START is observed from ScenarioRunner; action response is measured separately.",
+      "No physical collision is inferred from overlapping projected boxes alone."
+    ]
+  },
+  "actions": {
+    "has_stage_observations": true,
+    "planned_events": [
+      {
+        "event": "hero_acquire_goal",
+        "actors": [
+          "hero"
+        ],
+        "observation_status": "start_observed",
+        "transition_times_s": {
+          "START": [
+            2.2689285296946764
+          ],
+          "END": [],
+          "CANCEL": []
+        },
+        "trigger_xml": "<StartTrigger>\n                                <ConditionGroup>\n                                    <Condition name=\"hero_trig\" delay=\"0.0\" conditionEdge=\"rising\">\n                                        <ByValueCondition>\n                                            <SimulationTimeCondition value=\"0.0\" rule=\"greaterThan\" />\n                                        </ByValueCondition>\n                                    </Condition>\n                                </ConditionGroup>\n                            </StartTrigger>\n                        "
+      },
+      {
+        "event": "bus_cross",
+        "actors": [
+          "bus"
+        ],
+        "observation_status": "start_observed",
+        "transition_times_s": {
+          "START": [
+            2.2689285296946764
+          ],
+          "END": [],
+          "CANCEL": []
+        },
+        "trigger_xml": "<StartTrigger>\n                                <ConditionGroup>\n                                    <Condition name=\"bus_trig\" delay=\"0.0\" conditionEdge=\"rising\">\n                                        <ByValueCondition>\n                                            <SimulationTimeCondition value=\"0.0\" rule=\"greaterThan\" />\n                                        </ByValueCondition>\n                                    </Condition>\n                                </ConditionGroup>\n                            </StartTrigger>\n                        "
+      },
+      {
+        "event": "bus_depart",
+        "actors": [
+          "bus"
+        ],
+        "observation_status": "start_observed",
+        "transition_times_s": {
+          "START": [
+            11.46892866678536
+          ],
+          "END": [
+            14.168928707018495,
+            14.218928707763553
+          ],
+          "CANCEL": []
+        },
+        "trigger_xml": "<StartTrigger>\n                                <ConditionGroup>\n                                    <Condition name=\"c2x_ads_bus_near\" delay=\"0.0\" conditionEdge=\"none\">\n                                        <ByEntityCondition>\n                                            <TriggeringEntities triggeringEntitiesRule=\"any\">\n                                                <EntityRef entityRef=\"hero\" />\n                                            </TriggeringEntities>\n                                            <EntityCondition>\n                                                <RelativeDistanceCondition value=\"39.521\" freespace=\"true\" entityRef=\"bus\" rule=\"lessThan\" relativeDistanceType=\"cartesianDistance\" />\n                                            </EntityCondition>\n                                        </ByEntityCondition>\n                                    </Condition>\n                                    <Condition name=\"c2x_ads_bus_clear\" delay=\"0.0\" conditionEdge=\"none\">\n                                        <ByEntityCondition>\n                                            <TriggeringEntities triggeringEntitiesRule=\"any\">\n                                                <EntityRef entityRef=\"hero\" />\n                                            </TriggeringEntities>\n                                            <EntityCondition>\n                                                <RelativeDistanceCondition value=\"0.5\" freespace=\"true\" entityRef=\"bus\" rule=\"greaterThan\" relativeDistanceType=\"cartesianDistance\" />\n                                            </EntityCondition>\n                                        </ByEntityCondition>\n                                    </Condition>\n                                    <Condition name=\"c2x_ads_bus_ego_moving\" delay=\"0.0\" conditionEdge=\"none\">\n                                        <ByEntityCondition>\n                                            <TriggeringEntities triggeringEntitiesRule=\"any\">\n                                                <EntityRef entityRef=\"hero\" />\n                                            </TriggeringEntities>\n                                            <EntityCondition>\n                                                <SpeedCondition value=\"1.0\" rule=\"greaterThan\" />\n                                            </EntityCondition>\n                                        </ByEntityCondition>\n                                    </Condition>\n                                </ConditionGroup>\n                            </StartTrigger>\n                        "
+      },
+      {
+        "event": "bus_route_stop",
+        "actors": [
+          "bus"
+        ],
+        "observation_status": "start_not_observed",
+        "transition_times_s": {
+          "START": [],
+          "END": [],
+          "CANCEL": []
+        },
+        "trigger_xml": "<StartTrigger>\n                                <ConditionGroup>\n                                    <Condition name=\"bus_cross_finished\" delay=\"0.0\" conditionEdge=\"rising\">\n                                        <ByValueCondition>\n                                            <StoryboardElementStateCondition storyboardElementType=\"event\" storyboardElementRef=\"bus_cross\" state=\"endTransition\" />\n                                        </ByValueCondition>\n                                    </Condition>\n                                </ConditionGroup>\n                            </StartTrigger>\n                        "
+      }
+    ],
+    "actor_motion": {
+      "bus": {
+        "samples": 368,
+        "observed_interval_seconds": 18.349999999999998,
+        "stationary_seconds_below_0_1_mps": 10.2,
+        "brake_seconds_at_least_0_5": 0.0,
+        "sampled_path_length_m": 44.029936391616886,
+        "max_planar_speed_mps": 8.085508764450756,
+        "start_xy": [
+          189.979996,
+          1.75
+        ],
+        "end_xy": [
+          228.056534,
+          -12.388468
+        ],
+        "orientation_available": true,
+        "max_abs_roll_degrees": 2.264496,
+        "max_abs_pitch_degrees": 0.489499,
+        "tilted_over_60_degrees_seconds": 0.0
+      },
+      "hero": {
+        "samples": 368,
+        "observed_interval_seconds": 18.349999999999998,
+        "stationary_seconds_below_0_1_mps": 1.0500000000000003,
+        "brake_seconds_at_least_0_5": 0.1999999999999975,
+        "sampled_path_length_m": 78.26548282016624,
+        "max_planar_speed_mps": 6.063923196852843,
+        "start_xy": [
+          231.75,
+          60.020004
+        ],
+        "end_xy": [
+          230.036148,
+          -17.76783
+        ],
+        "orientation_available": true,
+        "max_abs_roll_degrees": 4.30572,
+        "max_abs_pitch_degrees": 1.041781,
+        "tilted_over_60_degrees_seconds": 0.0
+      }
+    },
+    "contact_pairs": [
+      {
+        "actors": [
+          "bus",
+          "hero"
+        ],
+        "sensor_records": 40,
+        "first_time_s": 18.518929,
+        "last_time_s": 20.518929
+      }
+    ],
+    "source_fidelity_accepted": false,
+    "autonomous_task_success": null,
+    "limitations": [
+      "START/END observations establish behavior-tree stages, not successful physical actions.",
+      "Missing START is an observation result; no stage records means instrumentation is unverified.",
+      "Stationary and braking intervals use the preceding sample and omit gaps over 0.1 seconds.",
+      "Braking or absent contact alone does not identify why an agent stopped.",
+      "Measured roll/pitch over 60 degrees is an orientation observation; source relevance requires separate review.",
+      "Collision sensor records are not independent accident counts."
+    ]
+  },
+  "termination": "collision_exit",
+  "total_ticks": 368,
+  "full_episode_lane_invasions": 0,
+  "full_episode_offroad_seconds": 0.0,
+  "full_episode_collision_sensor_records": 40,
+  "source_reconstruction_accepted": false,
+  "visual_review_pass": null,
+  "limitations": [
+    "Screening checks actor centres, not full footprints or lane legality.",
+    "ADS lane departures and physical collisions are recorded outcomes, not automatic invalidation of an otherwise valid test.",
+    "One episode per parameter setting; no failure-rate or robustness claim.",
+    "Experimental onset, speed and spacing differ from source reports.",
+    "Full-episode termination and failures remain visible alongside the six-second interaction."
+  ],
+  "sha256": {
+    "scenario.xosc": "17182edc327cfc4dbfeb7426fbb4e63ac625f9e7d145945d267ff0a486302139",
+    "map.xodr": "18e9730d54aea5af72b22635060d1965969277b4c6f09959e6a7d61f06eb1e9d",
+    "sim_trace_raw.jsonl": "5961aa7f1951410f719d345f88bb7da031cf74ba24a7f8979a2b315e18a3f1a6",
+    "events.jsonl": "286d216a5a6670c519f7be248f675cdcc0bdd49e9eb5f1185492c083edcfb5ec",
+    "carla_rgb.mp4": "79cdda844126ae2410bb0158adf78cb7979e96a1b7d1b552a7e8aea2463c96d0"
+  }
+}

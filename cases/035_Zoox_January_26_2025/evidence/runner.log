@@ -1,0 +1,21 @@
+==== runner.sh mode=run run_id=run_expand_035_critical_bd0496e3 ts=2026-09-19T13:44:12+08:00 ====
+CARLA port 2000 ready (server pings back)
+WARNING: Version mismatch detected: You are trying to connect to a simulator that might be incompatible with this API 
+WARNING: Client API version     = 78eb4c373 
+WARNING: Simulator API version  = 0.9.16 
+WARNING: Version mismatch detected: You are trying to connect to a simulator that might be incompatible with this API 
+WARNING: Client API version     = 78eb4c373 
+WARNING: Simulator API version  = 0.9.16 
+warmup OK
+paper recorder started (pid=860102)
+{
+  "mp4_path": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/carla_rgb.mp4",
+  "run_dir": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out",
+  "scenario_path": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/inputs/scenario.xosc",
+  "map_path": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/inputs/map.xodr",
+  "log_path": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/scene/out/run_scene_wrapper.log",
+  "return_code": 0,
+  "elapsed_seconds": 153.57633738499135
+}
+paper render produced 379 frames + /home/server/crash2openx_ads_stress_20260919/runs/run_expand_035_critical_bd0496e3/outputs/carla_paper.mp4
+run_scene produced carla_rgb.mp4 + summary.json (ticks=381, rc=0 accepted)

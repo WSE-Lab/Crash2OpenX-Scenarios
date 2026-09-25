@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "013_Zoox_February_19_2025",
+    "profile": "critical",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/013_Zoox_February_19_2025/critical/quality_review.json"
+  },
+  {
+    "case_id": "013_Zoox_February_19_2025",
+    "profile": "tight",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/013_Zoox_February_19_2025/tight/quality_review.json"
+  },
+  {
+    "case_id": "035_Zoox_January_26_2025",
+    "profile": "critical",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/035_Zoox_January_26_2025/critical/quality_review.json"
+  },
+  {
+    "case_id": "035_Zoox_January_26_2025",
+    "profile": "tight",
+    "candidate_for_visual_review": false,
+    "review": "outputs/ads_expansion_20260919/035_Zoox_January_26_2025/tight/quality_review.json"
+  },
+  {
+    "case_id": "038_Waymo_December_17_2024",
+    "profile": "tight",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/038_Waymo_December_17_2024/tight/quality_review.json"
+  },
+  {
+    "case_id": "055_Waymo_November_3_2024_(1)",
+    "profile": "critical",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/055_Waymo_November_3_2024_(1)/critical/quality_review.json"
+  },
+  {
+    "case_id": "097_Zoox_May_30_2024",
+    "profile": "critical",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/097_Zoox_May_30_2024/critical/quality_review.json"
+  },
+  {
+    "case_id": "120_Zoox_February_22_2024_(1)",
+    "profile": "critical",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/120_Zoox_February_22_2024_(1)/critical/quality_review.json"
+  },
+  {
+    "case_id": "135_Zoox_January_1_2024_(A)",
+    "profile": "critical",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/135_Zoox_January_1_2024_(A)/critical/quality_review.json"
+  },
+  {
+    "case_id": "144_Waymo_October_17_2023",
+    "profile": "critical",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/144_Waymo_October_17_2023/critical/quality_review.json"
+  },
+  {
+    "case_id": "165_Mercedes_Benz_August_18_2023",
+    "profile": "critical",
+    "candidate_for_visual_review": false,
+    "review": "outputs/ads_expansion_20260919/165_Mercedes_Benz_August_18_2023/critical/quality_review.json"
+  },
+  {
+    "case_id": "165_Mercedes_Benz_August_18_2023",
+    "profile": "tight",
+    "candidate_for_visual_review": false,
+    "review": "outputs/ads_expansion_20260919/165_Mercedes_Benz_August_18_2023/tight/quality_review.json"
+  },
+  {
+    "case_id": "259_Zoox_February_23_2023",
+    "profile": "critical",
+    "candidate_for_visual_review": false,
+    "review": "outputs/ads_expansion_20260919/259_Zoox_February_23_2023/critical/quality_review.json"
+  },
+  {
+    "case_id": "262_Zoox_February_11_2023",
+    "profile": "critical",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/262_Zoox_February_11_2023/critical/quality_review.json"
+  },
+  {
+    "case_id": "262_Zoox_February_11_2023",
+    "profile": "tight",
+    "candidate_for_visual_review": false,
+    "review": "outputs/ads_expansion_20260919/262_Zoox_February_11_2023/tight/quality_review.json"
+  },
+  {
+    "case_id": "293_Zoox_October_14_2022",
+    "profile": "critical",
+    "candidate_for_visual_review": true,
+    "review": "outputs/ads_expansion_20260919/293_Zoox_October_14_2022/critical/quality_review.json"
+  },
+  {
+    "case_id": "323_Waymo_July_3_2022",
+    "profile": "critical",
+    "candidate_for_visual_review": false,
+    "review": "outputs/ads_expansion_20260919/323_Waymo_July_3_2022/critical/quality_review.json"
+  },
+  {
+    "case_id": "635_GM_Cruise_July_15_2019",
+    "profile": "critical",
+    "candidate_for_visual_review": false,
+    "review": "outputs/ads_expansion_20260919/635_GM_Cruise_July_15_2019/critical/quality_review.json"
+  },
+  {
+    "case_id": "635_GM_Cruise_July_15_2019",
+    "profile": "early",
+    "candidate_for_visual_review": false,
+    "review": "outputs/ads_expansion_20260919/635_GM_Cruise_July_15_2019/early/quality_review.json"
+  },
+  {
+    "case_id": "635_GM_Cruise_July_15_2019",
+    "profile": "tight",
+    "candidate_for_visual_review": false,
+    "review": "outputs/ads_expansion_20260919/635_GM_Cruise_July_15_2019/tight/quality_review.json"
+  }
+]

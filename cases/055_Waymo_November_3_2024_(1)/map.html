@@ -1,0 +1,1255 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>framework_42_20260917_055_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1 road-only preview</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #17202a; background: #f7f8fa; }
+    header { padding: 18px 24px; background: #ffffff; border-bottom: 1px solid #d8dee8; }
+    h1 { margin: 0 0 8px; font-size: 20px; }
+    .meta { display: flex; gap: 16px; flex-wrap: wrap; color: #4e5968; font-size: 13px; }
+    main { display: grid; grid-template-columns: minmax(520px, 1fr) 420px; gap: 18px; padding: 18px; }
+    .panel { background: #ffffff; border: 1px solid #d8dee8; border-radius: 8px; overflow: hidden; }
+    .panel h2 { margin: 0; padding: 12px 14px; font-size: 15px; border-bottom: 1px solid #e5e9f0; }
+    .canvas { aspect-ratio: 1 / 1; background: #eef2f6; }
+    svg { width: 100%; height: 100%; display: block; }
+    .road-ref { stroke: #202b3a; stroke-width: 4; stroke-linecap: round; opacity: 0.9; }
+    .road-ref.junction { stroke: #6f4bd8; stroke-width: 3; }
+    .lane-boundary { stroke: #7c8794; stroke-width: 1.2; stroke-linecap: round; opacity: 0.72; }
+    .lane-boundary.center { stroke: #c8a018; stroke-width: 1.6; stroke-dasharray: 8 7; opacity: 0.9; }
+    .lane { stroke: #15926f; stroke-width: 1.7; stroke-dasharray: 6 5; stroke-linecap: round; opacity: 0.85; }
+    .lane.connector { stroke: #d07819; stroke-width: 1.5; stroke-dasharray: 4 4; }
+    pre { margin: 0; padding: 14px; overflow: auto; font-size: 12px; line-height: 1.45; }
+    .legend { display: flex; gap: 14px; padding: 10px 14px; border-top: 1px solid #e5e9f0; color: #4e5968; font-size: 12px; }
+    .key { display: inline-flex; align-items: center; gap: 6px; }
+    .swatch { width: 24px; height: 3px; display: inline-block; border-radius: 2px; }
+    .ref { background: #202b3a; }
+    .boundary { background: #7c8794; }
+    .junction { background: #6f4bd8; }
+    .lane-s { background: #15926f; }
+    .connector { background: #d07819; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Road-only OpenDRIVE Preview</h1>
+    <div class="meta">
+      <span>XODR: /Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/055_Waymo_November_3_2024_(1)/fresh_equivalent_road_v1/pipeline/framework_42_20260917_055_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1/framework_42_20260917_055_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1.xodr</span>
+      <span>roads: 10</span>
+      <span>junctions: 1</span>
+      <span>connections: 12</span>
+      <span>laneLinks: 48</span>
+      <span>lanes: 2/direction, 4 total</span>
+    </div>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Road Geometry</h2>
+      <div class="canvas">
+        <svg viewBox="0 0 1000 1000" role="img" aria-label="OpenDRIVE road geometry preview">
+          <line class="lane-boundary" x1="68.97" y1="509.43" x2="446.12" y2="509.43" />
+<line class="lane-boundary" x1="68.97" y1="504.71" x2="446.12" y2="504.71" />
+<line class="lane-boundary center" x1="68.97" y1="500.00" x2="446.12" y2="500.00" />
+<line class="lane-boundary" x1="68.97" y1="495.29" x2="446.12" y2="495.29" />
+<line class="lane-boundary" x1="68.97" y1="490.57" x2="446.12" y2="490.57" />
+<line class="lane-boundary" x1="509.43" y1="931.03" x2="509.43" y2="553.88" />
+<line class="lane-boundary" x1="504.71" y1="931.03" x2="504.71" y2="553.88" />
+<line class="lane-boundary center" x1="500.00" y1="931.03" x2="500.00" y2="553.88" />
+<line class="lane-boundary" x1="495.29" y1="931.03" x2="495.29" y2="553.88" />
+<line class="lane-boundary" x1="490.57" y1="931.03" x2="490.57" y2="553.88" />
+<line class="lane-boundary" x1="931.03" y1="490.57" x2="553.88" y2="490.57" />
+<line class="lane-boundary" x1="931.03" y1="495.29" x2="553.88" y2="495.29" />
+<line class="lane-boundary center" x1="931.03" y1="500.00" x2="553.88" y2="500.00" />
+<line class="lane-boundary" x1="931.03" y1="504.71" x2="553.88" y2="504.71" />
+<line class="lane-boundary" x1="931.03" y1="509.43" x2="553.88" y2="509.43" />
+<line class="lane-boundary" x1="490.57" y1="68.97" x2="490.57" y2="446.12" />
+<line class="lane-boundary" x1="495.29" y1="68.97" x2="495.29" y2="446.12" />
+<line class="lane-boundary center" x1="500.00" y1="68.97" x2="500.00" y2="446.12" />
+<line class="lane-boundary" x1="504.71" y1="68.97" x2="504.71" y2="446.12" />
+<line class="lane-boundary" x1="509.43" y1="68.97" x2="509.43" y2="446.12" />
+<line class="lane-boundary" x1="446.12" y1="509.43" x2="449.57" y2="509.44" />
+<line class="lane-boundary" x1="449.57" y1="509.44" x2="452.91" y2="509.49" />
+<line class="lane-boundary" x1="452.91" y1="509.49" x2="456.14" y2="509.63" />
+<line class="lane-boundary" x1="456.14" y1="509.63" x2="459.25" y2="509.88" />
+<line class="lane-boundary" x1="459.25" y1="509.88" x2="462.25" y2="510.26" />
+<line class="lane-boundary" x1="462.25" y1="510.26" x2="465.11" y2="510.80" />
+<line class="lane-boundary" x1="465.11" y1="510.80" x2="467.83" y2="511.51" />
+<line class="lane-boundary" x1="467.83" y1="511.51" x2="470.37" y2="512.41" />
+<line class="lane-boundary" x1="446.12" y1="504.71" x2="449.61" y2="504.72" />
+<line class="lane-boundary" x1="449.61" y1="504.72" x2="453.04" y2="504.78" />
+<line class="lane-boundary" x1="453.04" y1="504.78" x2="456.42" y2="504.93" />
+<line class="lane-boundary" x1="456.42" y1="504.93" x2="459.73" y2="505.19" />
+<line class="lane-boundary" x1="459.73" y1="505.19" x2="462.98" y2="505.60" />
+<line class="lane-boundary" x1="462.98" y1="505.60" x2="466.14" y2="506.20" />
+<line class="lane-boundary" x1="466.14" y1="506.20" x2="469.21" y2="507.00" />
+<line class="lane-boundary" x1="469.21" y1="507.00" x2="472.14" y2="508.04" />
+<line class="lane-boundary center" x1="446.12" y1="500.00" x2="449.65" y2="500.01" />
+<line class="lane-boundary center" x1="449.65" y1="500.01" x2="453.17" y2="500.07" />
+<line class="lane-boundary center" x1="453.17" y1="500.07" x2="456.70" y2="500.22" />
+<line class="lane-boundary center" x1="456.70" y1="500.22" x2="460.21" y2="500.50" />
+<line class="lane-boundary center" x1="460.21" y1="500.50" x2="463.71" y2="500.95" />
+<line class="lane-boundary center" x1="463.71" y1="500.95" x2="467.17" y2="501.60" />
+<line class="lane-boundary center" x1="467.17" y1="501.60" x2="470.58" y2="502.50" />
+<line class="lane-boundary center" x1="470.58" y1="502.50" x2="473.91" y2="503.67" />
+<line class="lane-boundary" x1="446.12" y1="495.29" x2="449.69" y2="495.30" />
+<line class="lane-boundary" x1="449.69" y1="495.30" x2="453.31" y2="495.36" />
+<line class="lane-boundary" x1="453.31" y1="495.36" x2="456.98" y2="495.51" />
+<line class="lane-boundary" x1="456.98" y1="495.51" x2="460.69" y2="495.81" />
+<line class="lane-boundary" x1="460.69" y1="495.81" x2="464.44" y2="496.29" />
+<line class="lane-boundary" x1="464.44" y1="496.29" x2="468.20" y2="497.00" />
+<line class="lane-boundary" x1="468.20" y1="497.00" x2="471.96" y2="497.99" />
+<line class="lane-boundary" x1="471.96" y1="497.99" x2="475.68" y2="499.30" />
+<line class="lane-boundary" x1="446.12" y1="490.57" x2="449.73" y2="490.58" />
+<line class="lane-boundary" x1="449.73" y1="490.58" x2="453.44" y2="490.64" />
+<line class="lane-boundary" x1="453.44" y1="490.64" x2="457.25" y2="490.81" />
+<line class="lane-boundary" x1="457.25" y1="490.81" x2="461.17" y2="491.12" />
+<line class="lane-boundary" x1="461.17" y1="491.12" x2="465.17" y2="491.63" />
+<line class="lane-boundary" x1="465.17" y1="491.63" x2="469.24" y2="492.40" />
+<line class="lane-boundary" x1="469.24" y1="492.40" x2="473.34" y2="493.48" />
+<line class="lane-boundary" x1="473.34" y1="493.48" x2="477.44" y2="494.93" />
+<line class="lane-boundary" x1="470.63" y1="512.19" x2="473.49" y2="513.45" />
+<line class="lane-boundary" x1="473.49" y1="513.45" x2="476.21" y2="515.01" />
+<line class="lane-boundary" x1="476.21" y1="515.01" x2="478.74" y2="516.84" />
+<line class="lane-boundary" x1="478.74" y1="516.84" x2="481.07" y2="518.94" />
+<line class="lane-boundary" x1="481.07" y1="518.94" x2="483.17" y2="521.27" />
+<line class="lane-boundary" x1="483.17" y1="521.27" x2="485.00" y2="523.80" />
+<line class="lane-boundary" x1="485.00" y1="523.80" x2="486.56" y2="526.52" />
+<line class="lane-boundary" x1="486.56" y1="526.52" x2="487.82" y2="529.38" />
+<line class="lane-boundary" x1="472.29" y1="507.78" x2="475.62" y2="509.24" />
+<line class="lane-boundary" x1="475.62" y1="509.24" x2="478.77" y2="511.05" />
+<line class="lane-boundary" x1="478.77" y1="511.05" x2="481.71" y2="513.18" />
+<line class="lane-boundary" x1="481.71" y1="513.18" x2="484.41" y2="515.60" />
+<line class="lane-boundary" x1="484.41" y1="515.60" x2="486.83" y2="518.30" />
+<line class="lane-boundary" x1="486.83" y1="518.30" x2="488.96" y2="521.24" />
+<line class="lane-boundary" x1="488.96" y1="521.24" x2="490.77" y2="524.39" />
+<line class="lane-boundary" x1="490.77" y1="524.39" x2="492.23" y2="527.72" />
+<line class="lane-boundary center" x1="473.96" y1="503.37" x2="477.74" y2="505.03" />
+<line class="lane-boundary center" x1="477.74" y1="505.03" x2="481.32" y2="507.09" />
+<line class="lane-boundary center" x1="481.32" y1="507.09" x2="484.67" y2="509.51" />
+<line class="lane-boundary center" x1="484.67" y1="509.51" x2="487.74" y2="512.27" />
+<line class="lane-boundary center" x1="487.74" y1="512.27" x2="490.50" y2="515.34" />
+<line class="lane-boundary center" x1="490.50" y1="515.34" x2="492.92" y2="518.69" />
+<line class="lane-boundary center" x1="492.92" y1="518.69" x2="494.98" y2="522.27" />
+<line class="lane-boundary center" x1="494.98" y1="522.27" x2="496.64" y2="526.05" />
+<line class="lane-boundary" x1="475.63" y1="498.96" x2="479.87" y2="500.83" />
+<line class="lane-boundary" x1="479.87" y1="500.83" x2="483.88" y2="503.13" />
+<line class="lane-boundary" x1="483.88" y1="503.13" x2="487.63" y2="505.84" />
+<line class="lane-boundary" x1="487.63" y1="505.84" x2="491.07" y2="508.94" />
+<line class="lane-boundary" x1="491.07" y1="508.94" x2="494.17" y2="512.38" />
+<line class="lane-boundary" x1="494.17" y1="512.38" x2="496.88" y2="516.13" />
+<line class="lane-boundary" x1="496.88" y1="516.13" x2="499.18" y2="520.14" />
+<line class="lane-boundary" x1="499.18" y1="520.14" x2="501.05" y2="524.38" />
+<line class="lane-boundary" x1="477.30" y1="494.55" x2="481.99" y2="496.62" />
+<line class="lane-boundary" x1="481.99" y1="496.62" x2="486.44" y2="499.17" />
+<line class="lane-boundary" x1="486.44" y1="499.17" x2="490.59" y2="502.17" />
+<line class="lane-boundary" x1="490.59" y1="502.17" x2="494.41" y2="505.60" />
+<line class="lane-boundary" x1="494.41" y1="505.60" x2="497.84" y2="509.42" />
+<line class="lane-boundary" x1="497.84" y1="509.42" x2="500.84" y2="513.57" />
+<line class="lane-boundary" x1="500.84" y1="513.57" x2="503.39" y2="518.02" />
+<line class="lane-boundary" x1="503.39" y1="518.02" x2="505.46" y2="522.71" />
+<line class="lane-boundary" x1="487.81" y1="529.37" x2="488.67" y2="531.99" />
+<line class="lane-boundary" x1="488.67" y1="531.99" x2="489.36" y2="534.76" />
+<line class="lane-boundary" x1="489.36" y1="534.76" x2="489.89" y2="537.68" />
+<line class="lane-boundary" x1="489.89" y1="537.68" x2="490.27" y2="540.73" />
+<line class="lane-boundary" x1="490.27" y1="540.73" x2="490.53" y2="543.90" />
+<line class="lane-boundary" x1="490.53" y1="543.90" x2="490.69" y2="547.19" />
+<line class="lane-boundary" x1="490.69" y1="547.19" x2="490.80" y2="550.58" />
+<line class="lane-boundary" x1="490.80" y1="550.58" x2="490.88" y2="554.08" />
+<line class="lane-boundary" x1="492.22" y1="527.71" x2="493.21" y2="530.69" />
+<line class="lane-boundary" x1="493.21" y1="530.69" x2="493.97" y2="533.79" />
+<line class="lane-boundary" x1="493.97" y1="533.79" x2="494.55" y2="536.98" />
+<line class="lane-boundary" x1="494.55" y1="536.98" x2="494.96" y2="540.26" />
+<line class="lane-boundary" x1="494.96" y1="540.26" x2="495.23" y2="543.60" />
+<line class="lane-boundary" x1="495.23" y1="543.60" x2="495.40" y2="547.00" />
+<line class="lane-boundary" x1="495.40" y1="547.00" x2="495.51" y2="550.46" />
+<line class="lane-boundary" x1="495.51" y1="550.46" x2="495.59" y2="553.97" />
+<line class="lane-boundary center" x1="496.63" y1="526.04" x2="497.74" y2="529.38" />
+<line class="lane-boundary center" x1="497.74" y1="529.38" x2="498.59" y2="532.81" />
+<line class="lane-boundary center" x1="498.59" y1="532.81" x2="499.21" y2="536.28" />
+<line class="lane-boundary center" x1="499.21" y1="536.28" x2="499.65" y2="539.78" />
+<line class="lane-boundary center" x1="499.65" y1="539.78" x2="499.94" y2="543.29" />
+<line class="lane-boundary center" x1="499.94" y1="543.29" x2="500.12" y2="546.81" />
+<line class="lane-boundary center" x1="500.12" y1="546.81" x2="500.23" y2="550.34" />
+<line class="lane-boundary center" x1="500.23" y1="550.34" x2="500.30" y2="553.86" />
+<line class="lane-boundary" x1="501.04" y1="524.37" x2="502.27" y2="528.08" />
+<line class="lane-boundary" x1="502.27" y1="528.08" x2="503.20" y2="531.83" />
+<line class="lane-boundary" x1="503.20" y1="531.83" x2="503.87" y2="535.57" />
+<line class="lane-boundary" x1="503.87" y1="535.57" x2="504.34" y2="539.30" />
+<line class="lane-boundary" x1="504.34" y1="539.30" x2="504.64" y2="542.98" />
+<line class="lane-boundary" x1="504.64" y1="542.98" x2="504.83" y2="546.63" />
+<line class="lane-boundary" x1="504.83" y1="546.63" x2="504.94" y2="550.22" />
+<line class="lane-boundary" x1="504.94" y1="550.22" x2="505.02" y2="553.76" />
+<line class="lane-boundary" x1="505.45" y1="522.70" x2="506.80" y2="526.78" />
+<line class="lane-boundary" x1="506.80" y1="526.78" x2="507.81" y2="530.85" />
+<line class="lane-boundary" x1="507.81" y1="530.85" x2="508.53" y2="534.87" />
+<line class="lane-boundary" x1="508.53" y1="534.87" x2="509.03" y2="538.82" />
+<line class="lane-boundary" x1="509.03" y1="538.82" x2="509.35" y2="542.68" />
+<line class="lane-boundary" x1="509.35" y1="542.68" x2="509.54" y2="546.44" />
+<line class="lane-boundary" x1="509.54" y1="546.44" x2="509.65" y2="550.10" />
+<line class="lane-boundary" x1="509.65" y1="550.10" x2="509.73" y2="553.65" />
+<line class="lane-boundary" x1="446.12" y1="509.43" x2="553.88" y2="509.43" />
+<line class="lane-boundary" x1="446.12" y1="504.71" x2="553.88" y2="504.71" />
+<line class="lane-boundary center" x1="446.12" y1="500.00" x2="553.88" y2="500.00" />
+<line class="lane-boundary" x1="446.12" y1="495.29" x2="553.88" y2="495.29" />
+<line class="lane-boundary" x1="446.12" y1="490.57" x2="553.88" y2="490.57" />
+<line class="lane-boundary" x1="509.43" y1="553.88" x2="509.44" y2="550.43" />
+<line class="lane-boundary" x1="509.44" y1="550.43" x2="509.49" y2="547.09" />
+<line class="lane-boundary" x1="509.49" y1="547.09" x2="509.63" y2="543.86" />
+<line class="lane-boundary" x1="509.63" y1="543.86" x2="509.88" y2="540.75" />
+<line class="lane-boundary" x1="509.88" y1="540.75" x2="510.26" y2="537.75" />
+<line class="lane-boundary" x1="510.26" y1="537.75" x2="510.80" y2="534.89" />
+<line class="lane-boundary" x1="510.80" y1="534.89" x2="511.51" y2="532.17" />
+<line class="lane-boundary" x1="511.51" y1="532.17" x2="512.41" y2="529.63" />
+<line class="lane-boundary" x1="504.71" y1="553.88" x2="504.72" y2="550.39" />
+<line class="lane-boundary" x1="504.72" y1="550.39" x2="504.78" y2="546.96" />
+<line class="lane-boundary" x1="504.78" y1="546.96" x2="504.93" y2="543.58" />
+<line class="lane-boundary" x1="504.93" y1="543.58" x2="505.19" y2="540.27" />
+<line class="lane-boundary" x1="505.19" y1="540.27" x2="505.60" y2="537.02" />
+<line class="lane-boundary" x1="505.60" y1="537.02" x2="506.20" y2="533.86" />
+<line class="lane-boundary" x1="506.20" y1="533.86" x2="507.00" y2="530.79" />
+<line class="lane-boundary" x1="507.00" y1="530.79" x2="508.04" y2="527.86" />
+<line class="lane-boundary center" x1="500.00" y1="553.88" x2="500.01" y2="550.35" />
+<line class="lane-boundary center" x1="500.01" y1="550.35" x2="500.07" y2="546.83" />
+<line class="lane-boundary center" x1="500.07" y1="546.83" x2="500.22" y2="543.30" />
+<line class="lane-boundary center" x1="500.22" y1="543.30" x2="500.50" y2="539.79" />
+<line class="lane-boundary center" x1="500.50" y1="539.79" x2="500.95" y2="536.29" />
+<line class="lane-boundary center" x1="500.95" y1="536.29" x2="501.60" y2="532.83" />
+<line class="lane-boundary center" x1="501.60" y1="532.83" x2="502.50" y2="529.42" />
+<line class="lane-boundary center" x1="502.50" y1="529.42" x2="503.67" y2="526.09" />
+<line class="lane-boundary" x1="495.29" y1="553.88" x2="495.30" y2="550.31" />
+<line class="lane-boundary" x1="495.30" y1="550.31" x2="495.36" y2="546.69" />
+<line class="lane-boundary" x1="495.36" y1="546.69" x2="495.51" y2="543.02" />
+<line class="lane-boundary" x1="495.51" y1="543.02" x2="495.81" y2="539.31" />
+<line class="lane-boundary" x1="495.81" y1="539.31" x2="496.29" y2="535.56" />
+<line class="lane-boundary" x1="496.29" y1="535.56" x2="497.00" y2="531.80" />
+<line class="lane-boundary" x1="497.00" y1="531.80" x2="497.99" y2="528.04" />
+<line class="lane-boundary" x1="497.99" y1="528.04" x2="499.30" y2="524.32" />
+<line class="lane-boundary" x1="490.57" y1="553.88" x2="490.58" y2="550.27" />
+<line class="lane-boundary" x1="490.58" y1="550.27" x2="490.64" y2="546.56" />
+<line class="lane-boundary" x1="490.64" y1="546.56" x2="490.81" y2="542.75" />
+<line class="lane-boundary" x1="490.81" y1="542.75" x2="491.12" y2="538.83" />
+<line class="lane-boundary" x1="491.12" y1="538.83" x2="491.63" y2="534.83" />
+<line class="lane-boundary" x1="491.63" y1="534.83" x2="492.40" y2="530.76" />
+<line class="lane-boundary" x1="492.40" y1="530.76" x2="493.48" y2="526.66" />
+<line class="lane-boundary" x1="493.48" y1="526.66" x2="494.93" y2="522.56" />
+<line class="lane-boundary" x1="512.19" y1="529.37" x2="513.45" y2="526.51" />
+<line class="lane-boundary" x1="513.45" y1="526.51" x2="515.01" y2="523.79" />
+<line class="lane-boundary" x1="515.01" y1="523.79" x2="516.84" y2="521.26" />
+<line class="lane-boundary" x1="516.84" y1="521.26" x2="518.94" y2="518.93" />
+<line class="lane-boundary" x1="518.94" y1="518.93" x2="521.27" y2="516.83" />
+<line class="lane-boundary" x1="521.27" y1="516.83" x2="523.80" y2="515.00" />
+<line class="lane-boundary" x1="523.80" y1="515.00" x2="526.52" y2="513.44" />
+<line class="lane-boundary" x1="526.52" y1="513.44" x2="529.38" y2="512.18" />
+<line class="lane-boundary" x1="507.78" y1="527.71" x2="509.24" y2="524.38" />
+<line class="lane-boundary" x1="509.24" y1="524.38" x2="511.05" y2="521.23" />
+<line class="lane-boundary" x1="511.05" y1="521.23" x2="513.18" y2="518.29" />
+<line class="lane-boundary" x1="513.18" y1="518.29" x2="515.60" y2="515.59" />
+<line class="lane-boundary" x1="515.60" y1="515.59" x2="518.30" y2="513.17" />
+<line class="lane-boundary" x1="518.30" y1="513.17" x2="521.24" y2="511.04" />
+<line class="lane-boundary" x1="521.24" y1="511.04" x2="524.39" y2="509.23" />
+<line class="lane-boundary" x1="524.39" y1="509.23" x2="527.72" y2="507.77" />
+<line class="lane-boundary center" x1="503.37" y1="526.04" x2="505.03" y2="522.26" />
+<line class="lane-boundary center" x1="505.03" y1="522.26" x2="507.09" y2="518.68" />
+<line class="lane-boundary center" x1="507.09" y1="518.68" x2="509.51" y2="515.33" />
+<line class="lane-boundary center" x1="509.51" y1="515.33" x2="512.27" y2="512.26" />
+<line class="lane-boundary center" x1="512.27" y1="512.26" x2="515.34" y2="509.50" />
+<line class="lane-boundary center" x1="515.34" y1="509.50" x2="518.69" y2="507.08" />
+<line class="lane-boundary center" x1="518.69" y1="507.08" x2="522.27" y2="505.02" />
+<line class="lane-boundary center" x1="522.27" y1="505.02" x2="526.05" y2="503.36" />
+<line class="lane-boundary" x1="498.96" y1="524.37" x2="500.83" y2="520.13" />
+<line class="lane-boundary" x1="500.83" y1="520.13" x2="503.13" y2="516.12" />
+<line class="lane-boundary" x1="503.13" y1="516.12" x2="505.84" y2="512.37" />
+<line class="lane-boundary" x1="505.84" y1="512.37" x2="508.94" y2="508.93" />
+<line class="lane-boundary" x1="508.94" y1="508.93" x2="512.38" y2="505.83" />
+<line class="lane-boundary" x1="512.38" y1="505.83" x2="516.13" y2="503.12" />
+<line class="lane-boundary" x1="516.13" y1="503.12" x2="520.14" y2="500.82" />
+<line class="lane-boundary" x1="520.14" y1="500.82" x2="524.38" y2="498.95" />
+<line class="lane-boundary" x1="494.55" y1="522.70" x2="496.62" y2="518.01" />
+<line class="lane-boundary" x1="496.62" y1="518.01" x2="499.17" y2="513.56" />
+<line class="lane-boundary" x1="499.17" y1="513.56" x2="502.17" y2="509.41" />
+<line class="lane-boundary" x1="502.17" y1="509.41" x2="505.60" y2="505.59" />
+<line class="lane-boundary" x1="505.60" y1="505.59" x2="509.42" y2="502.16" />
+<line class="lane-boundary" x1="509.42" y1="502.16" x2="513.57" y2="499.16" />
+<line class="lane-boundary" x1="513.57" y1="499.16" x2="518.02" y2="496.61" />
+<line class="lane-boundary" x1="518.02" y1="496.61" x2="522.71" y2="494.54" />
+<line class="lane-boundary" x1="529.37" y1="512.19" x2="531.99" y2="511.33" />
+<line class="lane-boundary" x1="531.99" y1="511.33" x2="534.76" y2="510.64" />
+<line class="lane-boundary" x1="534.76" y1="510.64" x2="537.68" y2="510.11" />
+<line class="lane-boundary" x1="537.68" y1="510.11" x2="540.73" y2="509.73" />
+<line class="lane-boundary" x1="540.73" y1="509.73" x2="543.90" y2="509.47" />
+<line class="lane-boundary" x1="543.90" y1="509.47" x2="547.19" y2="509.31" />
+<line class="lane-boundary" x1="547.19" y1="509.31" x2="550.58" y2="509.20" />
+<line class="lane-boundary" x1="550.58" y1="509.20" x2="554.08" y2="509.12" />
+<line class="lane-boundary" x1="527.71" y1="507.78" x2="530.69" y2="506.79" />
+<line class="lane-boundary" x1="530.69" y1="506.79" x2="533.79" y2="506.03" />
+<line class="lane-boundary" x1="533.79" y1="506.03" x2="536.98" y2="505.45" />
+<line class="lane-boundary" x1="536.98" y1="505.45" x2="540.26" y2="505.04" />
+<line class="lane-boundary" x1="540.26" y1="505.04" x2="543.60" y2="504.77" />
+<line class="lane-boundary" x1="543.60" y1="504.77" x2="547.00" y2="504.60" />
+<line class="lane-boundary" x1="547.00" y1="504.60" x2="550.46" y2="504.49" />
+<line class="lane-boundary" x1="550.46" y1="504.49" x2="553.97" y2="504.41" />
+<line class="lane-boundary center" x1="526.04" y1="503.37" x2="529.38" y2="502.26" />
+<line class="lane-boundary center" x1="529.38" y1="502.26" x2="532.81" y2="501.41" />
+<line class="lane-boundary center" x1="532.81" y1="501.41" x2="536.28" y2="500.79" />
+<line class="lane-boundary center" x1="536.28" y1="500.79" x2="539.78" y2="500.35" />
+<line class="lane-boundary center" x1="539.78" y1="500.35" x2="543.29" y2="500.06" />
+<line class="lane-boundary center" x1="543.29" y1="500.06" x2="546.81" y2="499.88" />
+<line class="lane-boundary center" x1="546.81" y1="499.88" x2="550.34" y2="499.77" />
+<line class="lane-boundary center" x1="550.34" y1="499.77" x2="553.86" y2="499.70" />
+<line class="lane-boundary" x1="524.37" y1="498.96" x2="528.08" y2="497.73" />
+<line class="lane-boundary" x1="528.08" y1="497.73" x2="531.83" y2="496.80" />
+<line class="lane-boundary" x1="531.83" y1="496.80" x2="535.57" y2="496.13" />
+<line class="lane-boundary" x1="535.57" y1="496.13" x2="539.30" y2="495.66" />
+<line class="lane-boundary" x1="539.30" y1="495.66" x2="542.98" y2="495.36" />
+<line class="lane-boundary" x1="542.98" y1="495.36" x2="546.63" y2="495.17" />
+<line class="lane-boundary" x1="546.63" y1="495.17" x2="550.22" y2="495.06" />
+<line class="lane-boundary" x1="550.22" y1="495.06" x2="553.76" y2="494.98" />
+<line class="lane-boundary" x1="522.70" y1="494.55" x2="526.78" y2="493.20" />
+<line class="lane-boundary" x1="526.78" y1="493.20" x2="530.85" y2="492.19" />
+<line class="lane-boundary" x1="530.85" y1="492.19" x2="534.87" y2="491.47" />
+<line class="lane-boundary" x1="534.87" y1="491.47" x2="538.82" y2="490.97" />
+<line class="lane-boundary" x1="538.82" y1="490.97" x2="542.68" y2="490.65" />
+<line class="lane-boundary" x1="542.68" y1="490.65" x2="546.44" y2="490.46" />
+<line class="lane-boundary" x1="546.44" y1="490.46" x2="550.10" y2="490.35" />
+<line class="lane-boundary" x1="550.10" y1="490.35" x2="553.65" y2="490.27" />
+<line class="lane-boundary" x1="446.12" y1="509.43" x2="449.73" y2="509.42" />
+<line class="lane-boundary" x1="449.73" y1="509.42" x2="453.44" y2="509.36" />
+<line class="lane-boundary" x1="453.44" y1="509.36" x2="457.25" y2="509.19" />
+<line class="lane-boundary" x1="457.25" y1="509.19" x2="461.17" y2="508.88" />
+<line class="lane-boundary" x1="461.17" y1="508.88" x2="465.17" y2="508.37" />
+<line class="lane-boundary" x1="465.17" y1="508.37" x2="469.24" y2="507.60" />
+<line class="lane-boundary" x1="469.24" y1="507.60" x2="473.34" y2="506.52" />
+<line class="lane-boundary" x1="473.34" y1="506.52" x2="477.44" y2="505.07" />
+<line class="lane-boundary" x1="446.12" y1="504.71" x2="449.69" y2="504.70" />
+<line class="lane-boundary" x1="449.69" y1="504.70" x2="453.31" y2="504.64" />
+<line class="lane-boundary" x1="453.31" y1="504.64" x2="456.98" y2="504.49" />
+<line class="lane-boundary" x1="456.98" y1="504.49" x2="460.69" y2="504.19" />
+<line class="lane-boundary" x1="460.69" y1="504.19" x2="464.44" y2="503.71" />
+<line class="lane-boundary" x1="464.44" y1="503.71" x2="468.20" y2="503.00" />
+<line class="lane-boundary" x1="468.20" y1="503.00" x2="471.96" y2="502.01" />
+<line class="lane-boundary" x1="471.96" y1="502.01" x2="475.68" y2="500.70" />
+<line class="lane-boundary center" x1="446.12" y1="500.00" x2="449.65" y2="499.99" />
+<line class="lane-boundary center" x1="449.65" y1="499.99" x2="453.17" y2="499.93" />
+<line class="lane-boundary center" x1="453.17" y1="499.93" x2="456.70" y2="499.78" />
+<line class="lane-boundary center" x1="456.70" y1="499.78" x2="460.21" y2="499.50" />
+<line class="lane-boundary center" x1="460.21" y1="499.50" x2="463.71" y2="499.05" />
+<line class="lane-boundary center" x1="463.71" y1="499.05" x2="467.17" y2="498.40" />
+<line class="lane-boundary center" x1="467.17" y1="498.40" x2="470.58" y2="497.50" />
+<line class="lane-boundary center" x1="470.58" y1="497.50" x2="473.91" y2="496.33" />
+<line class="lane-boundary" x1="446.12" y1="495.29" x2="449.61" y2="495.28" />
+<line class="lane-boundary" x1="449.61" y1="495.28" x2="453.04" y2="495.22" />
+<line class="lane-boundary" x1="453.04" y1="495.22" x2="456.42" y2="495.07" />
+<line class="lane-boundary" x1="456.42" y1="495.07" x2="459.73" y2="494.81" />
+<line class="lane-boundary" x1="459.73" y1="494.81" x2="462.98" y2="494.40" />
+<line class="lane-boundary" x1="462.98" y1="494.40" x2="466.14" y2="493.80" />
+<line class="lane-boundary" x1="466.14" y1="493.80" x2="469.21" y2="493.00" />
+<line class="lane-boundary" x1="469.21" y1="493.00" x2="472.14" y2="491.96" />
+<line class="lane-boundary" x1="446.12" y1="490.57" x2="449.57" y2="490.56" />
+<line class="lane-boundary" x1="449.57" y1="490.56" x2="452.91" y2="490.51" />
+<line class="lane-boundary" x1="452.91" y1="490.51" x2="456.14" y2="490.37" />
+<line class="lane-boundary" x1="456.14" y1="490.37" x2="459.25" y2="490.12" />
+<line class="lane-boundary" x1="459.25" y1="490.12" x2="462.25" y2="489.74" />
+<line class="lane-boundary" x1="462.25" y1="489.74" x2="465.11" y2="489.20" />
+<line class="lane-boundary" x1="465.11" y1="489.20" x2="467.83" y2="488.49" />
+<line class="lane-boundary" x1="467.83" y1="488.49" x2="470.37" y2="487.59" />
+<line class="lane-boundary" x1="477.30" y1="505.45" x2="481.99" y2="503.38" />
+<line class="lane-boundary" x1="481.99" y1="503.38" x2="486.44" y2="500.83" />
+<line class="lane-boundary" x1="486.44" y1="500.83" x2="490.59" y2="497.83" />
+<line class="lane-boundary" x1="490.59" y1="497.83" x2="494.41" y2="494.40" />
+<line class="lane-boundary" x1="494.41" y1="494.40" x2="497.84" y2="490.58" />
+<line class="lane-boundary" x1="497.84" y1="490.58" x2="500.84" y2="486.43" />
+<line class="lane-boundary" x1="500.84" y1="486.43" x2="503.39" y2="481.98" />
+<line class="lane-boundary" x1="503.39" y1="481.98" x2="505.46" y2="477.29" />
+<line class="lane-boundary" x1="475.63" y1="501.04" x2="479.87" y2="499.17" />
+<line class="lane-boundary" x1="479.87" y1="499.17" x2="483.88" y2="496.87" />
+<line class="lane-boundary" x1="483.88" y1="496.87" x2="487.63" y2="494.16" />
+<line class="lane-boundary" x1="487.63" y1="494.16" x2="491.07" y2="491.06" />
+<line class="lane-boundary" x1="491.07" y1="491.06" x2="494.17" y2="487.62" />
+<line class="lane-boundary" x1="494.17" y1="487.62" x2="496.88" y2="483.87" />
+<line class="lane-boundary" x1="496.88" y1="483.87" x2="499.18" y2="479.86" />
+<line class="lane-boundary" x1="499.18" y1="479.86" x2="501.05" y2="475.62" />
+<line class="lane-boundary center" x1="473.96" y1="496.63" x2="477.74" y2="494.97" />
+<line class="lane-boundary center" x1="477.74" y1="494.97" x2="481.32" y2="492.91" />
+<line class="lane-boundary center" x1="481.32" y1="492.91" x2="484.67" y2="490.49" />
+<line class="lane-boundary center" x1="484.67" y1="490.49" x2="487.74" y2="487.73" />
+<line class="lane-boundary center" x1="487.74" y1="487.73" x2="490.50" y2="484.66" />
+<line class="lane-boundary center" x1="490.50" y1="484.66" x2="492.92" y2="481.31" />
+<line class="lane-boundary center" x1="492.92" y1="481.31" x2="494.98" y2="477.73" />
+<line class="lane-boundary center" x1="494.98" y1="477.73" x2="496.64" y2="473.95" />
+<line class="lane-boundary" x1="472.29" y1="492.22" x2="475.62" y2="490.76" />
+<line class="lane-boundary" x1="475.62" y1="490.76" x2="478.77" y2="488.95" />
+<line class="lane-boundary" x1="478.77" y1="488.95" x2="481.71" y2="486.82" />
+<line class="lane-boundary" x1="481.71" y1="486.82" x2="484.41" y2="484.40" />
+<line class="lane-boundary" x1="484.41" y1="484.40" x2="486.83" y2="481.70" />
+<line class="lane-boundary" x1="486.83" y1="481.70" x2="488.96" y2="478.76" />
+<line class="lane-boundary" x1="488.96" y1="478.76" x2="490.77" y2="475.61" />
+<line class="lane-boundary" x1="490.77" y1="475.61" x2="492.23" y2="472.28" />
+<line class="lane-boundary" x1="470.63" y1="487.81" x2="473.49" y2="486.55" />
+<line class="lane-boundary" x1="473.49" y1="486.55" x2="476.21" y2="484.99" />
+<line class="lane-boundary" x1="476.21" y1="484.99" x2="478.74" y2="483.16" />
+<line class="lane-boundary" x1="478.74" y1="483.16" x2="481.07" y2="481.06" />
+<line class="lane-boundary" x1="481.07" y1="481.06" x2="483.17" y2="478.73" />
+<line class="lane-boundary" x1="483.17" y1="478.73" x2="485.00" y2="476.20" />
+<line class="lane-boundary" x1="485.00" y1="476.20" x2="486.56" y2="473.48" />
+<line class="lane-boundary" x1="486.56" y1="473.48" x2="487.82" y2="470.62" />
+<line class="lane-boundary" x1="505.45" y1="477.30" x2="506.80" y2="473.22" />
+<line class="lane-boundary" x1="506.80" y1="473.22" x2="507.81" y2="469.15" />
+<line class="lane-boundary" x1="507.81" y1="469.15" x2="508.53" y2="465.13" />
+<line class="lane-boundary" x1="508.53" y1="465.13" x2="509.03" y2="461.18" />
+<line class="lane-boundary" x1="509.03" y1="461.18" x2="509.35" y2="457.32" />
+<line class="lane-boundary" x1="509.35" y1="457.32" x2="509.54" y2="453.56" />
+<line class="lane-boundary" x1="509.54" y1="453.56" x2="509.65" y2="449.90" />
+<line class="lane-boundary" x1="509.65" y1="449.90" x2="509.73" y2="446.35" />
+<line class="lane-boundary" x1="501.04" y1="475.63" x2="502.27" y2="471.92" />
+<line class="lane-boundary" x1="502.27" y1="471.92" x2="503.20" y2="468.17" />
+<line class="lane-boundary" x1="503.20" y1="468.17" x2="503.87" y2="464.43" />
+<line class="lane-boundary" x1="503.87" y1="464.43" x2="504.34" y2="460.70" />
+<line class="lane-boundary" x1="504.34" y1="460.70" x2="504.64" y2="457.02" />
+<line class="lane-boundary" x1="504.64" y1="457.02" x2="504.83" y2="453.37" />
+<line class="lane-boundary" x1="504.83" y1="453.37" x2="504.94" y2="449.78" />
+<line class="lane-boundary" x1="504.94" y1="449.78" x2="505.02" y2="446.24" />
+<line class="lane-boundary center" x1="496.63" y1="473.96" x2="497.74" y2="470.62" />
+<line class="lane-boundary center" x1="497.74" y1="470.62" x2="498.59" y2="467.19" />
+<line class="lane-boundary center" x1="498.59" y1="467.19" x2="499.21" y2="463.72" />
+<line class="lane-boundary center" x1="499.21" y1="463.72" x2="499.65" y2="460.22" />
+<line class="lane-boundary center" x1="499.65" y1="460.22" x2="499.94" y2="456.71" />
+<line class="lane-boundary center" x1="499.94" y1="456.71" x2="500.12" y2="453.19" />
+<line class="lane-boundary center" x1="500.12" y1="453.19" x2="500.23" y2="449.66" />
+<line class="lane-boundary center" x1="500.23" y1="449.66" x2="500.30" y2="446.14" />
+<line class="lane-boundary" x1="492.22" y1="472.29" x2="493.21" y2="469.31" />
+<line class="lane-boundary" x1="493.21" y1="469.31" x2="493.97" y2="466.21" />
+<line class="lane-boundary" x1="493.97" y1="466.21" x2="494.55" y2="463.02" />
+<line class="lane-boundary" x1="494.55" y1="463.02" x2="494.96" y2="459.74" />
+<line class="lane-boundary" x1="494.96" y1="459.74" x2="495.23" y2="456.40" />
+<line class="lane-boundary" x1="495.23" y1="456.40" x2="495.40" y2="453.00" />
+<line class="lane-boundary" x1="495.40" y1="453.00" x2="495.51" y2="449.54" />
+<line class="lane-boundary" x1="495.51" y1="449.54" x2="495.59" y2="446.03" />
+<line class="lane-boundary" x1="487.81" y1="470.63" x2="488.67" y2="468.01" />
+<line class="lane-boundary" x1="488.67" y1="468.01" x2="489.36" y2="465.24" />
+<line class="lane-boundary" x1="489.36" y1="465.24" x2="489.89" y2="462.32" />
+<line class="lane-boundary" x1="489.89" y1="462.32" x2="490.27" y2="459.27" />
+<line class="lane-boundary" x1="490.27" y1="459.27" x2="490.53" y2="456.10" />
+<line class="lane-boundary" x1="490.53" y1="456.10" x2="490.69" y2="452.81" />
+<line class="lane-boundary" x1="490.69" y1="452.81" x2="490.80" y2="449.42" />
+<line class="lane-boundary" x1="490.80" y1="449.42" x2="490.88" y2="445.92" />
+<line class="lane-boundary" x1="509.43" y1="553.88" x2="509.43" y2="446.12" />
+<line class="lane-boundary" x1="504.71" y1="553.88" x2="504.71" y2="446.12" />
+<line class="lane-boundary center" x1="500.00" y1="553.88" x2="500.00" y2="446.12" />
+<line class="lane-boundary" x1="495.29" y1="553.88" x2="495.29" y2="446.12" />
+<line class="lane-boundary" x1="490.57" y1="553.88" x2="490.57" y2="446.12" />
+<line class="lane-boundary" x1="553.88" y1="490.57" x2="550.43" y2="490.56" />
+<line class="lane-boundary" x1="550.43" y1="490.56" x2="547.09" y2="490.51" />
+<line class="lane-boundary" x1="547.09" y1="490.51" x2="543.86" y2="490.37" />
+<line class="lane-boundary" x1="543.86" y1="490.37" x2="540.75" y2="490.12" />
+<line class="lane-boundary" x1="540.75" y1="490.12" x2="537.75" y2="489.74" />
+<line class="lane-boundary" x1="537.75" y1="489.74" x2="534.89" y2="489.20" />
+<line class="lane-boundary" x1="534.89" y1="489.20" x2="532.17" y2="488.49" />
+<line class="lane-boundary" x1="532.17" y1="488.49" x2="529.63" y2="487.59" />
+<line class="lane-boundary" x1="553.88" y1="495.29" x2="550.39" y2="495.28" />
+<line class="lane-boundary" x1="550.39" y1="495.28" x2="546.96" y2="495.22" />
+<line class="lane-boundary" x1="546.96" y1="495.22" x2="543.58" y2="495.07" />
+<line class="lane-boundary" x1="543.58" y1="495.07" x2="540.27" y2="494.81" />
+<line class="lane-boundary" x1="540.27" y1="494.81" x2="537.02" y2="494.40" />
+<line class="lane-boundary" x1="537.02" y1="494.40" x2="533.86" y2="493.80" />
+<line class="lane-boundary" x1="533.86" y1="493.80" x2="530.79" y2="493.00" />
+<line class="lane-boundary" x1="530.79" y1="493.00" x2="527.86" y2="491.96" />
+<line class="lane-boundary center" x1="553.88" y1="500.00" x2="550.35" y2="499.99" />
+<line class="lane-boundary center" x1="550.35" y1="499.99" x2="546.83" y2="499.93" />
+<line class="lane-boundary center" x1="546.83" y1="499.93" x2="543.30" y2="499.78" />
+<line class="lane-boundary center" x1="543.30" y1="499.78" x2="539.79" y2="499.50" />
+<line class="lane-boundary center" x1="539.79" y1="499.50" x2="536.29" y2="499.05" />
+<line class="lane-boundary center" x1="536.29" y1="499.05" x2="532.83" y2="498.40" />
+<line class="lane-boundary center" x1="532.83" y1="498.40" x2="529.42" y2="497.50" />
+<line class="lane-boundary center" x1="529.42" y1="497.50" x2="526.09" y2="496.33" />
+<line class="lane-boundary" x1="553.88" y1="504.71" x2="550.31" y2="504.70" />
+<line class="lane-boundary" x1="550.31" y1="504.70" x2="546.69" y2="504.64" />
+<line class="lane-boundary" x1="546.69" y1="504.64" x2="543.02" y2="504.49" />
+<line class="lane-boundary" x1="543.02" y1="504.49" x2="539.31" y2="504.19" />
+<line class="lane-boundary" x1="539.31" y1="504.19" x2="535.56" y2="503.71" />
+<line class="lane-boundary" x1="535.56" y1="503.71" x2="531.80" y2="503.00" />
+<line class="lane-boundary" x1="531.80" y1="503.00" x2="528.04" y2="502.01" />
+<line class="lane-boundary" x1="528.04" y1="502.01" x2="524.32" y2="500.70" />
+<line class="lane-boundary" x1="553.88" y1="509.43" x2="550.27" y2="509.42" />
+<line class="lane-boundary" x1="550.27" y1="509.42" x2="546.56" y2="509.36" />
+<line class="lane-boundary" x1="546.56" y1="509.36" x2="542.75" y2="509.19" />
+<line class="lane-boundary" x1="542.75" y1="509.19" x2="538.83" y2="508.88" />
+<line class="lane-boundary" x1="538.83" y1="508.88" x2="534.83" y2="508.37" />
+<line class="lane-boundary" x1="534.83" y1="508.37" x2="530.76" y2="507.60" />
+<line class="lane-boundary" x1="530.76" y1="507.60" x2="526.66" y2="506.52" />
+<line class="lane-boundary" x1="526.66" y1="506.52" x2="522.56" y2="505.07" />
+<line class="lane-boundary" x1="529.37" y1="487.81" x2="526.51" y2="486.55" />
+<line class="lane-boundary" x1="526.51" y1="486.55" x2="523.79" y2="484.99" />
+<line class="lane-boundary" x1="523.79" y1="484.99" x2="521.26" y2="483.16" />
+<line class="lane-boundary" x1="521.26" y1="483.16" x2="518.93" y2="481.06" />
+<line class="lane-boundary" x1="518.93" y1="481.06" x2="516.83" y2="478.73" />
+<line class="lane-boundary" x1="516.83" y1="478.73" x2="515.00" y2="476.20" />
+<line class="lane-boundary" x1="515.00" y1="476.20" x2="513.44" y2="473.48" />
+<line class="lane-boundary" x1="513.44" y1="473.48" x2="512.18" y2="470.62" />
+<line class="lane-boundary" x1="527.71" y1="492.22" x2="524.38" y2="490.76" />
+<line class="lane-boundary" x1="524.38" y1="490.76" x2="521.23" y2="488.95" />
+<line class="lane-boundary" x1="521.23" y1="488.95" x2="518.29" y2="486.82" />
+<line class="lane-boundary" x1="518.29" y1="486.82" x2="515.59" y2="484.40" />
+<line class="lane-boundary" x1="515.59" y1="484.40" x2="513.17" y2="481.70" />
+<line class="lane-boundary" x1="513.17" y1="481.70" x2="511.04" y2="478.76" />
+<line class="lane-boundary" x1="511.04" y1="478.76" x2="509.23" y2="475.61" />
+<line class="lane-boundary" x1="509.23" y1="475.61" x2="507.77" y2="472.28" />
+<line class="lane-boundary center" x1="526.04" y1="496.63" x2="522.26" y2="494.97" />
+<line class="lane-boundary center" x1="522.26" y1="494.97" x2="518.68" y2="492.91" />
+<line class="lane-boundary center" x1="518.68" y1="492.91" x2="515.33" y2="490.49" />
+<line class="lane-boundary center" x1="515.33" y1="490.49" x2="512.26" y2="487.73" />
+<line class="lane-boundary center" x1="512.26" y1="487.73" x2="509.50" y2="484.66" />
+<line class="lane-boundary center" x1="509.50" y1="484.66" x2="507.08" y2="481.31" />
+<line class="lane-boundary center" x1="507.08" y1="481.31" x2="505.02" y2="477.73" />
+<line class="lane-boundary center" x1="505.02" y1="477.73" x2="503.36" y2="473.95" />
+<line class="lane-boundary" x1="524.37" y1="501.04" x2="520.13" y2="499.17" />
+<line class="lane-boundary" x1="520.13" y1="499.17" x2="516.12" y2="496.87" />
+<line class="lane-boundary" x1="516.12" y1="496.87" x2="512.37" y2="494.16" />
+<line class="lane-boundary" x1="512.37" y1="494.16" x2="508.93" y2="491.06" />
+<line class="lane-boundary" x1="508.93" y1="491.06" x2="505.83" y2="487.62" />
+<line class="lane-boundary" x1="505.83" y1="487.62" x2="503.12" y2="483.87" />
+<line class="lane-boundary" x1="503.12" y1="483.87" x2="500.82" y2="479.86" />
+<line class="lane-boundary" x1="500.82" y1="479.86" x2="498.95" y2="475.62" />
+<line class="lane-boundary" x1="522.70" y1="505.45" x2="518.01" y2="503.38" />
+<line class="lane-boundary" x1="518.01" y1="503.38" x2="513.56" y2="500.83" />
+<line class="lane-boundary" x1="513.56" y1="500.83" x2="509.41" y2="497.83" />
+<line class="lane-boundary" x1="509.41" y1="497.83" x2="505.59" y2="494.40" />
+<line class="lane-boundary" x1="505.59" y1="494.40" x2="502.16" y2="490.58" />
+<line class="lane-boundary" x1="502.16" y1="490.58" x2="499.16" y2="486.43" />
+<line class="lane-boundary" x1="499.16" y1="486.43" x2="496.61" y2="481.98" />
+<line class="lane-boundary" x1="496.61" y1="481.98" x2="494.54" y2="477.29" />
+<line class="lane-boundary" x1="512.19" y1="470.63" x2="511.33" y2="468.01" />
+<line class="lane-boundary" x1="511.33" y1="468.01" x2="510.64" y2="465.24" />
+<line class="lane-boundary" x1="510.64" y1="465.24" x2="510.11" y2="462.32" />
+<line class="lane-boundary" x1="510.11" y1="462.32" x2="509.73" y2="459.27" />
+<line class="lane-boundary" x1="509.73" y1="459.27" x2="509.47" y2="456.10" />
+<line class="lane-boundary" x1="509.47" y1="456.10" x2="509.31" y2="452.81" />
+<line class="lane-boundary" x1="509.31" y1="452.81" x2="509.20" y2="449.42" />
+<line class="lane-boundary" x1="509.20" y1="449.42" x2="509.12" y2="445.92" />
+<line class="lane-boundary" x1="507.78" y1="472.29" x2="506.79" y2="469.31" />
+<line class="lane-boundary" x1="506.79" y1="469.31" x2="506.03" y2="466.21" />
+<line class="lane-boundary" x1="506.03" y1="466.21" x2="505.45" y2="463.02" />
+<line class="lane-boundary" x1="505.45" y1="463.02" x2="505.04" y2="459.74" />
+<line class="lane-boundary" x1="505.04" y1="459.74" x2="504.77" y2="456.40" />
+<line class="lane-boundary" x1="504.77" y1="456.40" x2="504.60" y2="453.00" />
+<line class="lane-boundary" x1="504.60" y1="453.00" x2="504.49" y2="449.54" />
+<line class="lane-boundary" x1="504.49" y1="449.54" x2="504.41" y2="446.03" />
+<line class="lane-boundary center" x1="503.37" y1="473.96" x2="502.26" y2="470.62" />
+<line class="lane-boundary center" x1="502.26" y1="470.62" x2="501.41" y2="467.19" />
+<line class="lane-boundary center" x1="501.41" y1="467.19" x2="500.79" y2="463.72" />
+<line class="lane-boundary center" x1="500.79" y1="463.72" x2="500.35" y2="460.22" />
+<line class="lane-boundary center" x1="500.35" y1="460.22" x2="500.06" y2="456.71" />
+<line class="lane-boundary center" x1="500.06" y1="456.71" x2="499.88" y2="453.19" />
+<line class="lane-boundary center" x1="499.88" y1="453.19" x2="499.77" y2="449.66" />
+<line class="lane-boundary center" x1="499.77" y1="449.66" x2="499.70" y2="446.14" />
+<line class="lane-boundary" x1="498.96" y1="475.63" x2="497.73" y2="471.92" />
+<line class="lane-boundary" x1="497.73" y1="471.92" x2="496.80" y2="468.17" />
+<line class="lane-boundary" x1="496.80" y1="468.17" x2="496.13" y2="464.43" />
+<line class="lane-boundary" x1="496.13" y1="464.43" x2="495.66" y2="460.70" />
+<line class="lane-boundary" x1="495.66" y1="460.70" x2="495.36" y2="457.02" />
+<line class="lane-boundary" x1="495.36" y1="457.02" x2="495.17" y2="453.37" />
+<line class="lane-boundary" x1="495.17" y1="453.37" x2="495.06" y2="449.78" />
+<line class="lane-boundary" x1="495.06" y1="449.78" x2="494.98" y2="446.24" />
+<line class="lane-boundary" x1="494.55" y1="477.30" x2="493.20" y2="473.22" />
+<line class="lane-boundary" x1="493.20" y1="473.22" x2="492.19" y2="469.15" />
+<line class="lane-boundary" x1="492.19" y1="469.15" x2="491.47" y2="465.13" />
+<line class="lane-boundary" x1="491.47" y1="465.13" x2="490.97" y2="461.18" />
+<line class="lane-boundary" x1="490.97" y1="461.18" x2="490.65" y2="457.32" />
+<line class="lane-boundary" x1="490.65" y1="457.32" x2="490.46" y2="453.56" />
+<line class="lane-boundary" x1="490.46" y1="453.56" x2="490.35" y2="449.90" />
+<line class="lane-boundary" x1="490.35" y1="449.90" x2="490.27" y2="446.35" />
+          <line class="road-ref" x1="68.97" y1="500.00" x2="446.12" y2="500.00" />
+<line class="road-ref" x1="500.00" y1="931.03" x2="500.00" y2="553.88" />
+<line class="road-ref" x1="931.03" y1="500.00" x2="553.88" y2="500.00" />
+<line class="road-ref" x1="500.00" y1="68.97" x2="500.00" y2="446.12" />
+<line class="road-ref junction" x1="446.12" y1="500.00" x2="449.65" y2="500.01" />
+<line class="road-ref junction" x1="449.65" y1="500.01" x2="453.17" y2="500.07" />
+<line class="road-ref junction" x1="453.17" y1="500.07" x2="456.70" y2="500.22" />
+<line class="road-ref junction" x1="456.70" y1="500.22" x2="460.21" y2="500.50" />
+<line class="road-ref junction" x1="460.21" y1="500.50" x2="463.71" y2="500.95" />
+<line class="road-ref junction" x1="463.71" y1="500.95" x2="467.17" y2="501.60" />
+<line class="road-ref junction" x1="467.17" y1="501.60" x2="470.58" y2="502.50" />
+<line class="road-ref junction" x1="470.58" y1="502.50" x2="473.91" y2="503.67" />
+<line class="road-ref junction" x1="473.96" y1="503.37" x2="477.74" y2="505.03" />
+<line class="road-ref junction" x1="477.74" y1="505.03" x2="481.32" y2="507.09" />
+<line class="road-ref junction" x1="481.32" y1="507.09" x2="484.67" y2="509.51" />
+<line class="road-ref junction" x1="484.67" y1="509.51" x2="487.74" y2="512.27" />
+<line class="road-ref junction" x1="487.74" y1="512.27" x2="490.50" y2="515.34" />
+<line class="road-ref junction" x1="490.50" y1="515.34" x2="492.92" y2="518.69" />
+<line class="road-ref junction" x1="492.92" y1="518.69" x2="494.98" y2="522.27" />
+<line class="road-ref junction" x1="494.98" y1="522.27" x2="496.64" y2="526.05" />
+<line class="road-ref junction" x1="496.63" y1="526.04" x2="497.74" y2="529.38" />
+<line class="road-ref junction" x1="497.74" y1="529.38" x2="498.59" y2="532.81" />
+<line class="road-ref junction" x1="498.59" y1="532.81" x2="499.21" y2="536.28" />
+<line class="road-ref junction" x1="499.21" y1="536.28" x2="499.65" y2="539.78" />
+<line class="road-ref junction" x1="499.65" y1="539.78" x2="499.94" y2="543.29" />
+<line class="road-ref junction" x1="499.94" y1="543.29" x2="500.12" y2="546.81" />
+<line class="road-ref junction" x1="500.12" y1="546.81" x2="500.23" y2="550.34" />
+<line class="road-ref junction" x1="500.23" y1="550.34" x2="500.30" y2="553.86" />
+<line class="road-ref junction" x1="446.12" y1="500.00" x2="553.88" y2="500.00" />
+<line class="road-ref junction" x1="500.00" y1="553.88" x2="500.01" y2="550.35" />
+<line class="road-ref junction" x1="500.01" y1="550.35" x2="500.07" y2="546.83" />
+<line class="road-ref junction" x1="500.07" y1="546.83" x2="500.22" y2="543.30" />
+<line class="road-ref junction" x1="500.22" y1="543.30" x2="500.50" y2="539.79" />
+<line class="road-ref junction" x1="500.50" y1="539.79" x2="500.95" y2="536.29" />
+<line class="road-ref junction" x1="500.95" y1="536.29" x2="501.60" y2="532.83" />
+<line class="road-ref junction" x1="501.60" y1="532.83" x2="502.50" y2="529.42" />
+<line class="road-ref junction" x1="502.50" y1="529.42" x2="503.67" y2="526.09" />
+<line class="road-ref junction" x1="503.37" y1="526.04" x2="505.03" y2="522.26" />
+<line class="road-ref junction" x1="505.03" y1="522.26" x2="507.09" y2="518.68" />
+<line class="road-ref junction" x1="507.09" y1="518.68" x2="509.51" y2="515.33" />
+<line class="road-ref junction" x1="509.51" y1="515.33" x2="512.27" y2="512.26" />
+<line class="road-ref junction" x1="512.27" y1="512.26" x2="515.34" y2="509.50" />
+<line class="road-ref junction" x1="515.34" y1="509.50" x2="518.69" y2="507.08" />
+<line class="road-ref junction" x1="518.69" y1="507.08" x2="522.27" y2="505.02" />
+<line class="road-ref junction" x1="522.27" y1="505.02" x2="526.05" y2="503.36" />
+<line class="road-ref junction" x1="526.04" y1="503.37" x2="529.38" y2="502.26" />
+<line class="road-ref junction" x1="529.38" y1="502.26" x2="532.81" y2="501.41" />
+<line class="road-ref junction" x1="532.81" y1="501.41" x2="536.28" y2="500.79" />
+<line class="road-ref junction" x1="536.28" y1="500.79" x2="539.78" y2="500.35" />
+<line class="road-ref junction" x1="539.78" y1="500.35" x2="543.29" y2="500.06" />
+<line class="road-ref junction" x1="543.29" y1="500.06" x2="546.81" y2="499.88" />
+<line class="road-ref junction" x1="546.81" y1="499.88" x2="550.34" y2="499.77" />
+<line class="road-ref junction" x1="550.34" y1="499.77" x2="553.86" y2="499.70" />
+<line class="road-ref junction" x1="446.12" y1="500.00" x2="449.65" y2="499.99" />
+<line class="road-ref junction" x1="449.65" y1="499.99" x2="453.17" y2="499.93" />
+<line class="road-ref junction" x1="453.17" y1="499.93" x2="456.70" y2="499.78" />
+<line class="road-ref junction" x1="456.70" y1="499.78" x2="460.21" y2="499.50" />
+<line class="road-ref junction" x1="460.21" y1="499.50" x2="463.71" y2="499.05" />
+<line class="road-ref junction" x1="463.71" y1="499.05" x2="467.17" y2="498.40" />
+<line class="road-ref junction" x1="467.17" y1="498.40" x2="470.58" y2="497.50" />
+<line class="road-ref junction" x1="470.58" y1="497.50" x2="473.91" y2="496.33" />
+<line class="road-ref junction" x1="473.96" y1="496.63" x2="477.74" y2="494.97" />
+<line class="road-ref junction" x1="477.74" y1="494.97" x2="481.32" y2="492.91" />
+<line class="road-ref junction" x1="481.32" y1="492.91" x2="484.67" y2="490.49" />
+<line class="road-ref junction" x1="484.67" y1="490.49" x2="487.74" y2="487.73" />
+<line class="road-ref junction" x1="487.74" y1="487.73" x2="490.50" y2="484.66" />
+<line class="road-ref junction" x1="490.50" y1="484.66" x2="492.92" y2="481.31" />
+<line class="road-ref junction" x1="492.92" y1="481.31" x2="494.98" y2="477.73" />
+<line class="road-ref junction" x1="494.98" y1="477.73" x2="496.64" y2="473.95" />
+<line class="road-ref junction" x1="496.63" y1="473.96" x2="497.74" y2="470.62" />
+<line class="road-ref junction" x1="497.74" y1="470.62" x2="498.59" y2="467.19" />
+<line class="road-ref junction" x1="498.59" y1="467.19" x2="499.21" y2="463.72" />
+<line class="road-ref junction" x1="499.21" y1="463.72" x2="499.65" y2="460.22" />
+<line class="road-ref junction" x1="499.65" y1="460.22" x2="499.94" y2="456.71" />
+<line class="road-ref junction" x1="499.94" y1="456.71" x2="500.12" y2="453.19" />
+<line class="road-ref junction" x1="500.12" y1="453.19" x2="500.23" y2="449.66" />
+<line class="road-ref junction" x1="500.23" y1="449.66" x2="500.30" y2="446.14" />
+<line class="road-ref junction" x1="500.00" y1="553.88" x2="500.00" y2="446.12" />
+<line class="road-ref junction" x1="553.88" y1="500.00" x2="550.35" y2="499.99" />
+<line class="road-ref junction" x1="550.35" y1="499.99" x2="546.83" y2="499.93" />
+<line class="road-ref junction" x1="546.83" y1="499.93" x2="543.30" y2="499.78" />
+<line class="road-ref junction" x1="543.30" y1="499.78" x2="539.79" y2="499.50" />
+<line class="road-ref junction" x1="539.79" y1="499.50" x2="536.29" y2="499.05" />
+<line class="road-ref junction" x1="536.29" y1="499.05" x2="532.83" y2="498.40" />
+<line class="road-ref junction" x1="532.83" y1="498.40" x2="529.42" y2="497.50" />
+<line class="road-ref junction" x1="529.42" y1="497.50" x2="526.09" y2="496.33" />
+<line class="road-ref junction" x1="526.04" y1="496.63" x2="522.26" y2="494.97" />
+<line class="road-ref junction" x1="522.26" y1="494.97" x2="518.68" y2="492.91" />
+<line class="road-ref junction" x1="518.68" y1="492.91" x2="515.33" y2="490.49" />
+<line class="road-ref junction" x1="515.33" y1="490.49" x2="512.26" y2="487.73" />
+<line class="road-ref junction" x1="512.26" y1="487.73" x2="509.50" y2="484.66" />
+<line class="road-ref junction" x1="509.50" y1="484.66" x2="507.08" y2="481.31" />
+<line class="road-ref junction" x1="507.08" y1="481.31" x2="505.02" y2="477.73" />
+<line class="road-ref junction" x1="505.02" y1="477.73" x2="503.36" y2="473.95" />
+<line class="road-ref junction" x1="503.37" y1="473.96" x2="502.26" y2="470.62" />
+<line class="road-ref junction" x1="502.26" y1="470.62" x2="501.41" y2="467.19" />
+<line class="road-ref junction" x1="501.41" y1="467.19" x2="500.79" y2="463.72" />
+<line class="road-ref junction" x1="500.79" y1="463.72" x2="500.35" y2="460.22" />
+<line class="road-ref junction" x1="500.35" y1="460.22" x2="500.06" y2="456.71" />
+<line class="road-ref junction" x1="500.06" y1="456.71" x2="499.88" y2="453.19" />
+<line class="road-ref junction" x1="499.88" y1="453.19" x2="499.77" y2="449.66" />
+<line class="road-ref junction" x1="499.77" y1="449.66" x2="499.70" y2="446.14" />
+          <line class="lane" x1="68.97" y1="502.36" x2="446.12" y2="502.36" />
+<line class="lane" x1="68.97" y1="507.07" x2="446.12" y2="507.07" />
+<line class="lane" x1="68.97" y1="497.64" x2="446.12" y2="497.64" />
+<line class="lane" x1="68.97" y1="492.93" x2="446.12" y2="492.93" />
+<line class="lane" x1="502.36" y1="931.03" x2="502.36" y2="553.88" />
+<line class="lane" x1="507.07" y1="931.03" x2="507.07" y2="553.88" />
+<line class="lane" x1="497.64" y1="931.03" x2="497.64" y2="553.88" />
+<line class="lane" x1="492.93" y1="931.03" x2="492.93" y2="553.88" />
+<line class="lane" x1="931.03" y1="497.64" x2="553.88" y2="497.64" />
+<line class="lane" x1="931.03" y1="492.93" x2="553.88" y2="492.93" />
+<line class="lane" x1="931.03" y1="502.36" x2="553.88" y2="502.36" />
+<line class="lane" x1="931.03" y1="507.07" x2="553.88" y2="507.07" />
+<line class="lane" x1="497.64" y1="68.97" x2="497.64" y2="446.12" />
+<line class="lane" x1="492.93" y1="68.97" x2="492.93" y2="446.12" />
+<line class="lane" x1="502.36" y1="68.97" x2="502.36" y2="446.12" />
+<line class="lane" x1="507.07" y1="68.97" x2="507.07" y2="446.12" />
+<line class="lane connector" x1="446.12" y1="500.00" x2="449.65" y2="500.01" />
+<line class="lane connector" x1="449.65" y1="500.01" x2="453.17" y2="500.07" />
+<line class="lane connector" x1="453.17" y1="500.07" x2="456.70" y2="500.22" />
+<line class="lane connector" x1="456.70" y1="500.22" x2="460.21" y2="500.50" />
+<line class="lane connector" x1="460.21" y1="500.50" x2="463.71" y2="500.95" />
+<line class="lane connector" x1="463.71" y1="500.95" x2="467.17" y2="501.60" />
+<line class="lane connector" x1="467.17" y1="501.60" x2="470.58" y2="502.50" />
+<line class="lane connector" x1="470.58" y1="502.50" x2="473.91" y2="503.67" />
+<line class="lane" x1="446.12" y1="502.36" x2="449.63" y2="502.37" />
+<line class="lane" x1="449.63" y1="502.37" x2="453.11" y2="502.43" />
+<line class="lane" x1="453.11" y1="502.43" x2="456.56" y2="502.57" />
+<line class="lane" x1="456.56" y1="502.57" x2="459.97" y2="502.84" />
+<line class="lane" x1="459.97" y1="502.84" x2="463.34" y2="503.27" />
+<line class="lane" x1="463.34" y1="503.27" x2="466.66" y2="503.90" />
+<line class="lane" x1="466.66" y1="503.90" x2="469.89" y2="504.75" />
+<line class="lane" x1="469.89" y1="504.75" x2="473.03" y2="505.85" />
+<line class="lane" x1="446.12" y1="507.07" x2="449.59" y2="507.08" />
+<line class="lane" x1="449.59" y1="507.08" x2="452.97" y2="507.14" />
+<line class="lane" x1="452.97" y1="507.14" x2="456.28" y2="507.28" />
+<line class="lane" x1="456.28" y1="507.28" x2="459.49" y2="507.53" />
+<line class="lane" x1="459.49" y1="507.53" x2="462.61" y2="507.93" />
+<line class="lane" x1="462.61" y1="507.93" x2="465.63" y2="508.50" />
+<line class="lane" x1="465.63" y1="508.50" x2="468.52" y2="509.26" />
+<line class="lane" x1="468.52" y1="509.26" x2="471.26" y2="510.22" />
+<line class="lane" x1="446.12" y1="497.64" x2="449.67" y2="497.65" />
+<line class="lane" x1="449.67" y1="497.65" x2="453.24" y2="497.71" />
+<line class="lane" x1="453.24" y1="497.71" x2="456.84" y2="497.87" />
+<line class="lane" x1="456.84" y1="497.87" x2="460.45" y2="498.15" />
+<line class="lane" x1="460.45" y1="498.15" x2="464.07" y2="498.62" />
+<line class="lane" x1="464.07" y1="498.62" x2="467.69" y2="499.30" />
+<line class="lane" x1="467.69" y1="499.30" x2="471.27" y2="500.24" />
+<line class="lane" x1="471.27" y1="500.24" x2="474.79" y2="501.48" />
+<line class="lane" x1="446.12" y1="492.93" x2="449.71" y2="492.94" />
+<line class="lane" x1="449.71" y1="492.94" x2="453.37" y2="493.00" />
+<line class="lane" x1="453.37" y1="493.00" x2="457.12" y2="493.16" />
+<line class="lane" x1="457.12" y1="493.16" x2="460.93" y2="493.46" />
+<line class="lane" x1="460.93" y1="493.46" x2="464.80" y2="493.96" />
+<line class="lane" x1="464.80" y1="493.96" x2="468.72" y2="494.70" />
+<line class="lane" x1="468.72" y1="494.70" x2="472.65" y2="495.73" />
+<line class="lane" x1="472.65" y1="495.73" x2="476.56" y2="497.11" />
+<line class="lane connector" x1="473.96" y1="503.37" x2="477.74" y2="505.03" />
+<line class="lane connector" x1="477.74" y1="505.03" x2="481.32" y2="507.09" />
+<line class="lane connector" x1="481.32" y1="507.09" x2="484.67" y2="509.51" />
+<line class="lane connector" x1="484.67" y1="509.51" x2="487.74" y2="512.27" />
+<line class="lane connector" x1="487.74" y1="512.27" x2="490.50" y2="515.34" />
+<line class="lane connector" x1="490.50" y1="515.34" x2="492.92" y2="518.69" />
+<line class="lane connector" x1="492.92" y1="518.69" x2="494.98" y2="522.27" />
+<line class="lane connector" x1="494.98" y1="522.27" x2="496.64" y2="526.05" />
+<line class="lane" x1="473.13" y1="505.57" x2="476.68" y2="507.14" />
+<line class="lane" x1="476.68" y1="507.14" x2="480.05" y2="509.07" />
+<line class="lane" x1="480.05" y1="509.07" x2="483.19" y2="511.34" />
+<line class="lane" x1="483.19" y1="511.34" x2="486.07" y2="513.94" />
+<line class="lane" x1="486.07" y1="513.94" x2="488.67" y2="516.82" />
+<line class="lane" x1="488.67" y1="516.82" x2="490.94" y2="519.96" />
+<line class="lane" x1="490.94" y1="519.96" x2="492.87" y2="523.33" />
+<line class="lane" x1="492.87" y1="523.33" x2="494.44" y2="526.88" />
+<line class="lane" x1="471.46" y1="509.98" x2="474.55" y2="511.35" />
+<line class="lane" x1="474.55" y1="511.35" x2="477.49" y2="513.03" />
+<line class="lane" x1="477.49" y1="513.03" x2="480.23" y2="515.01" />
+<line class="lane" x1="480.23" y1="515.01" x2="482.74" y2="517.27" />
+<line class="lane" x1="482.74" y1="517.27" x2="485.00" y2="519.78" />
+<line class="lane" x1="485.00" y1="519.78" x2="486.98" y2="522.52" />
+<line class="lane" x1="486.98" y1="522.52" x2="488.66" y2="525.46" />
+<line class="lane" x1="488.66" y1="525.46" x2="490.03" y2="528.55" />
+<line class="lane" x1="474.80" y1="501.17" x2="478.81" y2="502.93" />
+<line class="lane" x1="478.81" y1="502.93" x2="482.60" y2="505.11" />
+<line class="lane" x1="482.60" y1="505.11" x2="486.15" y2="507.68" />
+<line class="lane" x1="486.15" y1="507.68" x2="489.41" y2="510.60" />
+<line class="lane" x1="489.41" y1="510.60" x2="492.34" y2="513.86" />
+<line class="lane" x1="492.34" y1="513.86" x2="494.90" y2="517.41" />
+<line class="lane" x1="494.90" y1="517.41" x2="497.08" y2="521.21" />
+<line class="lane" x1="497.08" y1="521.21" x2="498.85" y2="525.21" />
+<line class="lane" x1="476.47" y1="496.76" x2="480.93" y2="498.72" />
+<line class="lane" x1="480.93" y1="498.72" x2="485.16" y2="501.15" />
+<line class="lane" x1="485.16" y1="501.15" x2="489.11" y2="504.01" />
+<line class="lane" x1="489.11" y1="504.01" x2="492.74" y2="507.27" />
+<line class="lane" x1="492.74" y1="507.27" x2="496.00" y2="510.90" />
+<line class="lane" x1="496.00" y1="510.90" x2="498.86" y2="514.85" />
+<line class="lane" x1="498.86" y1="514.85" x2="501.29" y2="519.08" />
+<line class="lane" x1="501.29" y1="519.08" x2="503.25" y2="523.54" />
+<line class="lane connector" x1="496.63" y1="526.04" x2="497.74" y2="529.38" />
+<line class="lane connector" x1="497.74" y1="529.38" x2="498.59" y2="532.81" />
+<line class="lane connector" x1="498.59" y1="532.81" x2="499.21" y2="536.28" />
+<line class="lane connector" x1="499.21" y1="536.28" x2="499.65" y2="539.78" />
+<line class="lane connector" x1="499.65" y1="539.78" x2="499.94" y2="543.29" />
+<line class="lane connector" x1="499.94" y1="543.29" x2="500.12" y2="546.81" />
+<line class="lane connector" x1="500.12" y1="546.81" x2="500.23" y2="550.34" />
+<line class="lane connector" x1="500.23" y1="550.34" x2="500.30" y2="553.86" />
+<line class="lane" x1="494.43" y1="526.87" x2="495.47" y2="530.04" />
+<line class="lane" x1="495.47" y1="530.04" x2="496.28" y2="533.30" />
+<line class="lane" x1="496.28" y1="533.30" x2="496.88" y2="536.63" />
+<line class="lane" x1="496.88" y1="536.63" x2="497.30" y2="540.02" />
+<line class="lane" x1="497.30" y1="540.02" x2="497.58" y2="543.44" />
+<line class="lane" x1="497.58" y1="543.44" x2="497.76" y2="546.91" />
+<line class="lane" x1="497.76" y1="546.91" x2="497.87" y2="550.40" />
+<line class="lane" x1="497.87" y1="550.40" x2="497.95" y2="553.92" />
+<line class="lane" x1="490.02" y1="528.54" x2="490.94" y2="531.34" />
+<line class="lane" x1="490.94" y1="531.34" x2="491.67" y2="534.28" />
+<line class="lane" x1="491.67" y1="534.28" x2="492.22" y2="537.33" />
+<line class="lane" x1="492.22" y1="537.33" x2="492.61" y2="540.49" />
+<line class="lane" x1="492.61" y1="540.49" x2="492.88" y2="543.75" />
+<line class="lane" x1="492.88" y1="543.75" x2="493.05" y2="547.09" />
+<line class="lane" x1="493.05" y1="547.09" x2="493.16" y2="550.52" />
+<line class="lane" x1="493.16" y1="550.52" x2="493.24" y2="554.02" />
+<line class="lane" x1="498.83" y1="525.20" x2="500.00" y2="528.73" />
+<line class="lane" x1="500.00" y1="528.73" x2="500.89" y2="532.32" />
+<line class="lane" x1="500.89" y1="532.32" x2="501.54" y2="535.93" />
+<line class="lane" x1="501.54" y1="535.93" x2="501.99" y2="539.54" />
+<line class="lane" x1="501.99" y1="539.54" x2="502.29" y2="543.14" />
+<line class="lane" x1="502.29" y1="543.14" x2="502.47" y2="546.72" />
+<line class="lane" x1="502.47" y1="546.72" x2="502.58" y2="550.28" />
+<line class="lane" x1="502.58" y1="550.28" x2="502.66" y2="553.81" />
+<line class="lane" x1="503.24" y1="523.53" x2="504.53" y2="527.43" />
+<line class="lane" x1="504.53" y1="527.43" x2="505.50" y2="531.34" />
+<line class="lane" x1="505.50" y1="531.34" x2="506.20" y2="535.22" />
+<line class="lane" x1="506.20" y1="535.22" x2="506.68" y2="539.06" />
+<line class="lane" x1="506.68" y1="539.06" x2="506.99" y2="542.83" />
+<line class="lane" x1="506.99" y1="542.83" x2="507.18" y2="546.53" />
+<line class="lane" x1="507.18" y1="546.53" x2="507.29" y2="550.16" />
+<line class="lane" x1="507.29" y1="550.16" x2="507.37" y2="553.70" />
+<line class="lane" x1="446.12" y1="502.36" x2="553.88" y2="502.36" />
+<line class="lane" x1="446.12" y1="507.07" x2="553.88" y2="507.07" />
+<line class="lane" x1="446.12" y1="497.64" x2="553.88" y2="497.64" />
+<line class="lane" x1="446.12" y1="492.93" x2="553.88" y2="492.93" />
+<line class="lane connector" x1="500.00" y1="553.88" x2="500.01" y2="550.35" />
+<line class="lane connector" x1="500.01" y1="550.35" x2="500.07" y2="546.83" />
+<line class="lane connector" x1="500.07" y1="546.83" x2="500.22" y2="543.30" />
+<line class="lane connector" x1="500.22" y1="543.30" x2="500.50" y2="539.79" />
+<line class="lane connector" x1="500.50" y1="539.79" x2="500.95" y2="536.29" />
+<line class="lane connector" x1="500.95" y1="536.29" x2="501.60" y2="532.83" />
+<line class="lane connector" x1="501.60" y1="532.83" x2="502.50" y2="529.42" />
+<line class="lane connector" x1="502.50" y1="529.42" x2="503.67" y2="526.09" />
+<line class="lane" x1="502.36" y1="553.88" x2="502.37" y2="550.37" />
+<line class="lane" x1="502.37" y1="550.37" x2="502.43" y2="546.89" />
+<line class="lane" x1="502.43" y1="546.89" x2="502.57" y2="543.44" />
+<line class="lane" x1="502.57" y1="543.44" x2="502.84" y2="540.03" />
+<line class="lane" x1="502.84" y1="540.03" x2="503.27" y2="536.66" />
+<line class="lane" x1="503.27" y1="536.66" x2="503.90" y2="533.34" />
+<line class="lane" x1="503.90" y1="533.34" x2="504.75" y2="530.11" />
+<line class="lane" x1="504.75" y1="530.11" x2="505.85" y2="526.97" />
+<line class="lane" x1="507.07" y1="553.88" x2="507.08" y2="550.41" />
+<line class="lane" x1="507.08" y1="550.41" x2="507.14" y2="547.03" />
+<line class="lane" x1="507.14" y1="547.03" x2="507.28" y2="543.72" />
+<line class="lane" x1="507.28" y1="543.72" x2="507.53" y2="540.51" />
+<line class="lane" x1="507.53" y1="540.51" x2="507.93" y2="537.39" />
+<line class="lane" x1="507.93" y1="537.39" x2="508.50" y2="534.37" />
+<line class="lane" x1="508.50" y1="534.37" x2="509.26" y2="531.48" />
+<line class="lane" x1="509.26" y1="531.48" x2="510.22" y2="528.74" />
+<line class="lane" x1="497.64" y1="553.88" x2="497.65" y2="550.33" />
+<line class="lane" x1="497.65" y1="550.33" x2="497.71" y2="546.76" />
+<line class="lane" x1="497.71" y1="546.76" x2="497.87" y2="543.16" />
+<line class="lane" x1="497.87" y1="543.16" x2="498.15" y2="539.55" />
+<line class="lane" x1="498.15" y1="539.55" x2="498.62" y2="535.93" />
+<line class="lane" x1="498.62" y1="535.93" x2="499.30" y2="532.31" />
+<line class="lane" x1="499.30" y1="532.31" x2="500.24" y2="528.73" />
+<line class="lane" x1="500.24" y1="528.73" x2="501.48" y2="525.21" />
+<line class="lane" x1="492.93" y1="553.88" x2="492.94" y2="550.29" />
+<line class="lane" x1="492.94" y1="550.29" x2="493.00" y2="546.63" />
+<line class="lane" x1="493.00" y1="546.63" x2="493.16" y2="542.88" />
+<line class="lane" x1="493.16" y1="542.88" x2="493.46" y2="539.07" />
+<line class="lane" x1="493.46" y1="539.07" x2="493.96" y2="535.20" />
+<line class="lane" x1="493.96" y1="535.20" x2="494.70" y2="531.28" />
+<line class="lane" x1="494.70" y1="531.28" x2="495.73" y2="527.35" />
+<line class="lane" x1="495.73" y1="527.35" x2="497.11" y2="523.44" />
+<line class="lane connector" x1="503.37" y1="526.04" x2="505.03" y2="522.26" />
+<line class="lane connector" x1="505.03" y1="522.26" x2="507.09" y2="518.68" />
+<line class="lane connector" x1="507.09" y1="518.68" x2="509.51" y2="515.33" />
+<line class="lane connector" x1="509.51" y1="515.33" x2="512.27" y2="512.26" />
+<line class="lane connector" x1="512.27" y1="512.26" x2="515.34" y2="509.50" />
+<line class="lane connector" x1="515.34" y1="509.50" x2="518.69" y2="507.08" />
+<line class="lane connector" x1="518.69" y1="507.08" x2="522.27" y2="505.02" />
+<line class="lane connector" x1="522.27" y1="505.02" x2="526.05" y2="503.36" />
+<line class="lane" x1="505.57" y1="526.87" x2="507.14" y2="523.32" />
+<line class="lane" x1="507.14" y1="523.32" x2="509.07" y2="519.95" />
+<line class="lane" x1="509.07" y1="519.95" x2="511.34" y2="516.81" />
+<line class="lane" x1="511.34" y1="516.81" x2="513.94" y2="513.93" />
+<line class="lane" x1="513.94" y1="513.93" x2="516.82" y2="511.33" />
+<line class="lane" x1="516.82" y1="511.33" x2="519.96" y2="509.06" />
+<line class="lane" x1="519.96" y1="509.06" x2="523.33" y2="507.13" />
+<line class="lane" x1="523.33" y1="507.13" x2="526.88" y2="505.56" />
+<line class="lane" x1="509.98" y1="528.54" x2="511.35" y2="525.45" />
+<line class="lane" x1="511.35" y1="525.45" x2="513.03" y2="522.51" />
+<line class="lane" x1="513.03" y1="522.51" x2="515.01" y2="519.77" />
+<line class="lane" x1="515.01" y1="519.77" x2="517.27" y2="517.26" />
+<line class="lane" x1="517.27" y1="517.26" x2="519.78" y2="515.00" />
+<line class="lane" x1="519.78" y1="515.00" x2="522.52" y2="513.02" />
+<line class="lane" x1="522.52" y1="513.02" x2="525.46" y2="511.34" />
+<line class="lane" x1="525.46" y1="511.34" x2="528.55" y2="509.97" />
+<line class="lane" x1="501.17" y1="525.20" x2="502.93" y2="521.19" />
+<line class="lane" x1="502.93" y1="521.19" x2="505.11" y2="517.40" />
+<line class="lane" x1="505.11" y1="517.40" x2="507.68" y2="513.85" />
+<line class="lane" x1="507.68" y1="513.85" x2="510.60" y2="510.59" />
+<line class="lane" x1="510.60" y1="510.59" x2="513.86" y2="507.66" />
+<line class="lane" x1="513.86" y1="507.66" x2="517.41" y2="505.10" />
+<line class="lane" x1="517.41" y1="505.10" x2="521.21" y2="502.92" />
+<line class="lane" x1="521.21" y1="502.92" x2="525.21" y2="501.15" />
+<line class="lane" x1="496.76" y1="523.53" x2="498.72" y2="519.07" />
+<line class="lane" x1="498.72" y1="519.07" x2="501.15" y2="514.84" />
+<line class="lane" x1="501.15" y1="514.84" x2="504.01" y2="510.89" />
+<line class="lane" x1="504.01" y1="510.89" x2="507.27" y2="507.26" />
+<line class="lane" x1="507.27" y1="507.26" x2="510.90" y2="504.00" />
+<line class="lane" x1="510.90" y1="504.00" x2="514.85" y2="501.14" />
+<line class="lane" x1="514.85" y1="501.14" x2="519.08" y2="498.71" />
+<line class="lane" x1="519.08" y1="498.71" x2="523.54" y2="496.75" />
+<line class="lane connector" x1="526.04" y1="503.37" x2="529.38" y2="502.26" />
+<line class="lane connector" x1="529.38" y1="502.26" x2="532.81" y2="501.41" />
+<line class="lane connector" x1="532.81" y1="501.41" x2="536.28" y2="500.79" />
+<line class="lane connector" x1="536.28" y1="500.79" x2="539.78" y2="500.35" />
+<line class="lane connector" x1="539.78" y1="500.35" x2="543.29" y2="500.06" />
+<line class="lane connector" x1="543.29" y1="500.06" x2="546.81" y2="499.88" />
+<line class="lane connector" x1="546.81" y1="499.88" x2="550.34" y2="499.77" />
+<line class="lane connector" x1="550.34" y1="499.77" x2="553.86" y2="499.70" />
+<line class="lane" x1="526.87" y1="505.57" x2="530.04" y2="504.53" />
+<line class="lane" x1="530.04" y1="504.53" x2="533.30" y2="503.72" />
+<line class="lane" x1="533.30" y1="503.72" x2="536.63" y2="503.12" />
+<line class="lane" x1="536.63" y1="503.12" x2="540.02" y2="502.70" />
+<line class="lane" x1="540.02" y1="502.70" x2="543.44" y2="502.42" />
+<line class="lane" x1="543.44" y1="502.42" x2="546.91" y2="502.24" />
+<line class="lane" x1="546.91" y1="502.24" x2="550.40" y2="502.13" />
+<line class="lane" x1="550.40" y1="502.13" x2="553.92" y2="502.05" />
+<line class="lane" x1="528.54" y1="509.98" x2="531.34" y2="509.06" />
+<line class="lane" x1="531.34" y1="509.06" x2="534.28" y2="508.33" />
+<line class="lane" x1="534.28" y1="508.33" x2="537.33" y2="507.78" />
+<line class="lane" x1="537.33" y1="507.78" x2="540.49" y2="507.39" />
+<line class="lane" x1="540.49" y1="507.39" x2="543.75" y2="507.12" />
+<line class="lane" x1="543.75" y1="507.12" x2="547.09" y2="506.95" />
+<line class="lane" x1="547.09" y1="506.95" x2="550.52" y2="506.84" />
+<line class="lane" x1="550.52" y1="506.84" x2="554.02" y2="506.76" />
+<line class="lane" x1="525.20" y1="501.17" x2="528.73" y2="500.00" />
+<line class="lane" x1="528.73" y1="500.00" x2="532.32" y2="499.11" />
+<line class="lane" x1="532.32" y1="499.11" x2="535.93" y2="498.46" />
+<line class="lane" x1="535.93" y1="498.46" x2="539.54" y2="498.01" />
+<line class="lane" x1="539.54" y1="498.01" x2="543.14" y2="497.71" />
+<line class="lane" x1="543.14" y1="497.71" x2="546.72" y2="497.53" />
+<line class="lane" x1="546.72" y1="497.53" x2="550.28" y2="497.42" />
+<line class="lane" x1="550.28" y1="497.42" x2="553.81" y2="497.34" />
+<line class="lane" x1="523.53" y1="496.76" x2="527.43" y2="495.47" />
+<line class="lane" x1="527.43" y1="495.47" x2="531.34" y2="494.50" />
+<line class="lane" x1="531.34" y1="494.50" x2="535.22" y2="493.80" />
+<line class="lane" x1="535.22" y1="493.80" x2="539.06" y2="493.32" />
+<line class="lane" x1="539.06" y1="493.32" x2="542.83" y2="493.01" />
+<line class="lane" x1="542.83" y1="493.01" x2="546.53" y2="492.82" />
+<line class="lane" x1="546.53" y1="492.82" x2="550.16" y2="492.71" />
+<line class="lane" x1="550.16" y1="492.71" x2="553.70" y2="492.63" />
+<line class="lane connector" x1="446.12" y1="500.00" x2="449.65" y2="499.99" />
+<line class="lane connector" x1="449.65" y1="499.99" x2="453.17" y2="499.93" />
+<line class="lane connector" x1="453.17" y1="499.93" x2="456.70" y2="499.78" />
+<line class="lane connector" x1="456.70" y1="499.78" x2="460.21" y2="499.50" />
+<line class="lane connector" x1="460.21" y1="499.50" x2="463.71" y2="499.05" />
+<line class="lane connector" x1="463.71" y1="499.05" x2="467.17" y2="498.40" />
+<line class="lane connector" x1="467.17" y1="498.40" x2="470.58" y2="497.50" />
+<line class="lane connector" x1="470.58" y1="497.50" x2="473.91" y2="496.33" />
+<line class="lane" x1="446.12" y1="502.36" x2="449.67" y2="502.35" />
+<line class="lane" x1="449.67" y1="502.35" x2="453.24" y2="502.29" />
+<line class="lane" x1="453.24" y1="502.29" x2="456.84" y2="502.13" />
+<line class="lane" x1="456.84" y1="502.13" x2="460.45" y2="501.85" />
+<line class="lane" x1="460.45" y1="501.85" x2="464.07" y2="501.38" />
+<line class="lane" x1="464.07" y1="501.38" x2="467.69" y2="500.70" />
+<line class="lane" x1="467.69" y1="500.70" x2="471.27" y2="499.76" />
+<line class="lane" x1="471.27" y1="499.76" x2="474.79" y2="498.52" />
+<line class="lane" x1="446.12" y1="507.07" x2="449.71" y2="507.06" />
+<line class="lane" x1="449.71" y1="507.06" x2="453.37" y2="507.00" />
+<line class="lane" x1="453.37" y1="507.00" x2="457.12" y2="506.84" />
+<line class="lane" x1="457.12" y1="506.84" x2="460.93" y2="506.54" />
+<line class="lane" x1="460.93" y1="506.54" x2="464.80" y2="506.04" />
+<line class="lane" x1="464.80" y1="506.04" x2="468.72" y2="505.30" />
+<line class="lane" x1="468.72" y1="505.30" x2="472.65" y2="504.27" />
+<line class="lane" x1="472.65" y1="504.27" x2="476.56" y2="502.89" />
+<line class="lane" x1="446.12" y1="497.64" x2="449.63" y2="497.63" />
+<line class="lane" x1="449.63" y1="497.63" x2="453.11" y2="497.57" />
+<line class="lane" x1="453.11" y1="497.57" x2="456.56" y2="497.43" />
+<line class="lane" x1="456.56" y1="497.43" x2="459.97" y2="497.16" />
+<line class="lane" x1="459.97" y1="497.16" x2="463.34" y2="496.73" />
+<line class="lane" x1="463.34" y1="496.73" x2="466.66" y2="496.10" />
+<line class="lane" x1="466.66" y1="496.10" x2="469.89" y2="495.25" />
+<line class="lane" x1="469.89" y1="495.25" x2="473.03" y2="494.15" />
+<line class="lane" x1="446.12" y1="492.93" x2="449.59" y2="492.92" />
+<line class="lane" x1="449.59" y1="492.92" x2="452.97" y2="492.86" />
+<line class="lane" x1="452.97" y1="492.86" x2="456.28" y2="492.72" />
+<line class="lane" x1="456.28" y1="492.72" x2="459.49" y2="492.47" />
+<line class="lane" x1="459.49" y1="492.47" x2="462.61" y2="492.07" />
+<line class="lane" x1="462.61" y1="492.07" x2="465.63" y2="491.50" />
+<line class="lane" x1="465.63" y1="491.50" x2="468.52" y2="490.74" />
+<line class="lane" x1="468.52" y1="490.74" x2="471.26" y2="489.78" />
+<line class="lane connector" x1="473.96" y1="496.63" x2="477.74" y2="494.97" />
+<line class="lane connector" x1="477.74" y1="494.97" x2="481.32" y2="492.91" />
+<line class="lane connector" x1="481.32" y1="492.91" x2="484.67" y2="490.49" />
+<line class="lane connector" x1="484.67" y1="490.49" x2="487.74" y2="487.73" />
+<line class="lane connector" x1="487.74" y1="487.73" x2="490.50" y2="484.66" />
+<line class="lane connector" x1="490.50" y1="484.66" x2="492.92" y2="481.31" />
+<line class="lane connector" x1="492.92" y1="481.31" x2="494.98" y2="477.73" />
+<line class="lane connector" x1="494.98" y1="477.73" x2="496.64" y2="473.95" />
+<line class="lane" x1="474.80" y1="498.83" x2="478.81" y2="497.07" />
+<line class="lane" x1="478.81" y1="497.07" x2="482.60" y2="494.89" />
+<line class="lane" x1="482.60" y1="494.89" x2="486.15" y2="492.32" />
+<line class="lane" x1="486.15" y1="492.32" x2="489.41" y2="489.40" />
+<line class="lane" x1="489.41" y1="489.40" x2="492.34" y2="486.14" />
+<line class="lane" x1="492.34" y1="486.14" x2="494.90" y2="482.59" />
+<line class="lane" x1="494.90" y1="482.59" x2="497.08" y2="478.79" />
+<line class="lane" x1="497.08" y1="478.79" x2="498.85" y2="474.79" />
+<line class="lane" x1="476.47" y1="503.24" x2="480.93" y2="501.28" />
+<line class="lane" x1="480.93" y1="501.28" x2="485.16" y2="498.85" />
+<line class="lane" x1="485.16" y1="498.85" x2="489.11" y2="495.99" />
+<line class="lane" x1="489.11" y1="495.99" x2="492.74" y2="492.73" />
+<line class="lane" x1="492.74" y1="492.73" x2="496.00" y2="489.10" />
+<line class="lane" x1="496.00" y1="489.10" x2="498.86" y2="485.15" />
+<line class="lane" x1="498.86" y1="485.15" x2="501.29" y2="480.92" />
+<line class="lane" x1="501.29" y1="480.92" x2="503.25" y2="476.46" />
+<line class="lane" x1="473.13" y1="494.43" x2="476.68" y2="492.86" />
+<line class="lane" x1="476.68" y1="492.86" x2="480.05" y2="490.93" />
+<line class="lane" x1="480.05" y1="490.93" x2="483.19" y2="488.66" />
+<line class="lane" x1="483.19" y1="488.66" x2="486.07" y2="486.06" />
+<line class="lane" x1="486.07" y1="486.06" x2="488.67" y2="483.18" />
+<line class="lane" x1="488.67" y1="483.18" x2="490.94" y2="480.04" />
+<line class="lane" x1="490.94" y1="480.04" x2="492.87" y2="476.67" />
+<line class="lane" x1="492.87" y1="476.67" x2="494.44" y2="473.12" />
+<line class="lane" x1="471.46" y1="490.02" x2="474.55" y2="488.65" />
+<line class="lane" x1="474.55" y1="488.65" x2="477.49" y2="486.97" />
+<line class="lane" x1="477.49" y1="486.97" x2="480.23" y2="484.99" />
+<line class="lane" x1="480.23" y1="484.99" x2="482.74" y2="482.73" />
+<line class="lane" x1="482.74" y1="482.73" x2="485.00" y2="480.22" />
+<line class="lane" x1="485.00" y1="480.22" x2="486.98" y2="477.48" />
+<line class="lane" x1="486.98" y1="477.48" x2="488.66" y2="474.54" />
+<line class="lane" x1="488.66" y1="474.54" x2="490.03" y2="471.45" />
+<line class="lane connector" x1="496.63" y1="473.96" x2="497.74" y2="470.62" />
+<line class="lane connector" x1="497.74" y1="470.62" x2="498.59" y2="467.19" />
+<line class="lane connector" x1="498.59" y1="467.19" x2="499.21" y2="463.72" />
+<line class="lane connector" x1="499.21" y1="463.72" x2="499.65" y2="460.22" />
+<line class="lane connector" x1="499.65" y1="460.22" x2="499.94" y2="456.71" />
+<line class="lane connector" x1="499.94" y1="456.71" x2="500.12" y2="453.19" />
+<line class="lane connector" x1="500.12" y1="453.19" x2="500.23" y2="449.66" />
+<line class="lane connector" x1="500.23" y1="449.66" x2="500.30" y2="446.14" />
+<line class="lane" x1="498.83" y1="474.80" x2="500.00" y2="471.27" />
+<line class="lane" x1="500.00" y1="471.27" x2="500.89" y2="467.68" />
+<line class="lane" x1="500.89" y1="467.68" x2="501.54" y2="464.07" />
+<line class="lane" x1="501.54" y1="464.07" x2="501.99" y2="460.46" />
+<line class="lane" x1="501.99" y1="460.46" x2="502.29" y2="456.86" />
+<line class="lane" x1="502.29" y1="456.86" x2="502.47" y2="453.28" />
+<line class="lane" x1="502.47" y1="453.28" x2="502.58" y2="449.72" />
+<line class="lane" x1="502.58" y1="449.72" x2="502.66" y2="446.19" />
+<line class="lane" x1="503.24" y1="476.47" x2="504.53" y2="472.57" />
+<line class="lane" x1="504.53" y1="472.57" x2="505.50" y2="468.66" />
+<line class="lane" x1="505.50" y1="468.66" x2="506.20" y2="464.78" />
+<line class="lane" x1="506.20" y1="464.78" x2="506.68" y2="460.94" />
+<line class="lane" x1="506.68" y1="460.94" x2="506.99" y2="457.17" />
+<line class="lane" x1="506.99" y1="457.17" x2="507.18" y2="453.47" />
+<line class="lane" x1="507.18" y1="453.47" x2="507.29" y2="449.84" />
+<line class="lane" x1="507.29" y1="449.84" x2="507.37" y2="446.30" />
+<line class="lane" x1="494.43" y1="473.13" x2="495.47" y2="469.96" />
+<line class="lane" x1="495.47" y1="469.96" x2="496.28" y2="466.70" />
+<line class="lane" x1="496.28" y1="466.70" x2="496.88" y2="463.37" />
+<line class="lane" x1="496.88" y1="463.37" x2="497.30" y2="459.98" />
+<line class="lane" x1="497.30" y1="459.98" x2="497.58" y2="456.56" />
+<line class="lane" x1="497.58" y1="456.56" x2="497.76" y2="453.09" />
+<line class="lane" x1="497.76" y1="453.09" x2="497.87" y2="449.60" />
+<line class="lane" x1="497.87" y1="449.60" x2="497.95" y2="446.08" />
+<line class="lane" x1="490.02" y1="471.46" x2="490.94" y2="468.66" />
+<line class="lane" x1="490.94" y1="468.66" x2="491.67" y2="465.72" />
+<line class="lane" x1="491.67" y1="465.72" x2="492.22" y2="462.67" />
+<line class="lane" x1="492.22" y1="462.67" x2="492.61" y2="459.51" />
+<line class="lane" x1="492.61" y1="459.51" x2="492.88" y2="456.25" />
+<line class="lane" x1="492.88" y1="456.25" x2="493.05" y2="452.91" />
+<line class="lane" x1="493.05" y1="452.91" x2="493.16" y2="449.48" />
+<line class="lane" x1="493.16" y1="449.48" x2="493.24" y2="445.98" />
+<line class="lane" x1="502.36" y1="553.88" x2="502.36" y2="446.12" />
+<line class="lane" x1="507.07" y1="553.88" x2="507.07" y2="446.12" />
+<line class="lane" x1="497.64" y1="553.88" x2="497.64" y2="446.12" />
+<line class="lane" x1="492.93" y1="553.88" x2="492.93" y2="446.12" />
+<line class="lane connector" x1="553.88" y1="500.00" x2="550.35" y2="499.99" />
+<line class="lane connector" x1="550.35" y1="499.99" x2="546.83" y2="499.93" />
+<line class="lane connector" x1="546.83" y1="499.93" x2="543.30" y2="499.78" />
+<line class="lane connector" x1="543.30" y1="499.78" x2="539.79" y2="499.50" />
+<line class="lane connector" x1="539.79" y1="499.50" x2="536.29" y2="499.05" />
+<line class="lane connector" x1="536.29" y1="499.05" x2="532.83" y2="498.40" />
+<line class="lane connector" x1="532.83" y1="498.40" x2="529.42" y2="497.50" />
+<line class="lane connector" x1="529.42" y1="497.50" x2="526.09" y2="496.33" />
+<line class="lane" x1="553.88" y1="497.64" x2="550.37" y2="497.63" />
+<line class="lane" x1="550.37" y1="497.63" x2="546.89" y2="497.57" />
+<line class="lane" x1="546.89" y1="497.57" x2="543.44" y2="497.43" />
+<line class="lane" x1="543.44" y1="497.43" x2="540.03" y2="497.16" />
+<line class="lane" x1="540.03" y1="497.16" x2="536.66" y2="496.73" />
+<line class="lane" x1="536.66" y1="496.73" x2="533.34" y2="496.10" />
+<line class="lane" x1="533.34" y1="496.10" x2="530.11" y2="495.25" />
+<line class="lane" x1="530.11" y1="495.25" x2="526.97" y2="494.15" />
+<line class="lane" x1="553.88" y1="492.93" x2="550.41" y2="492.92" />
+<line class="lane" x1="550.41" y1="492.92" x2="547.03" y2="492.86" />
+<line class="lane" x1="547.03" y1="492.86" x2="543.72" y2="492.72" />
+<line class="lane" x1="543.72" y1="492.72" x2="540.51" y2="492.47" />
+<line class="lane" x1="540.51" y1="492.47" x2="537.39" y2="492.07" />
+<line class="lane" x1="537.39" y1="492.07" x2="534.37" y2="491.50" />
+<line class="lane" x1="534.37" y1="491.50" x2="531.48" y2="490.74" />
+<line class="lane" x1="531.48" y1="490.74" x2="528.74" y2="489.78" />
+<line class="lane" x1="553.88" y1="502.36" x2="550.33" y2="502.35" />
+<line class="lane" x1="550.33" y1="502.35" x2="546.76" y2="502.29" />
+<line class="lane" x1="546.76" y1="502.29" x2="543.16" y2="502.13" />
+<line class="lane" x1="543.16" y1="502.13" x2="539.55" y2="501.85" />
+<line class="lane" x1="539.55" y1="501.85" x2="535.93" y2="501.38" />
+<line class="lane" x1="535.93" y1="501.38" x2="532.31" y2="500.70" />
+<line class="lane" x1="532.31" y1="500.70" x2="528.73" y2="499.76" />
+<line class="lane" x1="528.73" y1="499.76" x2="525.21" y2="498.52" />
+<line class="lane" x1="553.88" y1="507.07" x2="550.29" y2="507.06" />
+<line class="lane" x1="550.29" y1="507.06" x2="546.63" y2="507.00" />
+<line class="lane" x1="546.63" y1="507.00" x2="542.88" y2="506.84" />
+<line class="lane" x1="542.88" y1="506.84" x2="539.07" y2="506.54" />
+<line class="lane" x1="539.07" y1="506.54" x2="535.20" y2="506.04" />
+<line class="lane" x1="535.20" y1="506.04" x2="531.28" y2="505.30" />
+<line class="lane" x1="531.28" y1="505.30" x2="527.35" y2="504.27" />
+<line class="lane" x1="527.35" y1="504.27" x2="523.44" y2="502.89" />
+<line class="lane connector" x1="526.04" y1="496.63" x2="522.26" y2="494.97" />
+<line class="lane connector" x1="522.26" y1="494.97" x2="518.68" y2="492.91" />
+<line class="lane connector" x1="518.68" y1="492.91" x2="515.33" y2="490.49" />
+<line class="lane connector" x1="515.33" y1="490.49" x2="512.26" y2="487.73" />
+<line class="lane connector" x1="512.26" y1="487.73" x2="509.50" y2="484.66" />
+<line class="lane connector" x1="509.50" y1="484.66" x2="507.08" y2="481.31" />
+<line class="lane connector" x1="507.08" y1="481.31" x2="505.02" y2="477.73" />
+<line class="lane connector" x1="505.02" y1="477.73" x2="503.36" y2="473.95" />
+<line class="lane" x1="526.87" y1="494.43" x2="523.32" y2="492.86" />
+<line class="lane" x1="523.32" y1="492.86" x2="519.95" y2="490.93" />
+<line class="lane" x1="519.95" y1="490.93" x2="516.81" y2="488.66" />
+<line class="lane" x1="516.81" y1="488.66" x2="513.93" y2="486.06" />
+<line class="lane" x1="513.93" y1="486.06" x2="511.33" y2="483.18" />
+<line class="lane" x1="511.33" y1="483.18" x2="509.06" y2="480.04" />
+<line class="lane" x1="509.06" y1="480.04" x2="507.13" y2="476.67" />
+<line class="lane" x1="507.13" y1="476.67" x2="505.56" y2="473.12" />
+<line class="lane" x1="528.54" y1="490.02" x2="525.45" y2="488.65" />
+<line class="lane" x1="525.45" y1="488.65" x2="522.51" y2="486.97" />
+<line class="lane" x1="522.51" y1="486.97" x2="519.77" y2="484.99" />
+<line class="lane" x1="519.77" y1="484.99" x2="517.26" y2="482.73" />
+<line class="lane" x1="517.26" y1="482.73" x2="515.00" y2="480.22" />
+<line class="lane" x1="515.00" y1="480.22" x2="513.02" y2="477.48" />
+<line class="lane" x1="513.02" y1="477.48" x2="511.34" y2="474.54" />
+<line class="lane" x1="511.34" y1="474.54" x2="509.97" y2="471.45" />
+<line class="lane" x1="525.20" y1="498.83" x2="521.19" y2="497.07" />
+<line class="lane" x1="521.19" y1="497.07" x2="517.40" y2="494.89" />
+<line class="lane" x1="517.40" y1="494.89" x2="513.85" y2="492.32" />
+<line class="lane" x1="513.85" y1="492.32" x2="510.59" y2="489.40" />
+<line class="lane" x1="510.59" y1="489.40" x2="507.66" y2="486.14" />
+<line class="lane" x1="507.66" y1="486.14" x2="505.10" y2="482.59" />
+<line class="lane" x1="505.10" y1="482.59" x2="502.92" y2="478.79" />
+<line class="lane" x1="502.92" y1="478.79" x2="501.15" y2="474.79" />
+<line class="lane" x1="523.53" y1="503.24" x2="519.07" y2="501.28" />
+<line class="lane" x1="519.07" y1="501.28" x2="514.84" y2="498.85" />
+<line class="lane" x1="514.84" y1="498.85" x2="510.89" y2="495.99" />
+<line class="lane" x1="510.89" y1="495.99" x2="507.26" y2="492.73" />
+<line class="lane" x1="507.26" y1="492.73" x2="504.00" y2="489.10" />
+<line class="lane" x1="504.00" y1="489.10" x2="501.14" y2="485.15" />
+<line class="lane" x1="501.14" y1="485.15" x2="498.71" y2="480.92" />
+<line class="lane" x1="498.71" y1="480.92" x2="496.75" y2="476.46" />
+<line class="lane connector" x1="503.37" y1="473.96" x2="502.26" y2="470.62" />
+<line class="lane connector" x1="502.26" y1="470.62" x2="501.41" y2="467.19" />
+<line class="lane connector" x1="501.41" y1="467.19" x2="500.79" y2="463.72" />
+<line class="lane connector" x1="500.79" y1="463.72" x2="500.35" y2="460.22" />
+<line class="lane connector" x1="500.35" y1="460.22" x2="500.06" y2="456.71" />
+<line class="lane connector" x1="500.06" y1="456.71" x2="499.88" y2="453.19" />
+<line class="lane connector" x1="499.88" y1="453.19" x2="499.77" y2="449.66" />
+<line class="lane connector" x1="499.77" y1="449.66" x2="499.70" y2="446.14" />
+<line class="lane" x1="505.57" y1="473.13" x2="504.53" y2="469.96" />
+<line class="lane" x1="504.53" y1="469.96" x2="503.72" y2="466.70" />
+<line class="lane" x1="503.72" y1="466.70" x2="503.12" y2="463.37" />
+<line class="lane" x1="503.12" y1="463.37" x2="502.70" y2="459.98" />
+<line class="lane" x1="502.70" y1="459.98" x2="502.42" y2="456.56" />
+<line class="lane" x1="502.42" y1="456.56" x2="502.24" y2="453.09" />
+<line class="lane" x1="502.24" y1="453.09" x2="502.13" y2="449.60" />
+<line class="lane" x1="502.13" y1="449.60" x2="502.05" y2="446.08" />
+<line class="lane" x1="509.98" y1="471.46" x2="509.06" y2="468.66" />
+<line class="lane" x1="509.06" y1="468.66" x2="508.33" y2="465.72" />
+<line class="lane" x1="508.33" y1="465.72" x2="507.78" y2="462.67" />
+<line class="lane" x1="507.78" y1="462.67" x2="507.39" y2="459.51" />
+<line class="lane" x1="507.39" y1="459.51" x2="507.12" y2="456.25" />
+<line class="lane" x1="507.12" y1="456.25" x2="506.95" y2="452.91" />
+<line class="lane" x1="506.95" y1="452.91" x2="506.84" y2="449.48" />
+<line class="lane" x1="506.84" y1="449.48" x2="506.76" y2="445.98" />
+<line class="lane" x1="501.17" y1="474.80" x2="500.00" y2="471.27" />
+<line class="lane" x1="500.00" y1="471.27" x2="499.11" y2="467.68" />
+<line class="lane" x1="499.11" y1="467.68" x2="498.46" y2="464.07" />
+<line class="lane" x1="498.46" y1="464.07" x2="498.01" y2="460.46" />
+<line class="lane" x1="498.01" y1="460.46" x2="497.71" y2="456.86" />
+<line class="lane" x1="497.71" y1="456.86" x2="497.53" y2="453.28" />
+<line class="lane" x1="497.53" y1="453.28" x2="497.42" y2="449.72" />
+<line class="lane" x1="497.42" y1="449.72" x2="497.34" y2="446.19" />
+<line class="lane" x1="496.76" y1="476.47" x2="495.47" y2="472.57" />
+<line class="lane" x1="495.47" y1="472.57" x2="494.50" y2="468.66" />
+<line class="lane" x1="494.50" y1="468.66" x2="493.80" y2="464.78" />
+<line class="lane" x1="493.80" y1="464.78" x2="493.32" y2="460.94" />
+<line class="lane" x1="493.32" y1="460.94" x2="493.01" y2="457.17" />
+<line class="lane" x1="493.01" y1="457.17" x2="492.82" y2="453.47" />
+<line class="lane" x1="492.82" y1="453.47" x2="492.71" y2="449.84" />
+<line class="lane" x1="492.71" y1="449.84" x2="492.63" y2="446.30" />
+        </svg>
+      </div>
+      <div class="legend">
+        <span class="key"><span class="swatch ref"></span>road reference</span>
+        <span class="key"><span class="swatch boundary"></span>lane boundary</span>
+        <span class="key"><span class="swatch junction"></span>junction connector</span>
+        <span class="key"><span class="swatch lane-s"></span>driving lane center</span>
+        <span class="key"><span class="swatch connector"></span>connector sample</span>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Road Seed</h2>
+      <pre>{
+  &quot;status&quot;: &quot;supported&quot;,
+  &quot;road&quot;: {
+    &quot;topology&quot;: &quot;cross_intersection&quot;,
+    &quot;type&quot;: &quot;townArterial&quot;,
+    &quot;lanes&quot;: {
+      &quot;forward&quot;: 2,
+      &quot;backward&quot;: 2
+    },
+    &quot;center_line&quot;: &quot;broken&quot;
+  },
+  &quot;description_zh&quot;: &quot;事故发生在 Cesar Chavez Street 与 Guerrero Street 的平面十字交叉口（两条道路均为多车道城市干道），故选用 cross_intersection/townArterial；ego 东行方向明确有两条车道（“leftmost of two lanes”），对向按城市干道默认两条，故 forward=2、backward=2；中心线虚实未提及，保守取 broken 以保留借道空间。&quot;,
+  &quot;evidence&quot;: {
+    &quot;source_snippets&quot;: [
+      &quot;a collision involving an ambulance on Cesar Chavez Street at Guerrero Street&quot;,
+      &quot;The Waymo AV was traveling east in the leftmost of two lanes on Cesar Chavez Street&quot;,
+      &quot;While the traffic light was yellow, the Waymo AV began to cross the intersection with Guerrero Street&quot;,
+      &quot;an ambulance traveling north on Guerrero Street ... began to make a right turn onto eastbound Cesar Chavez Street&quot;,
+      &quot;ADDRESS/LOCATION OF ACCIDENT: Cesar Chavez Street at Guerrero Street&quot;,
+      &quot;CITY: San Francisco&quot;
+    ],
+    &quot;reason&quot;: &quot;输入明确给出“Cesar Chavez Street at Guerrero Street”且在黄灯下穿越路口，事故地点本身是平面交叉口，因此 topology 必须取 cross_intersection（四向 approach 与所有直行/左转/右转已隐含，无需列 allowed maneuvers）。Cesar Chavez Street 为旧金山多车道城市干道，ego 东行方向明确“两条车道中最左侧”，故 forward=2；对向车道数未明示，按城市干道对称默认 backward=2。type 取 townArterial（多车道干道）。center_line 未提及，按默认规则取 broken。&quot;
+  },
+  &quot;pipeline&quot;: {
+    &quot;stage&quot;: &quot;road_seed&quot;,
+    &quot;generation_mode&quot;: &quot;api_deepseek&quot;,
+    &quot;model&quot;: &quot;deepseek-flash&quot;,
+    &quot;input&quot;: &quot;outputs/framework_42_20260917/cases/055_Waymo_November_3_2024_(1)/fresh_deepseek_batch_v1/source.pdf&quot;
+  },
+  &quot;provenance&quot;: {
+    &quot;schema_version&quot;: &quot;1.0&quot;,
+    &quot;stage&quot;: &quot;road_seed&quot;,
+    &quot;llm&quot;: {
+      &quot;model&quot;: &quot;deepseek-flash&quot;,
+      &quot;base_url&quot;: &quot;https://api.deepseek.com&quot;,
+      &quot;temperature&quot;: 0.0,
+      &quot;reasoning_effort&quot;: &quot;high&quot;,
+      &quot;enable_thinking&quot;: true
+    },
+    &quot;schema_md_sha256_16&quot;: &quot;1a84c6af0160a9df&quot;,
+    &quot;input&quot;: {
+      &quot;path&quot;: &quot;/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/055_Waymo_November_3_2024_(1)/fresh_deepseek_batch_v1/source.pdf&quot;,
+      &quot;sha256_16&quot;: &quot;2f3ecaf257310885&quot;
+    },
+    &quot;output_sha256_16&quot;: &quot;90c845f8a442c3d0&quot;,
+    &quot;timestamp_utc&quot;: &quot;2026-09-17T18:28:24+00:00&quot;,
+    &quot;git_revision&quot;: &quot;e82d164435a5&quot;
+  }
+}</pre>
+      <h2>OpenDRIVE Summary</h2>
+      <pre>{
+  &quot;road_count&quot;: 10,
+  &quot;junction_count&quot;: 1,
+  &quot;connection_count&quot;: 12,
+  &quot;lane_link_count&quot;: 48,
+  &quot;driving_lanes_per_direction&quot;: 2,
+  &quot;total_driving_lanes_on_approach&quot;: 4,
+  &quot;road_ids&quot;: [
+    &quot;1&quot;,
+    &quot;2&quot;,
+    &quot;3&quot;,
+    &quot;4&quot;,
+    &quot;100&quot;,
+    &quot;101&quot;,
+    &quot;102&quot;,
+    &quot;103&quot;,
+    &quot;104&quot;,
+    &quot;105&quot;
+  ],
+  &quot;junction_ids&quot;: [
+    &quot;100&quot;
+  ],
+  &quot;xodr_schema_valid&quot;: true
+}</pre>
+    </section>
+  </main>
+</body>
+</html>

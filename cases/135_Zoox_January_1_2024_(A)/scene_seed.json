@@ -1,0 +1,62 @@
+{
+  "scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {},
+      "vehicle_class": "car"
+    },
+    "npcs": [
+      {
+        "id": "suv_red_light",
+        "kind": "vehicle",
+        "position": "cross",
+        "side": "left",
+        "behavior": {
+          "block": "junction_cross",
+          "params": {
+            "approach_distance_m": 10
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 0.0,
+            "distance_m": 46.662
+          }
+        },
+        "vehicle_class": "suv"
+      },
+      {
+        "id": "zoox_stopped",
+        "kind": "vehicle",
+        "position": "cross",
+        "side": "right",
+        "behavior": {
+          "block": "static_hold",
+          "params": {}
+        },
+        "vehicle_class": "suv"
+      }
+    ],
+    "collision": {
+      "a": "suv_red_light",
+      "b": "ego"
+    },
+    "collisions": [
+      {
+        "a": "suv_red_light",
+        "b": "ego"
+      },
+      {
+        "a": "suv_red_light",
+        "b": "zoox_stopped"
+      }
+    ],
+    "control": "traffic_light",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "night"
+    }
+  }
+}

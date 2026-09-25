@@ -1,0 +1,12 @@
+{
+  "operation": "build_road_seed_opendrive.build",
+  "started_at": "2026-09-18T10:10:26.221400+00:00",
+  "completed_at": "2026-09-18T10:10:26.330024+00:00",
+  "seed_path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/097_Zoox_May_30_2024/fresh_equivalent_road_v1/pipeline/framework_42_20260917_097_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1/road_seed.json",
+  "seed_sha256": "8e12cda926f463c71daad225b52847798219e6f032f1f12235e5973c3975008e",
+  "xodr_path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/097_Zoox_May_30_2024/fresh_equivalent_road_v1/pipeline/framework_42_20260917_097_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1/framework_42_20260917_097_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1.xodr",
+  "xodr_sha256": "a27be9bd9d57d758dc7b5523ebd8724024c66ee0f54d57c3942830ee912652b3",
+  "compiler_sha256": "58d3a5909763448f9fe63293adb79baba79b388b7f5f73de02feb30df225a0a8",
+  "existing_xodr_used": false,
+  "seed_reused_from": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/097_Zoox_May_30_2024/fresh_deepseek_batch_runtime_v1"
+}

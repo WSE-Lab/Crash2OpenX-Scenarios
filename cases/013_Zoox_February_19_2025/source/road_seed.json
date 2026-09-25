@@ -1,0 +1,46 @@
+{
+  "status": "supported",
+  "road": {
+    "topology": "straight",
+    "type": "townArterial",
+    "lanes": {
+      "forward": 5,
+      "backward": 0
+    },
+    "center_line": "broken"
+  },
+  "description_zh": "单向五车道城市干道（Harrison Street），同向至少5条车道，无对向车道，中心线无实际意义（默认 broken）；事故为同向车道间变道刮擦，非路口。",
+  "evidence": {
+    "source_snippets": [
+      "A Zoox vehicle (Vehicle 1) in autonomous mode was traveling in lane 4 on southwest-bound Harrison Street near Columbia Square in San Francisco.",
+      "a passenger car (Vehicle 2), traveling in the same direction ahead of the Zoox vehicle in the right adjacent lane (lane 5)",
+      "Vehicle 2 then swerved left into lane 4 across the path of the Zoox vehicle"
+    ],
+    "reason": "道路为直线城市干道，非交叉口；同向出现 lane 4 与 lane 5（右相邻），推断为单向至少5车道，故 forward=5, backward=0；Harrison Street 为城市干道，type=townArterial；单向无中心线实际意义，默认 broken。"
+  },
+  "pipeline": {
+    "stage": "road_seed",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/013_Zoox_February_19_2025/fresh_semantic_motion_v1/source.pdf"
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "road_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "1a84c6af0160a9df",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/013_Zoox_February_19_2025/fresh_semantic_motion_v1/source.pdf",
+      "sha256_16": "a6d0962fa6751016"
+    },
+    "output_sha256_16": "67fb550f515ee7d9",
+    "timestamp_utc": "2026-09-17T22:28:01+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}

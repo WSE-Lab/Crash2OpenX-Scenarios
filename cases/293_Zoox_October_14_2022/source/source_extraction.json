@@ -1,0 +1,20 @@
+{
+  "source": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/293_Zoox_October_14_2022/fresh_deepseek_batch_v1/source.pdf",
+  "source_sha256": "d0a5904290d0e8bd2625fcb49258f81ba7fd55e99679d07453d8adad21d76bd8",
+  "text_sha256": "1c0bc02fb34dbadbcb540e7f5cc235ce652dbfbf307b3d18af88a3b631b66e33",
+  "pdf_narrative_coverage": {
+    "applicable": true,
+    "passed": true,
+    "fields": [
+      {
+        "page": 2,
+        "field": "ADDRESS_2.1.0.1",
+        "word_count": 82,
+        "coverage": 1.0
+      }
+    ]
+  },
+  "vlm_model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "extracted_at": "2026-09-17T18:25:50.846010+00:00"
+}

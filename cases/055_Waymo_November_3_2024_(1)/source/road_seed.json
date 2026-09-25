@@ -1,0 +1,49 @@
+{
+  "status": "supported",
+  "road": {
+    "topology": "cross_intersection",
+    "type": "townArterial",
+    "lanes": {
+      "forward": 2,
+      "backward": 2
+    },
+    "center_line": "broken"
+  },
+  "description_zh": "事故发生在 Cesar Chavez Street 与 Guerrero Street 的平面十字交叉口（两条道路均为多车道城市干道），故选用 cross_intersection/townArterial；ego 东行方向明确有两条车道（“leftmost of two lanes”），对向按城市干道默认两条，故 forward=2、backward=2；中心线虚实未提及，保守取 broken 以保留借道空间。",
+  "evidence": {
+    "source_snippets": [
+      "a collision involving an ambulance on Cesar Chavez Street at Guerrero Street",
+      "The Waymo AV was traveling east in the leftmost of two lanes on Cesar Chavez Street",
+      "While the traffic light was yellow, the Waymo AV began to cross the intersection with Guerrero Street",
+      "an ambulance traveling north on Guerrero Street ... began to make a right turn onto eastbound Cesar Chavez Street",
+      "ADDRESS/LOCATION OF ACCIDENT: Cesar Chavez Street at Guerrero Street",
+      "CITY: San Francisco"
+    ],
+    "reason": "输入明确给出“Cesar Chavez Street at Guerrero Street”且在黄灯下穿越路口，事故地点本身是平面交叉口，因此 topology 必须取 cross_intersection（四向 approach 与所有直行/左转/右转已隐含，无需列 allowed maneuvers）。Cesar Chavez Street 为旧金山多车道城市干道，ego 东行方向明确“两条车道中最左侧”，故 forward=2；对向车道数未明示，按城市干道对称默认 backward=2。type 取 townArterial（多车道干道）。center_line 未提及，按默认规则取 broken。"
+  },
+  "pipeline": {
+    "stage": "road_seed",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/055_Waymo_November_3_2024_(1)/fresh_deepseek_batch_v1/source.pdf"
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "road_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "1a84c6af0160a9df",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/055_Waymo_November_3_2024_(1)/fresh_deepseek_batch_v1/source.pdf",
+      "sha256_16": "2f3ecaf257310885"
+    },
+    "output_sha256_16": "90c845f8a442c3d0",
+    "timestamp_utc": "2026-09-17T18:28:24+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}

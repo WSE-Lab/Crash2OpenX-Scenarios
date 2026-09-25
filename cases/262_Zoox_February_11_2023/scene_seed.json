@@ -1,0 +1,48 @@
+{
+  "scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {
+        "speed": 4.47,
+        "initial_speed_mps": 4.99
+      },
+      "vehicle_class": "car"
+    },
+    "npcs": [
+      {
+        "id": "av1",
+        "kind": "vehicle",
+        "position": "ahead_same_lane",
+        "side": "none",
+        "behavior": {
+          "block": "front_brake",
+          "params": {
+            "brake_t": 2.0,
+            "end_speed": 2.4,
+            "speed": 3.8,
+            "gap": 18,
+            "max_brake": 0.08
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 0.0,
+            "distance_m": 6
+          }
+        },
+        "vehicle_class": "suv"
+      }
+    ],
+    "collision": {
+      "a": "av1",
+      "b": "ego"
+    },
+    "control": "unknown",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "evening"
+    }
+  }
+}

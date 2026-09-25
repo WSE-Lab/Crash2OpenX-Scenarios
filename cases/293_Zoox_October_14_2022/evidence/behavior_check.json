@@ -1,0 +1,21 @@
+{
+  "aligned": true,
+  "verdict": "aligned",
+  "issues": [],
+  "warnings": [],
+  "expected_collision": [
+    "hero",
+    "v2"
+  ],
+  "actual_collision_actors": [
+    "hero",
+    "v2"
+  ],
+  "lane_invasion_count": 0,
+  "wrong_lane_count": 0,
+  "impact_area": "front",
+  "off_road_time": 0.0,
+  "max_lateral_excess_m": 0.0,
+  "off_road_before_collision_s": null,
+  "trajectory_quality": "clean"
+}

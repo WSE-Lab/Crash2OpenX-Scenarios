@@ -1,0 +1,54 @@
+{
+  "scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {
+        "initial_speed_mps": 4.99
+      },
+      "vehicle_class": "truck"
+    },
+    "npcs": [
+      {
+        "id": "av",
+        "kind": "vehicle",
+        "position": "adjacent",
+        "side": "right",
+        "behavior": {
+          "block": "partial_lane_intrusion",
+          "params": {
+            "long": 24,
+            "speed": 2.994
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 2.0,
+            "distance_m": 8.0
+          }
+        }
+      },
+      {
+        "id": "cyclist",
+        "kind": "cyclist",
+        "position": "roadside",
+        "side": "right",
+        "behavior": {
+          "block": "cruise",
+          "params": {}
+        },
+        "relative_to": "av"
+      }
+    ],
+    "collision": {
+      "a": "av",
+      "b": "ego"
+    },
+    "control": "unknown",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "afternoon"
+    }
+  }
+}

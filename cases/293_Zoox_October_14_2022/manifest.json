@@ -1,0 +1,138 @@
+{
+  "case_id": "293_Zoox_October_14_2022",
+  "mode": "derived_ADS_test",
+  "source_run": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/293_Zoox_October_14_2022/fresh_equivalent_road_v1/pipeline/framework_42_20260917_293_fresh_deepseek_batch_v1_fresh_deepseek_batch_runtime_v1_fresh_equivalent_road_v1",
+  "source_result_sha256": "b81fde13b2f95a1fac1613e1d27a6cb3d2e6818709b34e8d620bf8a020b6363e",
+  "source_scene_sha256": "8d2c552c771ac163aa451253d787fd2416b9ac4fb6ef8f19d2e009f613212aec",
+  "source_map_sha256": "8885a1140ad06b97425572b3d4cf49277d9804e0c0c7f789a18be5c5e8683958",
+  "map_sha256": "8885a1140ad06b97425572b3d4cf49277d9804e0c0c7f789a18be5c5e8683958",
+  "scenario_sha256": "b40f859005117420a7d9ab1f1d4efbd90bee7c99c1f3b21a376b6eaff71b6cd8",
+  "map_preserved": true,
+  "source_scene": {
+    "status": "supported",
+    "scene": {
+      "sut": {
+        "id": "ego",
+        "kind": "vehicle",
+        "maneuver": "straight",
+        "params": {}
+      },
+      "npcs": [
+        {
+          "id": "v2",
+          "kind": "vehicle",
+          "position": "oncoming",
+          "side": "none",
+          "behavior": {
+            "block": "junction_turn",
+            "params": {}
+          }
+        }
+      ],
+      "collision": {
+        "a": "ego",
+        "b": "v2"
+      },
+      "control": "traffic_light",
+      "environment": {
+        "weather": "clear",
+        "time_of_day": "afternoon"
+      }
+    },
+    "description_zh": "绿灯下直行拥有路权的 Zoox AV 在路口与一辆对向违规左转、横穿其行驶路径的 Nissan Altima 发生侧向（broadside）碰撞，安全员最大制动仍未能完全避免，Zoox 右前角撞上对方右前角。",
+    "evidence": {
+      "source_snippets": [
+        "A Zoox vehicle was proceeding straight in autonomy through an intersection with a green light and right of way when vehicle 2 attempted an illegal left turn across lanes of traffic into Zoox's right of way.",
+        "The safety driver disengaged and applied max braking effort which allowed Zoox to mitigate but not completely prevent the unavoidable collision. The Zoox vehicle struck the right front corner of vehicle 2.",
+        "MOVEMENT PRECEDING COLLISION: B. PROCEEDING STRAIGHT (VEH1), M. OTHER UNSAFE TURNING (VEH2); TYPE OF COLLISION: D. BROADSIDE",
+        "WEATHER A. CLEAR; LIGHTING A. DAYLIGHT; ROADWAY SURFACE A. DRY; H. NO UNUSUAL CONDITIONS; TIME OF ACCIDENT 02:52 PM"
+      ],
+      "reason": "双方交互碰撞：ego（Zoox AV，kind=vehicle）绿灯直行拥有路权，NPC 为对向车辆在路口违规左转横穿 ego 行驶路径，可用 junction_turn + position=oncoming 映射；控制信号为 traffic_light，天气 clear、白天、路面干燥（friction 默认）。报告未给出任何速度/距离/秒数等量化语，也无 abruptly 类强定性词，故 params 走默认，未强行填键。"
+    },
+    "pipeline": {
+      "stage": "scene_seed_v2",
+      "generation_mode": "api_deepseek",
+      "model": "deepseek-flash",
+      "input": "outputs/framework_42_20260917/cases/293_Zoox_October_14_2022/fresh_deepseek_batch_v1/source.pdf",
+      "normalization_rules": []
+    },
+    "provenance": {
+      "schema_version": "1.0",
+      "stage": "scene_seed",
+      "llm": {
+        "model": "deepseek-flash",
+        "base_url": "https://api.deepseek.com",
+        "temperature": 0.0,
+        "reasoning_effort": "high",
+        "enable_thinking": true
+      },
+      "schema_md_sha256_16": "1a84c6af0160a9df",
+      "input": {
+        "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/293_Zoox_October_14_2022/fresh_deepseek_batch_v1/source.pdf",
+        "sha256_16": "d0a5904290d0e8bd"
+      },
+      "output_sha256_16": "7990dabdf606542f",
+      "timestamp_utc": "2026-09-17T18:26:03+00:00",
+      "git_revision": "e82d164435a5"
+    }
+  },
+  "derived_scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "straight",
+      "params": {}
+    },
+    "npcs": [
+      {
+        "id": "v2",
+        "kind": "vehicle",
+        "position": "oncoming",
+        "side": "none",
+        "behavior": {
+          "block": "junction_turn",
+          "params": {
+            "approach_distance_m": 10
+          },
+          "ads_trigger": {
+            "min_clearance_m": 0.5,
+            "min_ego_speed_mps": 1.0,
+            "min_npc_speed_mps": 0.0,
+            "distance_m": 49.56
+          }
+        }
+      }
+    ],
+    "collision": {
+      "a": "ego",
+      "b": "v2"
+    },
+    "control": "traffic_light",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "afternoon"
+    }
+  },
+  "calibration": null,
+  "junction_timing": {
+    "v2": {
+      "distance_m": 49.56,
+      "npc_route_distance_to_conflict_m": 31.0,
+      "ego_route_distance_to_conflict_m": 69.0,
+      "ego_onset_route_s_m": 43.0,
+      "assumed_ego_speed_mps": 5,
+      "requested_npc_speed_mps": 8.0,
+      "estimated_npc_arrival_s": 5.208333333333333,
+      "time_offset_s": 0,
+      "conflict_xy": [
+        231.75,
+        8.97999999999999
+      ],
+      "method": "earliest common generated lane-route point; finite acceleration approximation"
+    }
+  },
+  "simulation_limit_s": 25,
+  "ocl_pass": true,
+  "xosc_xsd_pass": true,
+  "claim": "Source-derived ADS test; modified onset, speeds and spacing are experimental, not report facts."
+}

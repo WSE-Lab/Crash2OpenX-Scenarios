@@ -1,0 +1,72 @@
+{
+  "status": "supported",
+  "scene": {
+    "sut": {
+      "id": "ego",
+      "kind": "vehicle",
+      "maneuver": "right",
+      "params": {
+        "initial_speed_mps": 0
+      }
+    },
+    "npcs": [
+      {
+        "id": "cyclist_1",
+        "kind": "cyclist",
+        "position": "roadside",
+        "side": "right",
+        "behavior": {
+          "block": "cut_in",
+          "params": {
+            "lateral": 4.0
+          }
+        }
+      }
+    ],
+    "collision": {
+      "a": "cyclist_1",
+      "b": "ego"
+    },
+    "control": "unknown",
+    "environment": {
+      "weather": "clear",
+      "time_of_day": "morning"
+    }
+  },
+  "description_zh": "ego（Waymo AV, 唯一具备主动驾驶行为的 car, 取作 SUT）在 Market St 与 Gough St 路口先停车礼让行人（行人已穿越完毕, 不再是场景内交互参与者）, 随后起步执行右转；一名沿 Market St 东向人行道从其右侧后方驶来的骑行者此时进入人行横道, 从右侧切入 ego 行驶路径, 与 ego 右后侧围板发生接触——用 cyclist 从 roadside(right) 的 cut_in 表达该右转-切入冲突。",
+  "evidence": {
+    "source_snippets": [
+      "The Waymo AV was in autonomous mode on eastbound Market Street preparing to make a right turn onto southbound Gough Street and had stopped to yield, first for pedestrians to cross Gough Street and then for a cyclist approaching from behind traveling eastbound on the sidewalk of Market Street.",
+      "the Waymo AV test driver took manual control of the Waymo AV and began to accelerate and perform the right turn onto Gough Street. After the Waymo AV entered the crosswalk, the cyclist entered the crosswalk and made contact with the passenger's rear quarter panel of the Waymo AV.",
+      "MOVEMENT PRECEDING COLLISION: D. MAKING RIGHT TURN: VEH 1 X / L. ENTERING TRAFFIC: VEH 2 X; TYPE OF COLLISION: D. BROADSIDE: X; Involved in the Accident: Bicyclist X",
+      "TIME OF ACCIDENT: 09:24 AM; WEATHER: A. CLEAR: VEH 1 X, VEH 2 X; LIGHTING: A. DAYLIGHT: VEH 1 X, VEH 2 X; ROADWAY SURFACE: A. DRY"
+    ],
+    "reason": "SUT 选择：现场唯一的 car 是 Waymo AV, 且它具备主动驾驶行为（起步+右转）, 作为 ego, maneuver=right、initial_speed_mps=0（\"had stopped to yield\" 后 \"began to accelerate and perform the right turn\"）。第二参与者为骑行者（\"Involved in the Accident: Bicyclist\", \"NUMBER OF VEHICLES INVOLVED: 2\"）, 从 ego 右侧、后方沿人行道东向行进, 随后 \"entered the crosswalk\" 进入 ego 转弯路径（表单记 \"L. ENTERING TRAFFIC\"）, 与 ego 右后侧发生接触, 故用 cyclist + position=roadside(side=right, 人行道属路外) + block=cut_in 表达其从右侧切入 ego 路径; lateral=4.0 按 \"off the road/人行道\" 空间保真规则给定, 避免默认 3.5 m 造成接触几何错位。行人已完成穿越、不再是碰撞交互方, 故不入 npcs, 仅在描述中保留其导致的停车礼让前序。无量化速度/时间语, 故不填 speed/trig_*; 9:24 AM → morning, 报告明确标记 CLEAR → weather=clear, 路面 DRY 故不填 friction_scale; 报告未提及信号灯/停车标志, control=unknown。"
+  },
+  "pipeline": {
+    "stage": "scene_seed_v2",
+    "generation_mode": "api_deepseek",
+    "model": "deepseek-flash",
+    "input": "outputs/framework_42_20260917/cases/144_Waymo_October_17_2023/fresh_deepseek_budget32_v1/source.pdf",
+    "normalization_rules": []
+  },
+  "provenance": {
+    "schema_version": "1.0",
+    "stage": "scene_seed",
+    "llm": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "enable_thinking": true
+    },
+    "schema_md_sha256_16": "1a84c6af0160a9df",
+    "input": {
+      "path": "/Users/xijun/WSELab/crash2openx/outputs/framework_42_20260917/cases/144_Waymo_October_17_2023/fresh_deepseek_budget32_v1/source.pdf",
+      "sha256_16": "15cb71ee7641badd"
+    },
+    "output_sha256_16": "815ef8c867c4d37b",
+    "timestamp_utc": "2026-09-17T19:08:52+00:00",
+    "git_revision": "e82d164435a5"
+  }
+}
