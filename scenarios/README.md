@@ -17,4 +17,4 @@ Choose a scenario below. Every directory uses the same four folders: `simulation
 
 Clearance and TTC metrics in [index.csv](index.csv) describe the reviewed interaction window. Contacts can occur later in the full episode. One recorded run per configuration does not establish a failure rate.
 
-[Usage guide](../docs/usage.md) · [Full directory reference](../docs/structure.md) · [Video gallery](../preview/index.html)
+[Full execution logs](../docs/logs.md) · [Usage guide](../docs/usage.md) · [Full directory reference](../docs/structure.md) · [Video gallery](../preview/index.html)

@@ -1,0 +1,61 @@
+{
+  "case_id": "135_Zoox_January_1_2024_(A)",
+  "source_repository": "WSE-Lab/Crash2OpenX",
+  "source_directory": "outputs/ads_expansion_20260919/135_Zoox_January_1_2024_(A)/critical/run",
+  "remote_run_directory": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_135_critical_b66d4bf7",
+  "primary_log": "openscenario_full.log",
+  "primary_log_source": "../run_scene_wrapper.log",
+  "primary_log_is_byte_identical_to_source": true,
+  "complete_demo_log_in_primary": true,
+  "scope": "Full recorded console output for this archived execution attempt, ending at its recorded termination; not a claim of normal scenario completion or per-tick console logging.",
+  "recording": {
+    "total_ticks": 502,
+    "trace_rows": 502,
+    "frame_state_rows": 502,
+    "first_frame": 126810,
+    "last_frame": 127311,
+    "first_simulation_time_s": 2.134647,
+    "last_simulation_time_s": 27.184647,
+    "event_rows": 59,
+    "event_types": {
+      "episode_started": 1,
+      "storyboard_transition": 40,
+      "collision": 3,
+      "geometric_overlap": 1,
+      "lane_invasion": 13,
+      "episode_finished": 1
+    },
+    "termination_reason": "scenario_completed",
+    "scenario_tree_status": "Status.SUCCESS"
+  },
+  "server_log_capture": {
+    "server_log_exit_code": 0,
+    "tail_limit_lines": 50000,
+    "timeout_seconds": 20
+  },
+  "files": {
+    "openscenario_full.log": {
+      "source": "run_scene_wrapper.log",
+      "sha256": "f5d30aece7eaecab455720e03c4f3623335afe13356622bfd4d53df09b89667b",
+      "bytes": 35880,
+      "lines": 204
+    },
+    "rgb_recorder.log": {
+      "source": "rgb_recorder.log",
+      "sha256": "5b7e58276cd2f2b0279b01d6e05adb69b6c4c9acc88ada2ff69716ec04af131b",
+      "bytes": 7662,
+      "lines": 97
+    },
+    "carla_server.log.gz": {
+      "source": "carla_server.log.gz",
+      "sha256": "c80e3d6d14db127e5f4573412be6282ab92ad16befa44a3d91333f4c5dd38ed0",
+      "bytes": 245790,
+      "uncompressed_lines": 37471
+    },
+    "server_log_capture.json": {
+      "source": "server_log_capture.json",
+      "sha256": "76756848525281731c700ef5b5c3f65f27d7d50fe8276daf00cfe341621f7a20",
+      "bytes": 73
+    }
+  }
+}

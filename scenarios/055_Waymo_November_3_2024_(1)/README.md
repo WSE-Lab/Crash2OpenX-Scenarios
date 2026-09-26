@@ -4,6 +4,12 @@ Case ID: `055_Waymo_November_3_2024_(1)`
 
 Tests a vehicle entering the ADS path through a right turn at an intersection.
 
+## Full OpenSCENARIO log
+
+**[Full recorded execution log](evidence/logs/openscenario_full.log)** · [Log file guide](evidence/README.md) · [Full per-tick actor trace](evidence/sim_trace_raw.jsonl) · [Storyboard/event stream](evidence/events.jsonl)
+
+The recorded run contains **440 ticks** and ends with `collision_exit`. The run ended through the configured collision-exit policy; this is not normal storyboard completion.
+
 ## Recorded outcome
 
 The NPC contacted the ADS after turning right.
@@ -21,7 +27,7 @@ This is a crash-inspired ADS test variant with one recorded episode at the deliv
 | `simulation/` | The executable scenario, road network, and derived scene seed. | [scenario.xosc](simulation/scenario.xosc), [map.xodr](simulation/map.xodr), [scene_seed.json](simulation/scene_seed.json) |
 | `preview/` | Interaction video, contact sheet, road views, and measured response plot. | [interaction.mp4](preview/interaction.mp4), [map_and_response.png](preview/map_and_response.png) |
 | `source/` | Original report, extracted text, original seeds, and Chinese case note. | [report.pdf](source/report.pdf), [source_text.txt](source/source_text.txt) |
-| `evidence/` | Full recorded video, traces, events, logs, quality review, and exact runtime code. | [quality_review.json](evidence/quality_review.json), [carla_rgb.mp4](evidence/carla_rgb.mp4) |
+| `evidence/` | Full recorded video, traces, events, logs, quality review, and exact runtime code. | [Full execution log](evidence/logs/openscenario_full.log), [log guide](evidence/README.md), [quality_review.json](evidence/quality_review.json) |
 
 See the [full directory reference](../../docs/structure.md) for the files inside each directory.
 

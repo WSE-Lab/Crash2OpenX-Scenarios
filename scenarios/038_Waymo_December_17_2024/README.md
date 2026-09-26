@@ -4,6 +4,12 @@ Case ID: `038_Waymo_December_17_2024`
 
 Tests lateral clearance when an adjacent vehicle partially moves toward a truck while yielding to a cyclist.
 
+## Full OpenSCENARIO log
+
+**[Full recorded execution log](evidence/logs/openscenario_full.log)** · [Log file guide](evidence/README.md) · [Full per-tick actor trace](evidence/sim_trace_raw.jsonl) · [Storyboard/event stream](evidence/events.jsonl)
+
+The recorded run contains **1534 ticks** and ends with `signal:15`. The run hit the recorded wall-clock timeout and ended with SIGTERM. The log covers that terminated attempt, not a normally completed storyboard.
+
 ## Recorded outcome
 
 The truck braked. Minimum reviewed clearance was approximately 3.73 m, with no contact.
@@ -21,7 +27,7 @@ This is a crash-inspired ADS test variant with one recorded episode at the deliv
 | `simulation/` | The executable scenario, road network, and derived scene seed. | [scenario.xosc](simulation/scenario.xosc), [map.xodr](simulation/map.xodr), [scene_seed.json](simulation/scene_seed.json) |
 | `preview/` | Interaction video, contact sheet, road views, and measured response plot. | [interaction.mp4](preview/interaction.mp4), [map_and_response.png](preview/map_and_response.png) |
 | `source/` | Original report, extracted text, original seeds, and Chinese case note. | [report.pdf](source/report.pdf), [source_text.txt](source/source_text.txt) |
-| `evidence/` | Full recorded video, traces, events, logs, quality review, and exact runtime code. | [quality_review.json](evidence/quality_review.json), [carla_rgb.mp4](evidence/carla_rgb.mp4) |
+| `evidence/` | Full recorded video, traces, events, logs, quality review, and exact runtime code. | [Full execution log](evidence/logs/openscenario_full.log), [log guide](evidence/README.md), [quality_review.json](evidence/quality_review.json) |
 
 See the [full directory reference](../../docs/structure.md) for the files inside each directory.
 

@@ -26,6 +26,14 @@ scenarios/<case_id>/
 │   ├── road_generation.json
 │   └── README.zh-CN.md
 └── evidence/
+    ├── README.md
+    ├── logs/
+    │   ├── openscenario_full.log
+    │   ├── rgb_recorder.log
+    │   ├── paper_recorder.log       (only where captured)
+    │   ├── carla_server.log.gz
+    │   ├── server_log_capture.json
+    │   └── manifest.json
     ├── manifest.json
     ├── quality_review.json
     ├── clip_provenance.json
@@ -80,19 +88,29 @@ These assets summarize the test. The full recorded RGB episode and clip hashes l
 
 ## evidence
 
+**Start with `evidence/logs/openscenario_full.log` for the full recorded execution console**, or read the case's `evidence/README.md` for its captured interval and termination. The [log guide](logs.md) links directly to all ten full logs.
+
 | File or directory | Purpose |
 | --- | --- |
+| `README.md` | Direct log links, captured frame/time interval, and the actual termination of this run. |
+| `logs/openscenario_full.log` | Full captured wrapper console output, including the complete scenario subprocess output. An unmodified copy of `run_scene_wrapper.log`. |
+| `logs/rgb_recorder.log`, `logs/paper_recorder.log` | Original recorder/video-encoding diagnostics; the paper recorder log is included only where captured. |
+| `logs/carla_server.log.gz`, `logs/server_log_capture.json` | Compressed CARLA server diagnostics and original capture settings. Server capture was limited to the last 50,000 lines. |
+| `logs/manifest.json` | Added log file hashes, source run identity, coverage counts, and termination. |
 | `manifest.json` | Source hashes, calibration, and original/derived parameters. Compare `source_scene` and `derived_scene`. |
 | `quality_review.json` | Measured interactions, native-map checks, termination, contacts, and limitations. |
 | `clip_provenance.json` | Timing and hashes linking the preview clip to the original videos. |
 | `carla_rgb.mp4` | Full recorded RGB episode. |
-| `sim_trace_raw.jsonl`, `frame_states.jsonl` | Actor motion and frame/state records. Each JSONL line is one JSON object. |
-| `events.jsonl` | Recorded events, including collision-sensor evidence. |
+| `sim_trace_raw.jsonl` | Full recorded per-tick actor states, including motion, controls, bounding boxes, and lane data. Each line is one JSON object. |
+| `frame_states.jsonl` | Per-tick ADS ego state and control records. |
+| `events.jsonl` | Episode boundaries, recorded OpenSCENARIO storyboard transitions, and sensor events, including collision evidence. |
 | `summary.json`, `behavior_check.json` | Episode summary and behavior checks. |
 | `roadgraph_selfcheck.json` | Agreement between generated road geometry and native CARLA road sampling. |
 | `remote_run.json` | Execution metadata and hashes of the uploaded inputs. Historical machine paths identify the original run. |
 | `scenario.runtime.xosc` | Archived runtime input that can contain server-specific absolute paths. For new runs, use `simulation/scenario.xosc`. |
-| `demo.log`, `runner.log`, `run_scene_wrapper.log` | Diagnostic logs and termination details from the original run. |
+| `demo.log` | Scenario subprocess stdout/stderr, fully included in `logs/openscenario_full.log`. |
+| `run_scene_wrapper.log` | Original filename of the full recorded console log, retained for compatibility and provenance. |
+| `runner.log` | Short outer-launcher status/result summary; not the full scenario console. |
 | `ads_review/` | Review video, selected frames, and `review.json`. |
 | `rgb_frames/` | Camera metadata and frame timestamps; raw individual RGB images are not included here. |
 | `runtime_manifest.json` | Hashes of the runtime code captured for this case. |

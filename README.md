@@ -2,7 +2,13 @@
 
 Ten selected crash-inspired ADS tests, with executable OpenSCENARIO/OpenDRIVE files, source reports, and recorded CARLA/InterFuser evidence.
 
-**Start here:** [Choose a scenario](scenarios/README.md) · [View videos](preview/README.md) · [Run a scenario](docs/usage.md)
+**Start here:** [Choose a scenario](scenarios/README.md) · [Full execution logs](docs/logs.md) · [View videos](preview/README.md) · [Run a scenario](docs/usage.md)
+
+## Where is the full OpenSCENARIO log?
+
+Open **`scenarios/<case_id>/evidence/logs/openscenario_full.log`** for the full recorded execution console. For case 013, go directly to the **[full log](scenarios/013_Zoox_February_19_2025/evidence/logs/openscenario_full.log)** or its [evidence file guide](scenarios/013_Zoox_February_19_2025/evidence/README.md).
+
+The per-tick actor trace is `evidence/sim_trace_raw.jsonl`; recorded storyboard transitions and sensor events are in `evidence/events.jsonl`. `runner.log` is only the outer-launcher summary. See [all ten full-log links and their recorded termination](docs/logs.md).
 
 ## Where things live
 
@@ -15,7 +21,9 @@ crash2openx-scenarios/
 │       ├── simulation/     Run: scenario.xosc, map.xodr, scene_seed.json
 │       ├── preview/        View: video clips, maps, response plots
 │       ├── source/         Trace: original report, text, and seeds
-│       └── evidence/       Inspect: full recordings, logs, reviews, runtime code
+│       └── evidence/       Inspect: full recordings, traces, reviews, runtime code
+│           ├── README.md   Which log to read and what this run captured
+│           └── logs/       openscenario_full.log and auxiliary diagnostics
 ├── docs/            Setup, replay instructions, and detailed directory guide
 ├── preview/         Collection-wide video gallery and combined video
 └── archive/         Selection history, implementation snapshot, and provenance
@@ -27,6 +35,7 @@ crash2openx-scenarios/
 | Load a scenario into the supported runner | `scenarios/<case_id>/simulation/scenario.xosc` and its sibling `map.xodr` |
 | Watch an interaction | `scenarios/<case_id>/preview/interaction.mp4` |
 | Read the original report | `scenarios/<case_id>/source/report.pdf` |
+| Read the full recorded OpenSCENARIO console log | [Full-log index](docs/logs.md): `scenarios/<case_id>/evidence/logs/openscenario_full.log` |
 | Check an observed outcome | `scenarios/<case_id>/evidence/quality_review.json` and `events.jsonl` |
 | Set up CARLA and replay | [Usage guide](docs/usage.md) |
 | Understand every subdirectory | [Directory reference](docs/structure.md) |

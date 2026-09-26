@@ -1,0 +1,60 @@
+{
+  "case_id": "013_Zoox_February_19_2025",
+  "source_repository": "WSE-Lab/Crash2OpenX",
+  "source_directory": "outputs/ads_expansion_20260919/013_Zoox_February_19_2025/critical/run",
+  "remote_run_directory": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_013_critical_2f8ad17a",
+  "primary_log": "openscenario_full.log",
+  "primary_log_source": "../run_scene_wrapper.log",
+  "primary_log_is_byte_identical_to_source": true,
+  "complete_demo_log_in_primary": true,
+  "scope": "Full recorded console output for this archived execution attempt, ending at its recorded termination; not a claim of normal scenario completion or per-tick console logging.",
+  "recording": {
+    "total_ticks": 259,
+    "trace_rows": 259,
+    "frame_state_rows": 259,
+    "first_frame": 81733,
+    "last_frame": 81991,
+    "first_simulation_time_s": 2.153732,
+    "last_simulation_time_s": 15.053732,
+    "event_rows": 33,
+    "event_types": {
+      "episode_started": 1,
+      "storyboard_transition": 16,
+      "geometric_overlap": 2,
+      "collision": 13,
+      "episode_finished": 1
+    },
+    "termination_reason": "collision_exit",
+    "scenario_tree_status": "Status.RUNNING"
+  },
+  "server_log_capture": {
+    "server_log_exit_code": 0,
+    "tail_limit_lines": 50000,
+    "timeout_seconds": 20
+  },
+  "files": {
+    "openscenario_full.log": {
+      "source": "run_scene_wrapper.log",
+      "sha256": "b87d65f4eb9ba9357ae86ebc9c99e74b3b9b00e07248d93a722b3355ed323985",
+      "bytes": 24468,
+      "lines": 179
+    },
+    "rgb_recorder.log": {
+      "source": "rgb_recorder.log",
+      "sha256": "c6d0d43e92dd3ed051596381b784a61797b845a43a98974fdaa2efdc0868ca53",
+      "bytes": 7325,
+      "lines": 93
+    },
+    "carla_server.log.gz": {
+      "source": "carla_server.log.gz",
+      "sha256": "f48510c9151af88b6e4190f0fefa9359f487d8cb4791b4881aecd082b001fba8",
+      "bytes": 242908,
+      "uncompressed_lines": 37024
+    },
+    "server_log_capture.json": {
+      "source": "server_log_capture.json",
+      "sha256": "76756848525281731c700ef5b5c3f65f27d7d50fe8276daf00cfe341621f7a20",
+      "bytes": 73
+    }
+  }
+}

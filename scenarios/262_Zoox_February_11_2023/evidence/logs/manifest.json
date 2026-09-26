@@ -1,0 +1,58 @@
+{
+  "case_id": "262_Zoox_February_11_2023",
+  "source_repository": "WSE-Lab/Crash2OpenX",
+  "source_directory": "outputs/ads_expansion_20260919/262_Zoox_February_11_2023/critical/run",
+  "remote_run_directory": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_262_critical_9f980d7b",
+  "primary_log": "openscenario_full.log",
+  "primary_log_source": "../run_scene_wrapper.log",
+  "primary_log_is_byte_identical_to_source": true,
+  "complete_demo_log_in_primary": true,
+  "scope": "Full recorded console output for this archived execution attempt, ending at its recorded termination; not a claim of normal scenario completion or per-tick console logging.",
+  "recording": {
+    "total_ticks": 502,
+    "trace_rows": 502,
+    "frame_state_rows": 502,
+    "first_frame": 2667788,
+    "last_frame": 2668289,
+    "first_simulation_time_s": 2.1193,
+    "last_simulation_time_s": 27.1693,
+    "event_rows": 18,
+    "event_types": {
+      "episode_started": 1,
+      "storyboard_transition": 16,
+      "episode_finished": 1
+    },
+    "termination_reason": "scenario_completed",
+    "scenario_tree_status": "Status.SUCCESS"
+  },
+  "server_log_capture": {
+    "server_log_exit_code": 0,
+    "tail_limit_lines": 50000,
+    "timeout_seconds": 20
+  },
+  "files": {
+    "openscenario_full.log": {
+      "source": "run_scene_wrapper.log",
+      "sha256": "9fb2f21659f0e75a4db509eac6f3745645eba4eb5b7904394170317d2bea2a1f",
+      "bytes": 36113,
+      "lines": 204
+    },
+    "rgb_recorder.log": {
+      "source": "rgb_recorder.log",
+      "sha256": "99c6555d456dc406df81f64c092021cdcb9e35ed1044a5554d26c83c0d81ac80",
+      "bytes": 7469,
+      "lines": 95
+    },
+    "carla_server.log.gz": {
+      "source": "carla_server.log.gz",
+      "sha256": "74cc93cc2d8f7b6f0aef34780151a644ba397f5cf058297f2f7e073af46bf6b2",
+      "bytes": 237575,
+      "uncompressed_lines": 35987
+    },
+    "server_log_capture.json": {
+      "source": "server_log_capture.json",
+      "sha256": "76756848525281731c700ef5b5c3f65f27d7d50fe8276daf00cfe341621f7a20",
+      "bytes": 73
+    }
+  }
+}

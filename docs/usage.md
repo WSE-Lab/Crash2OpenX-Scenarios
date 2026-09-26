@@ -68,9 +68,9 @@ The current toolchain provides a supported replay environment. The archived `evi
 
 ## Read and compare the results
 
-1. Read the case's `README.md`, `evidence/manifest.json`, and `evidence/quality_review.json` for the interaction, experimental parameter changes, measured window, and limitations.
+1. Open `evidence/logs/openscenario_full.log` for the full recorded execution console; `evidence/README.md` explains every log and the run's actual termination. The [collection log guide](logs.md) links to all ten cases. Read the case's `README.md`, `evidence/manifest.json`, and `evidence/quality_review.json` for the interaction, experimental parameter changes, measured window, and limitations.
 2. Compare the derived `simulation/scene_seed.json` with the original `source/scene_seed.json`. The original road seed is `source/road_seed.json`.
-3. Review the interaction clip, full RGB episode, traces, collision events, and termination logs together. Windowed clearance/TTC metrics can precede later contact shown in a clip.
+3. Review the interaction clip, full RGB episode, `evidence/sim_trace_raw.jsonl` (full recorded actor trace), and `evidence/events.jsonl` (recorded storyboard transitions and sensor events) together. Windowed clearance/TTC metrics can precede later contact shown in a clip.
 4. Save new execution output separately from the archived evidence. Check the new run's actor behavior, contact records, lane departures, and termination before comparing outcomes.
 
 Case 038's original full episode hit a wall-clock timeout; only its interaction window was accepted. Case 262 is a slowdown variant with a moving lead vehicle, not a reconstruction of a complete lead-vehicle stop. See all case guides for additional limits.

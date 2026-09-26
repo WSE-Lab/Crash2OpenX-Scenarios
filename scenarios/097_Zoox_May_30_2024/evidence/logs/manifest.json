@@ -1,0 +1,60 @@
+{
+  "case_id": "097_Zoox_May_30_2024",
+  "source_repository": "WSE-Lab/Crash2OpenX",
+  "source_directory": "outputs/ads_expansion_20260919/097_Zoox_May_30_2024/critical/run",
+  "remote_run_directory": "/home/server/crash2openx_ads_stress_20260919/runs/run_expand_097_critical_39479b5b",
+  "primary_log": "openscenario_full.log",
+  "primary_log_source": "../run_scene_wrapper.log",
+  "primary_log_is_byte_identical_to_source": true,
+  "complete_demo_log_in_primary": true,
+  "scope": "Full recorded console output for this archived execution attempt, ending at its recorded termination; not a claim of normal scenario completion or per-tick console logging.",
+  "recording": {
+    "total_ticks": 259,
+    "trace_rows": 259,
+    "frame_state_rows": 259,
+    "first_frame": 53902,
+    "last_frame": 54160,
+    "first_simulation_time_s": 2.197882,
+    "last_simulation_time_s": 15.097882,
+    "event_rows": 27,
+    "event_types": {
+      "episode_started": 1,
+      "storyboard_transition": 10,
+      "geometric_overlap": 1,
+      "collision": 14,
+      "episode_finished": 1
+    },
+    "termination_reason": "collision_exit",
+    "scenario_tree_status": "Status.RUNNING"
+  },
+  "server_log_capture": {
+    "server_log_exit_code": 0,
+    "tail_limit_lines": 50000,
+    "timeout_seconds": 20
+  },
+  "files": {
+    "openscenario_full.log": {
+      "source": "run_scene_wrapper.log",
+      "sha256": "1bc31b5a49127fa3e5513ea6ba2816b3b466ccd636b6a11da8d57c65a6ce0733",
+      "bytes": 24072,
+      "lines": 176
+    },
+    "rgb_recorder.log": {
+      "source": "rgb_recorder.log",
+      "sha256": "0a42faed49268d19c8d310151b385e0abc7c8d2817de9b430a70ec4b00784b8c",
+      "bytes": 7323,
+      "lines": 93
+    },
+    "carla_server.log.gz": {
+      "source": "carla_server.log.gz",
+      "sha256": "7fc14dd402622deccf2dd41195c3bc0574b0fc80823b658fbc498ef16dec111b",
+      "bytes": 254111,
+      "uncompressed_lines": 38805
+    },
+    "server_log_capture.json": {
+      "source": "server_log_capture.json",
+      "sha256": "76756848525281731c700ef5b5c3f65f27d7d50fe8276daf00cfe341621f7a20",
+      "bytes": 73
+    }
+  }
+}
