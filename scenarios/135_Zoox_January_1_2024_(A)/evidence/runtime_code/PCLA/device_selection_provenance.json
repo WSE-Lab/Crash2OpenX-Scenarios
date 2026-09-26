@@ -1,8 +1,0 @@
-{
-  "original_pcla": "/home/server/workspace/LXJ/leaderboard_2.0/PCLA",
-  "task_pcla": "/home/server/crash2openx_validation_20260917/PCLA_device_selectable",
-  "modified_file": "pcla_agents/interfuser/interfuser_agent.py",
-  "original_sha256": "d27e5f7d1a6a6ba35e6489c346056b08ef55e3e3ad18aa47b0d48eb8f39fdce4",
-  "modified_sha256": "f57ec1dcd47dcb8718c8ed4fe0baff3485e02cf63e8c0a1e62af4593628a436e",
-  "scope": "Device selection, checkpoint map_location, CPU thread limit and explicit device logging only. Network, weights, preprocessing, sensors and controller remain unchanged."
-}

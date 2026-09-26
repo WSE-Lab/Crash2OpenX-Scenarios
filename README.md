@@ -1,64 +1,54 @@
 # Crash2OpenX Scenarios
 
-Ten selected crash-inspired ADS tests, with executable OpenSCENARIO/OpenDRIVE files, source reports, and recorded CARLA/InterFuser evidence.
+Ten crash-inspired ADS tests with the inputs needed to rerun them, an original report, and a compact record of each observed result. Runtime code is supplied by the separate [Crash2OpenX project](https://github.com/WSE-Lab/Crash2OpenX).
 
-**Start here:** [Choose a scenario](scenarios/README.md) · [Full execution logs](docs/logs.md) · [View videos](preview/README.md) · [Run a scenario](docs/usage.md)
+**[Replay instructions](REPRODUCE.md)** · **[Case 013 full execution log](scenarios/013_Zoox_February_19_2025/openscenario_full.log)**
 
-## Where is the full OpenSCENARIO log?
-
-Open **`scenarios/<case_id>/evidence/logs/openscenario_full.log`** for the full recorded execution console. For case 013, go directly to the **[full log](scenarios/013_Zoox_February_19_2025/evidence/logs/openscenario_full.log)** or its [evidence file guide](scenarios/013_Zoox_February_19_2025/evidence/README.md).
-
-The per-tick actor trace is `evidence/sim_trace_raw.jsonl`; recorded storyboard transitions and sensor events are in `evidence/events.jsonl`. `runner.log` is only the outer-launcher summary. See [all ten full-log links and their recorded termination](docs/logs.md).
-
-## Where things live
+## Layout
 
 ```text
 crash2openx-scenarios/
 ├── README.md
-├── scenarios/       10 scenarios, each with the same structure
-│   └── <case_id>/
-│       ├── README.md       Description, outcome, limits, and replay command
-│       ├── simulation/     Run: scenario.xosc, map.xodr, scene_seed.json
-│       ├── preview/        View: video clips, maps, response plots
-│       ├── source/         Trace: original report, text, and seeds
-│       └── evidence/       Inspect: full recordings, traces, reviews, runtime code
-│           ├── README.md   Which log to read and what this run captured
-│           └── logs/       openscenario_full.log and auxiliary diagnostics
-├── docs/            Setup, replay instructions, and detailed directory guide
-├── preview/         Collection-wide video gallery and combined video
-└── archive/         Selection history, implementation snapshot, and provenance
+├── REPRODUCE.md          Fixed runtime version and replay commands
+├── manifest.json         Input/result checksums and runtime reference
+└── scenarios/
+    └── <case_id>/
+        ├── README.md                Description, result, and replay command
+        ├── scenario.xosc            Runnable OpenSCENARIO
+        ├── map.xodr                 Matching OpenDRIVE map
+        ├── scene_seed.json          Scene parameters
+        ├── road_seed.json           Road parameters
+        ├── report.pdf               Original crash report
+        ├── preview.mp4              Full recorded video
+        ├── openscenario_full.log    Full recorded execution console
+        └── summary.json             Result and termination
 ```
 
-| What you want to do | Open |
-| --- | --- |
-| Pick one of the 10 scenarios | [Scenario catalog](scenarios/README.md) |
-| Load a scenario into the supported runner | `scenarios/<case_id>/simulation/scenario.xosc` and its sibling `map.xodr` |
-| Watch an interaction | `scenarios/<case_id>/preview/interaction.mp4` |
-| Read the original report | `scenarios/<case_id>/source/report.pdf` |
-| Read the full recorded OpenSCENARIO console log | [Full-log index](docs/logs.md): `scenarios/<case_id>/evidence/logs/openscenario_full.log` |
-| Check an observed outcome | `scenarios/<case_id>/evidence/quality_review.json` and `events.jsonl` |
-| Set up CARLA and replay | [Usage guide](docs/usage.md) |
-| Understand every subdirectory | [Directory reference](docs/structure.md) |
-| Audit the original package | [Archive guide](archive/README.md) |
+Each scenario directory contains **nine files**. Open its README to see the outcome, limitations, and exact replay command. The full console log always has the same name: **`openscenario_full.log`**.
 
-## Preview without installing CARLA
+## Scenarios
 
-From this repository's root:
+| ID | Scenario | Files | Full execution log |
+| --- | --- | --- | --- |
+| 013 | Adjacent cut-in with a cyclist ahead | [Open](scenarios/013_Zoox_February_19_2025/README.md) | [Log](scenarios/013_Zoox_February_19_2025/openscenario_full.log) |
+| 035 | ADS left turn with crossing traffic | [Open](scenarios/035_Zoox_January_26_2025/README.md) | [Log](scenarios/035_Zoox_January_26_2025/openscenario_full.log) |
+| 038 | Partial encroachment beside an ADS-controlled truck | [Open](scenarios/038_Waymo_December_17_2024/README.md) | [Log](scenarios/038_Waymo_December_17_2024/openscenario_full.log) |
+| 055 | Cross-traffic vehicle turning right into the ADS path | [Open](scenarios/055_Waymo_November_3_2024_%281%29/README.md) | [Log](scenarios/055_Waymo_November_3_2024_%281%29/openscenario_full.log) |
+| 097 | Roadside vehicle merging into the ADS lane | [Open](scenarios/097_Zoox_May_30_2024/README.md) | [Log](scenarios/097_Zoox_May_30_2024/openscenario_full.log) |
+| 120 | Large turning vehicle at an intersection | [Open](scenarios/120_Zoox_February_22_2024_%281%29/README.md) | [Log](scenarios/120_Zoox_February_22_2024_%281%29/openscenario_full.log) |
+| 135 | Three-vehicle intersection conflict | [Open](scenarios/135_Zoox_January_1_2024_%28A%29/README.md) | [Log](scenarios/135_Zoox_January_1_2024_%28A%29/openscenario_full.log) |
+| 144 | Cyclist cut-in during an ADS turn | [Open](scenarios/144_Waymo_October_17_2023/README.md) | [Log](scenarios/144_Waymo_October_17_2023/openscenario_full.log) |
+| 262 | Lead-vehicle slowdown and ADS following response | [Open](scenarios/262_Zoox_February_11_2023/README.md) | [Log](scenarios/262_Zoox_February_11_2023/openscenario_full.log) |
+| 293 | Oncoming left-turn onset conflict | [Open](scenarios/293_Zoox_October_14_2022/README.md) | [Log](scenarios/293_Zoox_October_14_2022/openscenario_full.log) |
+
+## Use the collection
+
+Clone the current version, then open any case's video, report, or log:
 
 ```sh
-python3 -m http.server 8000 --bind 127.0.0.1
+git clone --depth 1 https://github.com/WSE-Lab/Crash2OpenX-Scenarios.git crash2openx-scenarios
 ```
 
-Open **http://localhost:8000/preview/**. Stop the server with Ctrl+C. The gallery retains the original Chinese descriptions; the README and scenario guides are in English. GitHub displays Markdown but does not execute the HTML gallery.
+To rerun a case, follow [REPRODUCE.md](REPRODUCE.md). It pins the external toolchain revision and requires CARLA **0.9.16**, the project's patched ScenarioRunner, and InterFuser (`if_if`) with its weights. Execution uses a configured Linux NVIDIA GPU host. Viewing the supplied results needs no simulator.
 
-## Replay requirements
-
-Use [Crash2OpenX](https://github.com/WSE-Lab/Crash2OpenX) with CARLA **0.9.16**, the project's patched ScenarioRunner, PCLA's InterFuser agent (`if_if`), and its pretrained weights. Execution requires a configured Linux NVIDIA GPU host; viewing the archived results needs only a browser. Follow the [replay guide](docs/usage.md) for local and remote commands.
-
-## What the results mean
-
-The collection contains one recorded episode per selected configuration, drawn from a 42-case inventory. Parameters such as speed, spacing, and interaction timing were adjusted to create ADS tests. These are not claims of exact accident reconstruction or statistical failure rates.
-
-Each scenario README records its limits. In particular, case **038** has an accepted interaction window but a full-episode timeout; case **262** uses a moving lead-vehicle slowdown, not a complete stop. Contacts and lane departures are preserved as observed outcomes.
-
-All **743 original package files** retain their original bytes at the new paths. [Provenance records](archive/README.md#provenance) and the [verification command](docs/usage.md#verify-the-original-files) support integrity checks.
+Each supplied result is one recorded run of an experimental test variant. Full logs cover the actual recorded attempt, including collision exits and timeouts. Case **038** ended on timeout; case **262** uses a lead-vehicle slowdown rather than a complete stop. Refer to each case README for its specific limits. New runs can produce different trajectories; these records do not establish exact crash reconstruction or failure rates.
