@@ -10,6 +10,8 @@ Ten crash-inspired ADS tests with the inputs needed to rerun them, an original r
 crash2openx-scenarios/
 ├── README.md
 ├── REPRODUCE.md          Fixed runtime version and replay commands
+├── LICENSE               GNU LGPL v3.0
+├── COPYING               Incorporated GNU GPL v3.0 terms
 ├── manifest.json         Input/result checksums and runtime reference
 └── scenarios/
     └── <case_id>/
@@ -52,3 +54,9 @@ git clone --depth 1 https://github.com/WSE-Lab/Crash2OpenX-Scenarios.git crash2o
 To rerun a case, follow [REPRODUCE.md](REPRODUCE.md). It pins the external toolchain revision and requires CARLA **0.9.16**, the project's patched ScenarioRunner, and InterFuser (`if_if`) with its weights. Execution uses a configured Linux NVIDIA GPU host. Viewing the supplied results needs no simulator.
 
 Each supplied result is one recorded run of an experimental test variant. Full logs cover the actual recorded attempt, including collision exits and timeouts. Case **038** ended on timeout; case **262** uses a lead-vehicle slowdown rather than a complete stop. Refer to each case README for its specific limits. New runs can produce different trajectories; these records do not establish exact crash reconstruction or failure rates.
+
+## License
+
+Original contributions to this project are licensed under the **GNU Lesser General Public License v3.0 (LGPL-3.0)**. See [LICENSE](LICENSE) and the incorporated GNU GPL v3.0 terms in [COPYING](COPYING).
+
+Third-party source reports, dependencies, and material carrying their own copyright or license notices retain their respective terms. This license does not replace those notices or grant additional rights to third-party material.
